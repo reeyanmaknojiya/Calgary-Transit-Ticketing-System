@@ -1,0 +1,70 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<div class="text-center">
+    <h1>
+        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-caret-left" viewBox="0 0 16 16">
+            <path d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753l-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z" />
+        </svg> Items in Cart
+    </h1>
+</div>
+<div>
+    <table class="centre" style="width:600px;">
+        <tbody>
+            <tr>
+                <td>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" fill="currentColor" class="bi bi-exclude" viewBox="0 0 16 16">
+                        <path d="M0 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2H2a2 2 0 0 1-2-2V2zm12 2H5a1 1 0 0 0-1 1v7h7a1 1 0 0 0 1-1V4z" />
+                    </svg>
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td>
+                                <h5>Adult Monthly Pass</h5>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a class="floated" asp-controller="Home" asp-action="Index">Remove</a> @*We need to make this an action link that submits the form with the value remove*@
+                                <p class="floated" style="padding-left:20px">$XX.XX</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="floated">
+                                <input type="button" class="floated" value="-" />
+                                <p class="floated">1</p>
+                                <input type="button" class="floated" value="+" />
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <td></td>
+                <td class="text-lg-center"><input class="centre" type="button" value="Checkout" /> </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+<style>
+    .floated {
+        float: left;
+        margin-right: 5px;
+    }
+
+    .centre {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .centre-cell{
+        text-align:center;
+    }
+</style>
