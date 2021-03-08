@@ -1,0 +1,41 @@
+﻿body {
+}
+
+.login-btn {
+    color:white;
+    background-color: #b83a3f;
+    height: 50px;
+    width: 100%;
+}
+
+.forgotpass {
+    float:right;
+}
+
+.title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-left: 20px;
+}
+
+.title-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+    vertical-align: middle;
+}
+
+.back-arrow {
+}
+
+.input {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.input-box {
+    height:50px;
+}

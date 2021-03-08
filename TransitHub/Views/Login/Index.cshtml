@@ -3,22 +3,53 @@
 *@
 
 @{
+    Layout = null;
+    ViewBag.Title = "Index";
 }
-<div class="text-center">
-    <h1 class="display-4">Login</h1>
-    <form method="post" asp-controller="Login" asp-action="Index">
-        <div>
-            <label for="Email">Email</label>
-            <input type="text" name="emailInput" value="" />
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - TransitHub</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <!-- CSS in html and in login.css-->
+    <link href="~/css/login.css" rel="stylesheet" type="text/css">
+</head>
+<div>
+    <!--<h1 class="display-4 px-3 py-3 mt-5 pb-md-4 text-center">TransitHub</h1>-->
+    <!-- Logo -->
+    <div style="display:flex;justify-content:center;align-items:center;margin-top:4rem;margin-bottom:4rem;">
+        <img src="~/img/logo.png" alt="Logo" width="200">
+    </div>
+
+    <!--Email Address and Password input-->
+    <form style="width:100%;max-width:450px;margin: 0 auto;" method="post" asp-controller="Login" asp-action="Index">
+        <div style="display:flex;justify-content:center;align-items:center;margin-top:2rem;margin-bottom:1rem;">
+            <input type="text" class="form-control" style="height:50px;" placeholder="Email Address" name="emailInput" value="" />
         </div>
-        <div>
-            <label for="Password">Password</label>
-            <input type="password" name="passwordInput" value="" />
+        <div style="display:flex;justify-content:center;align-items:center;">
+            <input type="password" class="form-control" style="height: 50px;" placeholder="Password" name="passwordInput" value="" />
         </div>
-        <div>
-            <input type="submit" value="Submit" />
+        <div class="mb-3" style="margin-top:0.5rem;">
+            <label>
+                <input type="checkbox" value="remember-me">
+                Remember Me
+            </label>
+            <a class="forgotpass">Forgot Password?</a>
+        </div>
+
+        <!--Button-->
+        <div style="display:flex;justify-content:center;align-items:center;">
+            <button type="button" class="btn btn-danger mb-2 login-btn">Log In</button>
+        </div>
+        <div style="display:flex;justify-content:center;align-items:center;">
+            <button type="button" class="btn btn-danger mb-2 login-btn">Create An Account</button>
+        </div>
+        <div style="display:flex;justify-content:center;align-items:center;">
+            <button type="button" class="btn btn-danger mb-2 login-btn">Skip This For Now</button>
         </div>
     </form>
-    <input type="button" value="Privacy Page"  onclick="location.href='@Url.Action("Privacy", "Home")'" />
-    
+    <!--<input type="button" value="Privacy Page"  onclick="location.href='@Url.Action("Privacy", "Home")'" />-->
+
 </div>
