@@ -13,6 +13,10 @@ namespace TransitHub.Controllers
         {
             return View();
         }
+        public IActionResult SignUp()
+        {
+            return View();
+        }
 
         [HttpPost]
         public IActionResult Index(string emailInput, string passwordInput) => RedirectToAction("Index", "Home");

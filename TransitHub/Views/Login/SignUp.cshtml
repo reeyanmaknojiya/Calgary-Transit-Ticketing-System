@@ -1,0 +1,124 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = null;
+    ViewBag.Title = "SignUp";
+}
+
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - TransitHub</title>
+    <script src="https://use.fontawesome.com/3d76a26a36.js"></script>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <!-- CSS in html and in login.css-->
+    <link href="~/css/login.css" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <div class="title-container px-3 py-3 mt-5 pb-md-4 text-center">
+            <img class="back-arrow" src="~/img/arrow-left.svg" alt="arrow left" width="33" height="33">
+            <h1 class="display-4 title">Create An Account</h1>
+        </div>
+        <!--Email Address and Password input-->
+        <form style="width:100%;max-width:450px;margin: 0 auto;" method="post" asp-controller="Login" asp-action="SignUp">
+            <div class="row">
+                <div class="col-md-6 mb-3 input">
+                    <label for="Name">First Name</label>
+                    <input type="text" class="form-control input-box" name="fnameInput" value="" />
+                </div>
+                <div class="col-md-6 mb-3 input">
+                    <label for="Name">Last Name</label>
+                    <input type="text" class="form-control input-box" name="lnameInput" value="" />
+                </div>
+            </div>
+            <div class="row" style="display: flex;align-items: center">
+                <div class="col-md-5">
+                    <label for="Birthday">Birthday</label>
+                    <div class="form-group">
+                        <select class="form-control input-box">
+                            <option>January</option>
+                            <option>February</option>
+                            <option>March</option>
+                            <option>April</option>
+                            <option>May</option>
+                            <option>June</option>
+                            <option>July</option>
+                            <option>August</option>
+                            <option>September</option>
+                            <option>October</option>
+                            <option>Novemeber</option>
+                            <option>December</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-3" style="margin-bottom:-1rem;">
+                    <div class="form-group" style="margin-bottom:0;">
+                        <select class="form-control input-box">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                            <option>16</option>
+                            <option>17</option>
+                            <option>18</option>
+                            <option>19</option>
+                            <option>20</option>
+                            <option>21</option>
+                            <option>22</option>
+                            <option>23</option>
+                            <option>24</option>
+                            <option>25</option>
+                            <option>26</option>
+                            <option>27</option>
+                            <option>28</option>
+                            <option>29</option>
+                            <option>30</option>
+                            <option>31</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-4" style="margin-bottom:-1rem;">
+                    <input type="text" class="form-control input-box" placeholder="Year" value="" />
+                </div>
+            </div>
+            <div class="input">
+                <label for="Email">Email</label>
+                <input type="text" class="form-control input-box" name="emailInput" value="" />
+            </div>
+            <div class="input">
+                <label for="">Phone Number</label>
+                <input type="text" class="form-control input-box" style="" name="phoneInput" value="" />
+            </div>
+            <div class="input">
+                <label for="">Password</label>
+                <input type="password" class="form-control" style="height: 50px;" name="passwordInput" value="" />
+            </div>
+            <div class="input">
+                <label for="">Confirm Password</label>
+                <input type="password" class="form-control" style="height: 50px;" name="passwordInput" value="" />
+            </div>
+
+            <!--Button-->
+            <div style="display:flex;justify-content:center;align-items:center;">
+                <button type="button" class="btn btn-danger mb-2 login-btn">Sign Up</button>
+            </div>
+        </form>
+        <!--<input type="button" value="Privacy Page"  onclick="location.href='@Url.Action("Privacy", "Home")'" />-->
+
+    </div>
+</body>
