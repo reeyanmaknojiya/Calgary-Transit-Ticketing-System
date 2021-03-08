@@ -10,14 +10,19 @@ using System.Windows.Forms;
 
 namespace WPF
 {
-    public partial class activeTickets : Form
+    public partial class settings : Form
     {
-        public activeTickets()
+        public settings()
         {
             InitializeComponent();
         }
 
-        private void label9_Click(object sender, EventArgs e)
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
         {
 
         }

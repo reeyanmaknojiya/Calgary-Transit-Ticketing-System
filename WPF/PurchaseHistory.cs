@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace WPF
 {
-    public partial class activeTickets : Form
+    public partial class PurchaseHistory : Form
     {
-        public activeTickets()
+        public PurchaseHistory()
         {
             InitializeComponent();
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

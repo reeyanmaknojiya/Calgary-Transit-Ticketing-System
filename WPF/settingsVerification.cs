@@ -10,22 +10,20 @@ using System.Windows.Forms;
 
 namespace WPF
 {
-    public partial class _ : Form
+    public partial class settingsVerification : Form
     {
-        public _()
+        public settingsVerification()
         {
             InitializeComponent();
         }
 
-        private void InitializeComponent()
+        private void label1_Click(object sender, EventArgs e)
         {
-            this.SuspendLayout();
-            // 
-            // _
-            // 
-            this.ClientSize = new System.Drawing.Size(713, 552);
-            this.Name = "_";
-            this.ResumeLayout(false);
+
+        }
+
+        private void settingsVerification_Load(object sender, EventArgs e)
+        {
 
         }
     }

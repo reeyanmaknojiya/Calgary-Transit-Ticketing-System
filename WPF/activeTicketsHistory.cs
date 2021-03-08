@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace WPF
 {
-    public partial class activeTickets : Form
+    public partial class activeTicketsHistory : Form
     {
-        public activeTickets()
+        public activeTicketsHistory()
         {
             InitializeComponent();
         }
 
-        private void label9_Click(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
