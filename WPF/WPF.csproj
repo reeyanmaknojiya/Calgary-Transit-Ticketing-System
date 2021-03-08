@@ -46,16 +46,43 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include=".cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="activeTickets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="activeTickets.Designer.cs">
+      <DependentUpon>activeTickets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="storePasses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="storePasses.Designer.cs">
+      <DependentUpon>storePasses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="storeTickets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="storeTickets.Designer.cs">
+      <DependentUpon>storeTickets.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include=".resx">
+      <DependentUpon>.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="activeTickets.resx">
+      <DependentUpon>activeTickets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -66,6 +93,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="storePasses.resx">
+      <DependentUpon>storePasses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="storeTickets.resx">
+      <DependentUpon>storeTickets.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -78,6 +111,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="House.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
