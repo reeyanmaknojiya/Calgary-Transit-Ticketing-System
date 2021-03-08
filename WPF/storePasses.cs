@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace WPF
 {
-    public partial class Form1 : Form
+    public partial class storePasses : Form
     {
-        public Form1()
+        public storePasses()
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

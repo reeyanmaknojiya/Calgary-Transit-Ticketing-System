@@ -46,16 +46,115 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="activeTickets.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="activeTickets.Designer.cs">
+      <DependentUpon>activeTickets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="activeTicketsHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="activeTicketsHistory.Designer.cs">
+      <DependentUpon>activeTicketsHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCard.Designer.cs">
+      <DependentUpon>AddCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cart.Designer.cs">
+      <DependentUpon>Cart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="paymentInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="paymentInfo.Designer.cs">
+      <DependentUpon>paymentInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="PurchaseHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurchaseHistory.Designer.cs">
+      <DependentUpon>PurchaseHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SavedCards.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SavedCards.Designer.cs">
+      <DependentUpon>SavedCards.cs</DependentUpon>
+    </Compile>
+    <Compile Include="settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="settings.Designer.cs">
+      <DependentUpon>settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="settingsAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="settingsAccount.Designer.cs">
+      <DependentUpon>settingsAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="settingsPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="settingsPayment.Designer.cs">
+      <DependentUpon>settingsPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="settingsSecurity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="settingsSecurity.Designer.cs">
+      <DependentUpon>settingsSecurity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="settingsVerification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="settingsVerification.Designer.cs">
+      <DependentUpon>settingsVerification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="storePasses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="storePasses.Designer.cs">
+      <DependentUpon>storePasses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="storeTickets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="storeTickets.Designer.cs">
+      <DependentUpon>storeTickets.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="activeTickets.resx">
+      <DependentUpon>activeTickets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="activeTicketsHistory.resx">
+      <DependentUpon>activeTicketsHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddCard.resx">
+      <DependentUpon>AddCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cart.resx">
+      <DependentUpon>Cart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="paymentInfo.resx">
+      <DependentUpon>paymentInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -66,6 +165,33 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="PurchaseHistory.resx">
+      <DependentUpon>PurchaseHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SavedCards.resx">
+      <DependentUpon>SavedCards.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="settings.resx">
+      <DependentUpon>settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="settingsAccount.resx">
+      <DependentUpon>settingsAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="settingsPayment.resx">
+      <DependentUpon>settingsPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="settingsSecurity.resx">
+      <DependentUpon>settingsSecurity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="settingsVerification.resx">
+      <DependentUpon>settingsVerification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="storePasses.resx">
+      <DependentUpon>storePasses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="storeTickets.resx">
+      <DependentUpon>storeTickets.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -78,6 +204,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="House.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

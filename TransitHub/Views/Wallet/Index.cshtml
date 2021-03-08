@@ -1,0 +1,169 @@
+﻿
+@{
+    ViewData["Title"] = "View";
+}
+<div class="text-center">
+    <ul class="nav nav-pills text-center">
+        <li class="active"><a data-toggle="tab" href="#tickets">Tickets</a></li>
+        <li style="padding-left:1em"><a data-toggle="tab" href="#history">History</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="tickets" class="tab-pane fade">
+            <div class="form-control">
+                <table style="width:1075px;">
+                    <tr>
+                        <td>
+                            <h5>Adult Monthly Pass-Feb</h5>
+                            <h6>Purchased: Feb 02, 2021</h6>
+                            <input type="button" value="View" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br />
+            <div class="form-control">
+                <table style="width:1075px;">
+                    <tr>
+                        <td>
+                            <h5>Youth Ticket</h5>
+                            <h6>Purchased: Feb 05, 2021</h6>
+                            <input type="button" value="View" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br />
+            <div class="form-control">
+                <table style="width:1075px;">
+                    <tr>
+                        <td>
+                            <h5>Adult Ticket</h5>
+                            <h6>Purchased: Feb 05, 2021</h6>
+                            <input type="button" value="View" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br />
+            <div class="form-control">
+                <table style="width:1075px;">
+                    <tr>
+                        <td>
+                            <h5>Adult Ticket</h5>
+                            <h6>Purchased: Feb 05, 2021</h6>
+                            <input type="button" value="View" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+
+        <div id="history" class="tab-pane fade">
+            <div class="form-control">
+                <table style="width:1075px;">
+                    <tr>
+                        <td>
+                            <h5>Adult Monthly Pass-Jan</h5>
+                            <h6>Purchased: Dec 30, 2020</h6>
+                            <h6 style="color:red">Expired: Jan 31, 2021</h6>
+                            
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br />
+            <div class="form-control">
+                <table style="width:1075px;">
+                    <tr>
+                        <td>
+                            <h5>Adult Ticket</h5>
+                            <h6>Purchased: Jan 15, 2021</h6>
+                            <h6 style="color:red">Activated: Jan 20, 2021</h6>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br />
+            <div class="form-control">
+                <table style="width:1075px;">
+                    <tr>
+                        <td>
+                            <h5>Adult Ticket</h5>
+                            <h6>Purchased: Jan 1, 2021</h6>
+                            <h6 style="color:red">Activated: Jan 1, 2021</h6>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br />
+            <div class="form-control">
+                <table style="width:1075px;">
+                    <tr>
+                        <td>
+                            <h5>Youth Ticket</h5>
+                            <h6>Purchased: Dec 3, 2020</h6>
+                            <h6 style="color:red">Expired: Dec 10, 2020</h6>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .form-control{
+        width:100%;
+        height:110px;
+    }
+
+    .tab-content {
+        border-left: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+        padding: 10px;
+    }
+
+    .nav-pills {
+        margin-bottom: 0;
+        justify-content: center;
+    }
+
+    .leftpane {
+        width: 33%;
+        height: 100%;
+        float: left;
+    }
+
+    .middlepane {
+        width: 33%;
+        height: 100%;
+        float: left;
+    }
+
+    .rightpane {
+        width: 33%;
+        height: 100%;
+        float: right;
+    }
+
+    .split {
+        height: 100%;
+        width: 50%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        overflow-x: hidden;
+        padding-top: 20px;
+    }
+
+    .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+</style>
+
