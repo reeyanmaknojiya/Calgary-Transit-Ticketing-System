@@ -1,0 +1,275 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "View";
+}
+
+<div class="text-center">
+    <ul class="nav nav-pills text-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-caret-left" viewBox="0 0 16 16">
+            <path d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753l-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z" />
+        </svg> Back
+        <li class="active" style="padding-left:1em" ><a data-toggle="tab" href="#viewAccount">View Account</a></li>
+        <li style="padding-left:1em"><a data-toggle="tab" href="#editAccount">Edit Account</a></li>
+    </ul>
+
+    @*<div class="content">
+            <div class="centeredHead">
+                <h2>Account</h2>
+            </div>
+        </div>*@
+</div>
+
+    <div class="tab-content">
+        <div id="editAccount" class="tab-pane fade">
+            <form style="width:100%;max-width:300px;margin: 0 auto;" method="post" asp-controller="Login" asp-action="SignUp">
+                <div class="row">
+                    <div class="col-md-6 mb-3 input">
+                        <label for="Name">First Name</label>
+                        <input type="text" class="form-control input-box" name="fnameInput" value="" />
+                    </div>
+                    <div class="col-md-6 mb-3 input">
+                        <label for="Name">Last Name</label>
+                        <input type="text" class="form-control input-box" name="lnameInput" value="" />
+                    </div>
+                </div>
+                <div class="row" style="display: flex;align-items: center;">
+                    <div class="col-md-5">
+                        <label for="Birthday">Birthday</label>
+                        <div class="form-group" style="margin-right:-1rem">
+                            <select class="form-control input-box">
+                                <option>January</option>
+                                <option>February</option>
+                                <option>March</option>
+                                <option>April</option>
+                                <option>May</option>
+                                <option>June</option>
+                                <option>July</option>
+                                <option>August</option>
+                                <option>September</option>
+                                <option>October</option>
+                                <option>Novemeber</option>
+                                <option>December</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3" style="margin-bottom:-1rem;">
+                        <div class="form-group" style="margin-bottom:0;">
+                            <select class="form-control input-box">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                                <option>13</option>
+                                <option>14</option>
+                                <option>15</option>
+                                <option>16</option>
+                                <option>17</option>
+                                <option>18</option>
+                                <option>19</option>
+                                <option>20</option>
+                                <option>21</option>
+                                <option>22</option>
+                                <option>23</option>
+                                <option>24</option>
+                                <option>25</option>
+                                <option>26</option>
+                                <option>27</option>
+                                <option>28</option>
+                                <option>29</option>
+                                <option>30</option>
+                                <option>31</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4" style="margin-bottom:-1rem;">
+                        <input type="text" class="form-control input-box" placeholder="Year" value="" />
+                    </div>
+                </div>
+                <div class="input">
+                    <label for="Email">Email</label>
+                    <input type="text" class="form-control input-box" name="emailInput" value="" />
+                </div>
+                <div class="input">
+                    <label for="">Phone Number</label>
+                    <input type="text" class="form-control input-box" name="phoneInput" value="" />
+                </div>
+                <div class="input">
+                    <label for="">Password</label>
+                    <input type="password" class="form-control" style="height: 30px;" name="passwordInput" value="" />
+                </div>
+                <div class="input">
+                    <label for="">Confirm Password</label>
+                    <input type="password" class="form-control" style="height: 30px;" name="passwordInput" value="" />
+                </div>
+
+                <!--Button-->
+                <div style="display:flex;justify-content:center;align-items:center;">
+                    <button type="button" style="height: 35px;" class="btn btn-danger mb-2 login-btn">Save Changes</button>
+                </div>
+            </form>
+        </div>
+
+        <div id="viewAccount" class="tab-pane fade">
+            <div class="centered">
+                <div style="font-size:20px">
+                    <label for="Name">First Name:</label>
+                    <label for="Name"><b>John</b></label>
+                </div><br /><br />
+                <div style="font-size:20px">
+                    <label for="Name">Last Name:</label>
+                    <label for="Name"><b>Smith</b></label>
+                </div><br /><br />
+                <div style="font-size:20px">
+                    <label for="Birthday">Date of Birth:</label>
+                    <label for="Birthday"><b>January 1st 1985</b></label>
+                </div><br /><br />
+                <div style="font-size:20px">
+                    <label for="Email">Email:</label>
+                    <label for="Email"><b>john.smith@gmail.com</b></label>
+                </div><br /><br />
+                <div style="font-size:20px">
+                    <label>Phone Number:</label>
+                    <label><b>XXXXXXXXXX</b></label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .content {
+        margin-left: 200px;
+        padding-left: 20px;
+    }
+
+    .form-control {
+        width: 100%;
+        height: 110px;
+    }
+
+    .tab-content {
+        border-left: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+        padding: 10px;
+    }
+
+    .nav-pills {
+        margin-bottom: 0;
+        justify-content: center;
+    }
+
+    .leftpane {
+        width: 33%;
+        height: 100%;
+        float: left;
+    }
+
+    .middlepane {
+        width: 33%;
+        height: 100%;
+        float: left;
+    }
+
+    .rightpane {
+        width: 33%;
+        height: 100%;
+        float: right;
+    }
+
+    .split {
+        height: 100%;
+        width: 50%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        overflow-x: hidden;
+        padding-top: 20px;
+    }
+
+    .centered {
+        text-align: left;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .centeredHead {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .login-btn {
+        color: white;
+        background-color: #b83a3f;
+        height: 50px;
+        width: 100%;
+    }
+
+    .forgotpass {
+        float: right;
+    }
+
+    .title {
+        font-size: 2.5rem;
+        text-align: center;
+        margin-left: 20px;
+    }
+
+    .title-container {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        max-width: 450px;
+        margin: 0 auto;
+        vertical-align: middle;
+    }
+
+    .back-arrow {
+    }
+
+    .input {
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+    .input-box {
+        height: 33px;
+    }
+
+    .floated {
+        float: left;
+        margin-right: 5px;
+    }
+
+    .centre {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .centre-cell {
+        text-align: center;
+    }
+</style>
