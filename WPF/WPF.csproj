@@ -70,6 +70,12 @@
     <Compile Include="Cart.Designer.cs">
       <DependentUpon>Cart.cs</DependentUpon>
     </Compile>
+    <Compile Include="signUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="signUp.Designer.cs">
+      <DependentUpon>signUp.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -185,6 +191,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="settingsVerification.resx">
       <DependentUpon>settingsVerification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="signUp.resx">
+      <DependentUpon>signUp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="storePasses.resx">
       <DependentUpon>storePasses.cs</DependentUpon>
