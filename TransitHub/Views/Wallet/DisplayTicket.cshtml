@@ -1,0 +1,74 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<section>
+    <div class="header">
+        <ul>
+            <li class="left"></li>
+            <li><h1 class="header_sub">Ticket Viewer</h1></li>
+        </ul>
+    </div>
+    <div class="title">
+        <h1>YOUTH TICKET</h1>
+    </div>
+    <div class="info">
+        <h1>PURCHASED ON: JAN 21, 2021</h1>
+        <h1>ACTIVATED ON: JAN 31, 2021 AT 8:30 PM</h1>
+    </div>
+    <div class="qrcode">
+        <img id="barcode" src="https://api.qrserver.com/v1/create-qr-code/?data=HelloWorld&size=600x600" alt="barcode" />
+    </div>
+</section>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        justify-content: center;
+    }
+
+    ul {
+        margin: 2rem;
+        padding: 2rem;
+    }
+
+    li {
+        display: inline-block;
+    }
+
+    .left {
+        width: 2rem;
+        height: 2rem;
+        border-left: .5rem solid black;
+        border-bottom: .5rem solid black;
+        transform: rotate(45deg);
+    }
+
+    .header_sub {
+        padding-left: 4rem;
+        font-size: 3rem;
+    }
+
+    .title, .info {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .info {
+        font-size: 1.2rem;
+    }
+</style>

@@ -27,5 +27,10 @@ namespace TransitHub.Controllers
         {
             return View();
         }
+
+        public IActionResult DisplayTicket()
+        {
+            return View();
+        }
     }
 }
