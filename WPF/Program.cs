@@ -16,7 +16,7 @@ namespace WPF
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AddCard());
+            Application.Run(new Cart());
         }
     }
 }
