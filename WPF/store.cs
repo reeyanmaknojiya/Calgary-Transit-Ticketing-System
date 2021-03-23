@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WPF
 {
-    public partial class storePasses : Form
+    public partial class store : Form
     {
-        public storePasses()
+        public store()
         {
             InitializeComponent();
         }

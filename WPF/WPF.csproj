@@ -151,17 +151,11 @@
     <Compile Include="settingsVerification.Designer.cs">
       <DependentUpon>settingsVerification.cs</DependentUpon>
     </Compile>
-    <Compile Include="storePasses.cs">
+    <Compile Include="store.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="storePasses.Designer.cs">
-      <DependentUpon>storePasses.cs</DependentUpon>
-    </Compile>
-    <Compile Include="storeTickets.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="storeTickets.Designer.cs">
-      <DependentUpon>storeTickets.cs</DependentUpon>
+    <Compile Include="store.Designer.cs">
+      <DependentUpon>store.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="activeTickets.resx">
       <DependentUpon>activeTickets.cs</DependentUpon>
@@ -215,11 +209,8 @@
     <EmbeddedResource Include="signUp.resx">
       <DependentUpon>signUp.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="storePasses.resx">
-      <DependentUpon>storePasses.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="storeTickets.resx">
-      <DependentUpon>storeTickets.cs</DependentUpon>
+    <EmbeddedResource Include="store.resx">
+      <DependentUpon>store.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -236,7 +227,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="House.jpg" />
- <Content Include="Images\TransitHub Logo.ico" />
+    <Content Include="Images\TransitHub Logo.ico" />
     <None Include="Resources\logo.png" />
   </ItemGroup>
   <ItemGroup>

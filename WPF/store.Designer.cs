@@ -1,7 +1,7 @@
 ﻿
 namespace WPF
 {
-    partial class storePasses
+    partial class store
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace WPF
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(storePasses));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(store));
             this.button10 = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -126,13 +126,15 @@ namespace WPF
             // 
             // button5
             // 
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(58)))), ((int)(((byte)(63)))));
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.button5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button5.Location = new System.Drawing.Point(39, 428);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(340, 61);
             this.button5.TabIndex = 13;
             this.button5.Text = "Add to Cart $0.00";
-            this.button5.UseVisualStyleBackColor = true;
+            this.button5.UseVisualStyleBackColor = false;
             // 
             // panel2
             // 
@@ -165,10 +167,10 @@ namespace WPF
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
-            this.label7.Location = new System.Drawing.Point(326, 298);
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
+            this.label7.Location = new System.Drawing.Point(325, 292);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(24, 25);
+            this.label7.Size = new System.Drawing.Size(30, 31);
             this.label7.TabIndex = 10;
             this.label7.Text = "0";
             // 
@@ -213,10 +215,10 @@ namespace WPF
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
             this.label4.Location = new System.Drawing.Point(326, 92);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(24, 25);
+            this.label4.Size = new System.Drawing.Size(30, 31);
             this.label4.TabIndex = 5;
             this.label4.Text = "0";
             // 
@@ -305,13 +307,15 @@ namespace WPF
             // 
             // button13
             // 
+            this.button13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(58)))), ((int)(((byte)(63)))));
             this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.button13.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button13.Location = new System.Drawing.Point(44, 552);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(340, 61);
             this.button13.TabIndex = 28;
             this.button13.Text = "Add to Cart $0.00";
-            this.button13.UseVisualStyleBackColor = true;
+            this.button13.UseVisualStyleBackColor = false;
             // 
             // panel5
             // 
@@ -344,10 +348,10 @@ namespace WPF
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
-            this.label18.Location = new System.Drawing.Point(326, 449);
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
+            this.label18.Location = new System.Drawing.Point(325, 443);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(24, 25);
+            this.label18.Size = new System.Drawing.Size(30, 31);
             this.label18.TabIndex = 25;
             this.label18.Text = "0";
             // 
@@ -412,10 +416,10 @@ namespace WPF
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
-            this.label14.Location = new System.Drawing.Point(326, 273);
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
+            this.label14.Location = new System.Drawing.Point(325, 267);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(24, 25);
+            this.label14.Size = new System.Drawing.Size(30, 31);
             this.label14.TabIndex = 18;
             this.label14.Text = "0";
             // 
@@ -460,10 +464,10 @@ namespace WPF
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
-            this.label9.Location = new System.Drawing.Point(326, 92);
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
+            this.label9.Location = new System.Drawing.Point(325, 86);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(24, 25);
+            this.label9.Size = new System.Drawing.Size(30, 31);
             this.label9.TabIndex = 12;
             this.label9.Text = "0";
             // 
@@ -517,16 +521,17 @@ namespace WPF
             this.label12.TabIndex = 7;
             this.label12.Text = "Adult Monthly Pass";
             // 
-            // storePasses
+            // store
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(434, 761);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.button10);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "storePasses";
-            this.Text = "storeTickets";
+            this.Name = "store";
+            this.Text = "Store";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
