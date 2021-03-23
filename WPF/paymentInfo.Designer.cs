@@ -71,9 +71,10 @@ namespace WPF
             // 
             // textBox8
             // 
+            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.textBox8.Location = new System.Drawing.Point(19, 462);
             this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(203, 20);
+            this.textBox8.Size = new System.Drawing.Size(203, 30);
             this.textBox8.TabIndex = 45;
             // 
             // label12
@@ -88,9 +89,10 @@ namespace WPF
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(240, 365);
+            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.textBox4.Location = new System.Drawing.Point(259, 364);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(85, 20);
+            this.textBox4.Size = new System.Drawing.Size(126, 30);
             this.textBox4.TabIndex = 37;
             // 
             // label8
@@ -107,7 +109,7 @@ namespace WPF
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
-            this.label7.Location = new System.Drawing.Point(236, 336);
+            this.label7.Location = new System.Drawing.Point(254, 336);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(58, 25);
             this.label7.TabIndex = 35;
@@ -115,6 +117,7 @@ namespace WPF
             // 
             // comboBox2
             // 
+            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
             "2021",
@@ -123,16 +126,16 @@ namespace WPF
             "2024",
             "2025",
             "2026"});
-            this.comboBox2.Location = new System.Drawing.Point(120, 364);
+            this.comboBox2.Location = new System.Drawing.Point(119, 364);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(100, 21);
+            this.comboBox2.Size = new System.Drawing.Size(100, 33);
             this.comboBox2.TabIndex = 33;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
-            this.label5.Location = new System.Drawing.Point(95, 362);
+            this.label5.Location = new System.Drawing.Point(95, 367);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(19, 25);
             this.label5.TabIndex = 32;
@@ -140,6 +143,7 @@ namespace WPF
             // 
             // comboBox1
             // 
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "Jan",
@@ -156,7 +160,7 @@ namespace WPF
             "Dec"});
             this.comboBox1.Location = new System.Drawing.Point(17, 364);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(72, 21);
+            this.comboBox1.Size = new System.Drawing.Size(72, 33);
             this.comboBox1.TabIndex = 31;
             // 
             // textBox2
@@ -198,12 +202,12 @@ namespace WPF
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 27F);
-            this.label16.Location = new System.Drawing.Point(74, 26);
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.label16.Location = new System.Drawing.Point(75, 31);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(348, 40);
+            this.label16.Size = new System.Drawing.Size(344, 31);
             this.label16.TabIndex = 50;
-            this.label16.Text = "Payment Information";
+            this.label16.Text = "PAYMENT INFORMATION";
             // 
             // label17
             // 
@@ -217,18 +221,21 @@ namespace WPF
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(58)))), ((int)(((byte)(63)))));
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.button1.Location = new System.Drawing.Point(100, 536);
+            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button1.Location = new System.Drawing.Point(81, 536);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(207, 58);
+            this.button1.Size = new System.Drawing.Size(270, 58);
             this.button1.TabIndex = 51;
-            this.button1.Text = "Continue and Pay";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Text = "CONTINUE AND PAY";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // paymentInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(434, 761);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label16);
