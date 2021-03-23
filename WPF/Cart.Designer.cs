@@ -304,7 +304,7 @@ namespace WPF
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.label16.Location = new System.Drawing.Point(270, 562);
+            this.label16.Location = new System.Drawing.Point(43, 619);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(78, 26);
             this.label16.TabIndex = 23;
@@ -314,7 +314,7 @@ namespace WPF
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Underline);
-            this.label17.Location = new System.Drawing.Point(15, 609);
+            this.label17.Location = new System.Drawing.Point(266, 562);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(94, 26);
             this.label17.TabIndex = 22;
@@ -434,7 +434,7 @@ namespace WPF
             this.button11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(58)))), ((int)(((byte)(63)))));
             this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.button11.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button11.Location = new System.Drawing.Point(98, 667);
+            this.button11.Location = new System.Drawing.Point(80, 684);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(207, 58);
             this.button11.TabIndex = 52;
