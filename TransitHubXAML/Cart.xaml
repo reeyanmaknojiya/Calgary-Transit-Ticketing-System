@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TransitHubXAML"
         mc:Ignorable="d"
-        Title="Cart" Height="800" Width="450">
+        Title="Cart" Height="800" Width="450"
+         ResizeMode="NoResize">
     <ScrollViewer VerticalScrollBarVisibility="Auto">
         <Grid RenderTransformOrigin="0.493,0.585">
 
