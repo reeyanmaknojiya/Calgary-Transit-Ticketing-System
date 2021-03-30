@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -37,6 +37,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -55,7 +56,27 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="signUp.xaml.cs">
+      <DependentUpon>signUp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Store.xaml.cs">
+      <DependentUpon>Store.xaml</DependentUpon>
+    </Compile>
+	<Compile Include="Account.xaml.cs">
+		<DependentUpon>Account.xaml</DependentUpon>
+	</Compile>
+	<Compile Include="Verification.xaml.cs">
+		<DependentUpon>Verification.xaml</DependentUpon>
+	</Compile>
     <Page Include="Cart.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="chooseLogin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Login.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -70,6 +91,12 @@
     <Compile Include="Cart.xaml.cs">
       <DependentUpon>Cart.xaml</DependentUpon>
     </Compile>
+    <Compile Include="chooseLogin.xaml.cs">
+      <DependentUpon>chooseLogin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Login.xaml.cs">
+      <DependentUpon>Login.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -78,6 +105,22 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="signUp.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Store.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+	<Page Include="Account.xaml">
+		<SubType>Designer</SubType>
+		<Generator>MSBuild:Compile</Generator>
+	</Page>
+	<Page Include="Verification.xaml">
+		<SubType>Designer</SubType>
+		<Generator>MSBuild:Compile</Generator>
+	</Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="PaymentInformation.xaml.cs">
@@ -111,5 +154,38 @@
   <ItemGroup>
     <Resource Include="Resources\plusButton.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\back-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\google.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\fb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\logo.png" />
+  </ItemGroup>
+    <ItemGroup>
+	    <Resource Include="Resources\camera.png" />
+    </ItemGroup>
+    <ItemGroup>
+	    <Resource Include="Resources\folder.png" />
+    </ItemGroup>
+    <ItemGroup>
+	    <Resource Include="Resources\credit-card.png" />
+    </ItemGroup>
+    <ItemGroup>
+	    <Resource Include="Resources\history.png" />
+    </ItemGroup>
+    <ItemGroup>
+	    <Resource Include="Resources\checkmark.png" />
+    </ItemGroup>
+    <ItemGroup>
+	    <Resource Include="Resources\account.png" />
+    </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

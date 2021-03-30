@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TransitHubXAML"
         mc:Ignorable="d"
-        Title="Payment Information" Height="800" Width="450">
+        Title="Payment Information" Height="800" Width="450"
+         ResizeMode="NoResize">
     <Grid>
         <Label Content="PAYMENT INFORMATION" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="75,-3,-110,0" Height="58" Width="477" FontSize="30" FontFamily="Open Sans"/>
         <Label Content="&lt;" Foreground="White" HorizontalAlignment="Left" Margin="26,-20,0,0" VerticalAlignment="Top" Height="75" Width="57" FontSize="50"/>

@@ -5,11 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TransitHubXAML"
         mc:Ignorable="d"
-        Title="Cart" Height="800" Width="450">
+        Title="Cart" Height="800" Width="450"
+         ResizeMode="NoResize">
     <ScrollViewer VerticalScrollBarVisibility="Auto">
         <Grid RenderTransformOrigin="0.493,0.585">
 
-            <Label Content="ITEMS IN CART" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="110,-9,0,0" Height="58" Width="280" FontSize="40" FontFamily="Open Sans"/>
+            <Label Content="ITEMS IN CART" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="99,0,0,0" Height="58" Width="280" FontSize="40" FontFamily="Open Sans"/>
             <Label Content="Adult Ticket" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="22,60,0,0" TextOptions.TextFormattingMode="Display" FontSize="20"/>
             <Label Content="Remove" Foreground="Gray" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="273,61,0,0" FontSize="20"/>
             <Label Content="$3.50" HorizontalAlignment="Left" Margin="22,109,0,0" VerticalAlignment="Top" FontSize="20"/>
