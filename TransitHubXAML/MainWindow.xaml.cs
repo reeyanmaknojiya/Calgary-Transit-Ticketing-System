@@ -22,9 +22,25 @@ namespace TransitHubXAML
     {
         public MainWindow()
         {
-            Cart cartWindow = new Cart();
-            cartWindow.Show();
-            this.Close();
+            InitializeComponent();
+            Show();
+     
+           
+        }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            mainFrame.Navigate(new storePage());
+        }
+
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+            mainFrame.Navigate(new cartPage());
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            mainFrame.Navigate(new paymentInformationPage());
         }
     }
 }

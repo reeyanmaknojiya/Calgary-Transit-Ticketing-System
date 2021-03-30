@@ -7,6 +7,33 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="800" Width="450" ResizeMode="NoResize">
     <Grid>
-        
+        <Frame NavigationUIVisibility="Hidden" Name="mainFrame" Source="storePage.xaml" HorizontalAlignment="Left" Height="651" VerticalAlignment="Top" Width="444" Margin="0,10,0,0"/>
+        <Grid Margin="0,666,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="90" />
+                <ColumnDefinition Width="90" />
+                <ColumnDefinition Width="90" />
+                <ColumnDefinition Width="90" />
+                <ColumnDefinition Width="90" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions    >
+                <RowDefinition Height="100"/>
+            </Grid.RowDefinitions>
+            <Button Name="button1" Grid.Column="0" Grid.Row="0" Click="button1_Click" >
+                <Image Source="Resources/logo.png"></Image>
+            </Button>
+            <Button Name="button2" Grid.Column="1" Grid.Row="0" Click="button2_Click" >
+                <Image Source="Resources/history.png"></Image>
+            </Button>
+            <Button  Name="button3" Grid.Column="2" Grid.Row="0">
+                <Image Source="Resources/plusButton.jpg"></Image>
+            </Button>
+            <Button  Grid.Column="3" Grid.Row="0" Click="Button_Click" >
+                <Image Source="Resources/Folder.png"></Image>
+            </Button>
+            <Button  Grid.Column="4" Grid.Row="0">
+                <Image Source="Resources/checkmark.png"></Image>
+            </Button>
+        </Grid>
     </Grid>
 </Window>

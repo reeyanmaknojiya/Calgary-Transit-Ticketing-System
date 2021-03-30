@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -56,19 +56,32 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="cartPage.xaml.cs">
+      <DependentUpon>cartPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="paymentInformationPage.xaml.cs">
+      <DependentUpon>paymentInformationPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="signUp.xaml.cs">
       <DependentUpon>signUp.xaml</DependentUpon>
     </Compile>
     <Compile Include="Store.xaml.cs">
       <DependentUpon>Store.xaml</DependentUpon>
     </Compile>
-	<Compile Include="Account.xaml.cs">
-		<DependentUpon>Account.xaml</DependentUpon>
-	</Compile>
-	<Compile Include="Verification.xaml.cs">
-		<DependentUpon>Verification.xaml</DependentUpon>
-	</Compile>
+    <Compile Include="Account.xaml.cs">
+      <DependentUpon>Account.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="storePage.xaml.cs">
+      <DependentUpon>storePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Verification.xaml.cs">
+      <DependentUpon>Verification.xaml</DependentUpon>
+    </Compile>
     <Page Include="Cart.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="cartPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -105,6 +118,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="paymentInformationPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="signUp.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -113,14 +130,18 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-	<Page Include="Account.xaml">
-		<SubType>Designer</SubType>
-		<Generator>MSBuild:Compile</Generator>
-	</Page>
-	<Page Include="Verification.xaml">
-		<SubType>Designer</SubType>
-		<Generator>MSBuild:Compile</Generator>
-	</Page>
+    <Page Include="Account.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="storePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Verification.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="PaymentInformation.xaml.cs">
@@ -169,23 +190,23 @@
   <ItemGroup>
     <Resource Include="Resources\logo.png" />
   </ItemGroup>
-    <ItemGroup>
-	    <Resource Include="Resources\camera.png" />
-    </ItemGroup>
-    <ItemGroup>
-	    <Resource Include="Resources\folder.png" />
-    </ItemGroup>
-    <ItemGroup>
-	    <Resource Include="Resources\credit-card.png" />
-    </ItemGroup>
-    <ItemGroup>
-	    <Resource Include="Resources\history.png" />
-    </ItemGroup>
-    <ItemGroup>
-	    <Resource Include="Resources\checkmark.png" />
-    </ItemGroup>
-    <ItemGroup>
-	    <Resource Include="Resources\account.png" />
-    </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\camera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\credit-card.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\history.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\checkmark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\account.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
