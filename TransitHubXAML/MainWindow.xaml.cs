@@ -24,8 +24,7 @@ namespace TransitHubXAML
         {
             InitializeComponent();
             Show();
-     
-           
+
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)
@@ -42,5 +41,27 @@ namespace TransitHubXAML
         {
             mainFrame.Navigate(new paymentInformationPage());
         }
+
+        private void chooseLogin_Click(object sender, RoutedEventArgs e)
+        {
+            mainFrame.Navigate(new chooseLoginPage());
+        }
+
+        private void frame_Navigated(object sender, NavigationEventArgs e)
+        {
+            Type pageType = e.Content.GetType();
+
+            if (pageType == typeof(loginPage) || pageType == typeof(signUpPage))
+            {
+                //hide nav bar
+                navBar.Visibility = System.Windows.Visibility.Hidden;
+            }
+            else
+            {
+                //display nav bar
+                navBar.Visibility = System.Windows.Visibility.Visible;
+            }
+        }
+       
     }
 }
