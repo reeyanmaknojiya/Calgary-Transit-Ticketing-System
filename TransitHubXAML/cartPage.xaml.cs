@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using TransitHubXAML.Models;
 
 namespace TransitHubXAML
 {
@@ -20,8 +21,9 @@ namespace TransitHubXAML
     /// </summary>
     public partial class cartPage : Page
     {
-        public cartPage()
+        public cartPage(int[] items)
         {
+            adultTicketAmountLabel.Content = items[(int)Enums.adultTicket].ToString();
             InitializeComponent();
         }
     }

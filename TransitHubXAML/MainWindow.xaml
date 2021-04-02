@@ -20,19 +20,19 @@
                 <RowDefinition Height="100"/>
             </Grid.RowDefinitions>
             <Button Name="button1" Grid.Column="0" Grid.Row="0" Click="button1_Click" >
-                <Image Source="Resources/logo.png"></Image>
+                <Image Name="image1" Source="Resources/store.png" Height="84" Width="80"></Image>
             </Button>
             <Button Name="button2" Grid.Column="1" Grid.Row="0" Click="button2_Click" >
-                <Image Source="Resources/history.png"></Image>
+                <Image Name="image2" Source="Resources/my_tickets.png"></Image>
             </Button>
-            <Button  Name="button3" Grid.Column="2" Grid.Row="0">
-                <Image Source="Resources/plusButton.jpg"></Image>
+            <Button  Name="button3" Grid.Column="2" Grid.Row="0" Click="button3_Click">
+                <Image Name="image3" Source="Resources/help.png" Height="91"></Image>
             </Button>
-            <Button  Grid.Column="3" Grid.Row="0" Click="Button_Click" >
-                <Image Source="Resources/Folder.png"></Image>
+            <Button Name="button4" Grid.Column="3" Grid.Row="0" Click="button4_Click" >
+                <Image Name="image4" Source="Resources/accountNav.png" Height="91"></Image>
             </Button>
-            <Button  Grid.Column="4" Grid.Row="0">
-                <Image Source="Resources/checkmark.png"></Image>
+            <Button Name="button5" Grid.Column="4" Grid.Row="0" Click="button5_Click" Margin="0,0,6,0">
+                <Image Name="image5" Source="Resources/cart.png" Width="63" Height="59"></Image>
             </Button>
         </Grid>
     </Grid>

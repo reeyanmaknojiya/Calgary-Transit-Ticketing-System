@@ -59,6 +59,8 @@
     <Compile Include="cartPage.xaml.cs">
       <DependentUpon>cartPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Models\Enums.cs" />
+    <Compile Include="Models\storeItems.cs" />
     <Compile Include="paymentInformationPage.xaml.cs">
       <DependentUpon>paymentInformationPage.xaml</DependentUpon>
     </Compile>
@@ -207,6 +209,20 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\account.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\account_selected.png" />
+    <Resource Include="Resources\cart.png" />
+    <Resource Include="Resources\cart_selected.png" />
+    <Resource Include="Resources\help.png" />
+    <Resource Include="Resources\help_selected.png" />
+    <Resource Include="Resources\my_tickets.png" />
+    <Resource Include="Resources\my_tickets_selected.png" />
+    <Resource Include="Resources\store.png" />
+    <Resource Include="Resources\store_selected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\accountNav.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

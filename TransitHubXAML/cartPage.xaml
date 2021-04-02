@@ -15,7 +15,7 @@
             <Label Content="Adult Ticket" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="22,60,0,0" TextOptions.TextFormattingMode="Display" FontSize="20"/>
             <Label Content="Remove" Foreground="Gray" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="273,61,0,0" FontSize="20"/>
             <Label Content="$3.50" HorizontalAlignment="Left" Margin="22,109,0,0" VerticalAlignment="Top" FontSize="20"/>
-            <Label Content="0" HorizontalAlignment="Left" Margin="306,111,0,0" VerticalAlignment="Top" FontSize="20"/>
+            <Label Name="adultTicketAmountLabel" Content="0" HorizontalAlignment="Left" Margin="306,111,0,0" VerticalAlignment="Top" FontSize="20"/>
             <Label Content="Youth Ticket" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="22,165,0,0" TextOptions.TextFormattingMode="Display" FontSize="20"/>
             <Label Content="$2.40" HorizontalAlignment="Left" Margin="22,231,0,0" VerticalAlignment="Top" FontSize="20"/>
             <Label Content="Remove" Foreground="Gray" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="273,176,0,0" FontSize="20"/>
