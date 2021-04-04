@@ -31,6 +31,7 @@ namespace TransitHubXAML
             currentIcon = 0;
             InitializeComponent();
             Show();
+           
      
         }
         void storePage_onsendCartData(List<storeItems> list)
@@ -52,7 +53,7 @@ namespace TransitHubXAML
             resetCurrentWindow();
             currentIcon = 2;
             image2.Source = new BitmapImage(new Uri("Resources/my_tickets_selected.png", UriKind.Relative));
-            mainFrame.Navigate(new cartPage(null));
+            mainFrame.Navigate(new cartPage());
         }
 
         private void button3_Click(object sender, RoutedEventArgs e)
@@ -60,15 +61,16 @@ namespace TransitHubXAML
             resetCurrentWindow();
             currentIcon = 3;
             image3.Source = new BitmapImage(new Uri("Resources/help_selected.png", UriKind.Relative));
-            mainFrame.Navigate(new cartPage(null));
+            mainFrame.Navigate(new cartPage());
         }
 
         private void button4_Click(object sender, RoutedEventArgs e)
-        {
+        { 
+            
             resetCurrentWindow();
             currentIcon = 4;
             image4.Source = new BitmapImage(new Uri("Resources/account_selected.png", UriKind.Relative));
-            mainFrame.Navigate(new cartPage(null)); //TODO switch account to a page to make this work
+            mainFrame.Navigate(new cartPage()); //TODO switch account to a page to make this work
         }
 
         //We go to cart page and we send it the array of items
@@ -77,7 +79,9 @@ namespace TransitHubXAML
             resetCurrentWindow();
             currentIcon = 5;
             image5.Source = new BitmapImage(new Uri("Resources/cart_selected.png", UriKind.Relative));
-            mainFrame.Navigate(new cartPage(sp.items));
+           
+           
+            mainFrame.Navigate(new cartPage());
         }
 
         private void resetCurrentWindow()
@@ -103,6 +107,6 @@ namespace TransitHubXAML
             }
         }
 
-   
+       
     }
 }

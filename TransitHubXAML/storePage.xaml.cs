@@ -46,28 +46,33 @@ namespace TransitHubXAML
 
         public storePage()
         {   
-
             InitializeComponent();
         }
 
-        //Both of these functions need to update both of the add to cart buttons, wipe out all existing items
-        private void ticketsAddToCart_Click(object sender, RoutedEventArgs e)
+        private void AddToCart_Click(object sender, RoutedEventArgs e)
         {
             //We go through all the amounts and set that as our 
-            items[(int)Enums.adultTicket] = adultTicketAmount;
-            items[(int)Enums.youthTicket] = youthTicketAmount;
-            items[(int)Enums.adultMonthly] = adultMonthlyAmount;
-            items[(int)Enums.youthMontly] = youthMonthlyAmount;
-            items[(int)Enums.lowIncomeMonthly] = lowIncomeMonthlyAmount;
-        }
 
-        private void passesAddToCart_Click(object sender, RoutedEventArgs e)
-        {
-            items[(int)Enums.adultTicket] = adultTicketAmount;
-            items[(int)Enums.youthTicket] = youthTicketAmount;
-            items[(int)Enums.adultMonthly] = adultMonthlyAmount;
-            items[(int)Enums.youthMontly] = youthMonthlyAmount;
-            items[(int)Enums.lowIncomeMonthly] = lowIncomeMonthlyAmount;
+            if (App.Current.Properties.Contains("itemsToCart"))
+            {
+                var temp = (int[])App.Current.Properties["itemsToCart"];
+                temp[(int)Enums.adultTicket] += adultTicketAmount;
+                temp[(int)Enums.youthTicket] += youthTicketAmount;
+                temp[(int)Enums.adultMonthly] += adultMonthlyAmount;
+                temp[(int)Enums.youthMonthly] += youthMonthlyAmount;
+                temp[(int)Enums.lowIncomeMonthly] += lowIncomeMonthlyAmount;
+                App.Current.Properties.Remove("itemsToCart");
+                App.Current.Properties.Add("itemsToCart", temp);
+            }
+            else
+            {
+                items[(int)Enums.adultTicket] = adultTicketAmount;
+                items[(int)Enums.youthTicket] = youthTicketAmount;
+                items[(int)Enums.adultMonthly] = adultMonthlyAmount;
+                items[(int)Enums.youthMonthly] = youthMonthlyAmount;
+                items[(int)Enums.lowIncomeMonthly] = lowIncomeMonthlyAmount;
+                App.Current.Properties.Add("itemsToCart", items);
+            }
         }
 
         private void adultMonthlyPlus_Click(object sender, RoutedEventArgs e)

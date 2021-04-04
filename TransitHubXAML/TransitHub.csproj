@@ -59,10 +59,16 @@
     <Compile Include="cartPage.xaml.cs">
       <DependentUpon>cartPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="checkout.xaml.cs">
+      <DependentUpon>checkout.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Models\Enums.cs" />
     <Compile Include="Models\storeItems.cs" />
     <Compile Include="paymentInformationPage.xaml.cs">
       <DependentUpon>paymentInformationPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="selectPaymentMethod.xaml.cs">
+      <DependentUpon>selectPaymentMethod.xaml</DependentUpon>
     </Compile>
     <Compile Include="signUp.xaml.cs">
       <DependentUpon>signUp.xaml</DependentUpon>
@@ -84,6 +90,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="cartPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="checkout.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -121,6 +131,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="paymentInformationPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="selectPaymentMethod.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -176,6 +190,7 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\plusButton.jpg" />
+    <Resource Include="Resources\visa.PNG" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\back-arrow.png" />
@@ -223,6 +238,15 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\accountNav.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\masterCard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\paypal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\debit.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

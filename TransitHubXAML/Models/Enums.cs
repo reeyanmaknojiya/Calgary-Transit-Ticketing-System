@@ -11,7 +11,7 @@ namespace TransitHubXAML.Models
         adultTicket,
         youthTicket,
         adultMonthly,
-        youthMontly,
+        youthMonthly,
         lowIncomeMonthly
     }
 }
