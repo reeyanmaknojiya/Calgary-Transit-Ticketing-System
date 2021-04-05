@@ -64,6 +64,13 @@
     </Compile>
     <Compile Include="Models\Enums.cs" />
     <Compile Include="Models\storeItems.cs" />
+    <Compile Include="chooseLoginPage.xaml.cs">
+      <DependentUpon>chooseLoginPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs" />
+    <Compile Include="loginPage.xaml.cs">
+      <DependentUpon>loginPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="paymentInformationPage.xaml.cs">
       <DependentUpon>paymentInformationPage.xaml</DependentUpon>
     </Compile>
@@ -72,6 +79,9 @@
     </Compile>
     <Compile Include="signUp.xaml.cs">
       <DependentUpon>signUp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="signUpPage.xaml.cs">
+      <DependentUpon>signUpPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Store.xaml.cs">
       <DependentUpon>Store.xaml</DependentUpon>
@@ -104,7 +114,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="chooseLoginPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="loginPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -142,6 +160,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="signUp.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="signUpPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

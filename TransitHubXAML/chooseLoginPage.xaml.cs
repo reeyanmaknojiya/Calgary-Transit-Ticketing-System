@@ -10,19 +10,28 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
-using TransitHubXAML.Models;
 
 namespace TransitHubXAML
 {
     /// <summary>
-    /// Interaction logic for Cart.xaml
+    /// Interaction logic for chooseLoginPage.xaml
     /// </summary>
-    public partial class Cart : Window
+    public partial class chooseLoginPage : Page
     {
-        public Cart()
+        public chooseLoginPage()
         {
             InitializeComponent();
+        }
+        private void Login_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new loginPage());
+        }
+
+        private void Account_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new signUpPage());
         }
     }
 }
