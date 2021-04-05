@@ -10,18 +10,17 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.Collections.Generic;
-using TransitHubXAML.Models;
 
 namespace TransitHubXAML
 {
     /// <summary>
-    /// Interaction logic for Cart.xaml
+    /// Interaction logic for paymentInformationPage.xaml
     /// </summary>
-    public partial class Cart : Window
+    public partial class paymentInformationPage : Page
     {
-        public Cart()
+        public paymentInformationPage()
         {
             InitializeComponent();
         }
