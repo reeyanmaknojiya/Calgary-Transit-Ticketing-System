@@ -59,6 +59,11 @@
     <Compile Include="cartPage.xaml.cs">
       <DependentUpon>cartPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="checkout.xaml.cs">
+      <DependentUpon>checkout.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Enums.cs" />
+    <Compile Include="Models\storeItems.cs" />
     <Compile Include="chooseLoginPage.xaml.cs">
       <DependentUpon>chooseLoginPage.xaml</DependentUpon>
     </Compile>
@@ -68,6 +73,9 @@
     </Compile>
     <Compile Include="paymentInformationPage.xaml.cs">
       <DependentUpon>paymentInformationPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="selectPaymentMethod.xaml.cs">
+      <DependentUpon>selectPaymentMethod.xaml</DependentUpon>
     </Compile>
     <Compile Include="signUp.xaml.cs">
       <DependentUpon>signUp.xaml</DependentUpon>
@@ -84,6 +92,9 @@
     <Compile Include="storePage.xaml.cs">
       <DependentUpon>storePage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="thankYou.xaml.cs">
+      <DependentUpon>thankYou.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Verification.xaml.cs">
       <DependentUpon>Verification.xaml</DependentUpon>
     </Compile>
@@ -92,6 +103,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="cartPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="checkout.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -140,6 +155,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="selectPaymentMethod.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="signUp.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -157,6 +176,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="storePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="thankYou.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -196,6 +219,7 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\plusButton.jpg" />
+    <Resource Include="Resources\visa.PNG" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\back-arrow.png" />
@@ -229,6 +253,29 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\account.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\account_selected.png" />
+    <Resource Include="Resources\cart.png" />
+    <Resource Include="Resources\cart_selected.png" />
+    <Resource Include="Resources\help.png" />
+    <Resource Include="Resources\help_selected.png" />
+    <Resource Include="Resources\my_tickets.png" />
+    <Resource Include="Resources\my_tickets_selected.png" />
+    <Resource Include="Resources\store.png" />
+    <Resource Include="Resources\store_selected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\accountNav.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\masterCard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\paypal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\debit.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

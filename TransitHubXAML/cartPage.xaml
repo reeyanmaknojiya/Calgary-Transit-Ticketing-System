@@ -13,43 +13,38 @@
 
             <Label Content="ITEMS IN CART" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="99,0,0,0" Height="58" Width="280" FontSize="40" FontFamily="Open Sans"/>
             <Label Content="Adult Ticket" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="22,60,0,0" TextOptions.TextFormattingMode="Display" FontSize="20"/>
-            <Label Content="Remove" Foreground="Gray" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="273,61,0,0" FontSize="20"/>
             <Label Content="$3.50" HorizontalAlignment="Left" Margin="22,109,0,0" VerticalAlignment="Top" FontSize="20"/>
-            <Label Content="0" HorizontalAlignment="Left" Margin="306,111,0,0" VerticalAlignment="Top" FontSize="20"/>
+            <Label Name="adultTicketAmountLabel" Content="0" HorizontalAlignment="Left" Margin="306,84,0,0" VerticalAlignment="Top" FontSize="20"/>
             <Label Content="Youth Ticket" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="22,165,0,0" TextOptions.TextFormattingMode="Display" FontSize="20"/>
             <Label Content="$2.40" HorizontalAlignment="Left" Margin="22,231,0,0" VerticalAlignment="Top" FontSize="20"/>
-            <Label Content="Remove" Foreground="Gray" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="273,176,0,0" FontSize="20"/>
-            <Label Content="0" HorizontalAlignment="Left" Margin="306,231,0,0" VerticalAlignment="Top" FontSize="20"/>
-            <Button Content="+" Background="LightGray" HorizontalAlignment="Left" Margin="361,109,0,0" VerticalAlignment="Top" Width="40" Height="37" FontSize="25"/>
-            <Button Content="-" Background="LightGray" HorizontalAlignment="Left" Margin="231,109,0,0" VerticalAlignment="Top" Width="40" Height="37" FontSize="25"/>
-            <Button Content="-" Background="LightGray" HorizontalAlignment="Left" Margin="231,229,0,0" VerticalAlignment="Top" Width="40" Height="37" FontSize="25"/>
-            <Button Content="+" Background="LightGray" HorizontalAlignment="Left" Margin="361,231,0,0" VerticalAlignment="Top" Width="40" Height="37" FontSize="25"/>
+            <Label Name="youthTicketAmountLabel" Content="0" HorizontalAlignment="Left" Margin="306,204,0,0" VerticalAlignment="Top" FontSize="20"/>
+            <Button Name="adultTicketPlus" Content="+" Background="LightGray" HorizontalAlignment="Left" Margin="361,84,0,0" VerticalAlignment="Top" Width="40" Height="37" FontSize="25" Click="adultTicketPlus_Click"/>
+            <Button Name="adultTicketMinus" Content="-" Background="LightGray" HorizontalAlignment="Left" Margin="231,82,0,0" VerticalAlignment="Top" Width="40" Height="37" FontSize="25" Click="adultTicketMinus_Click"/>
+            <Button Name="youthTicketMinus" Content="-" Background="LightGray" HorizontalAlignment="Left" Margin="231,202,0,0" VerticalAlignment="Top" Width="40" Height="37" FontSize="25" Click="youthTicketMinus_Click"/>
+            <Button Name="youthTicketPlus" Content="+" Background="LightGray" HorizontalAlignment="Left" Margin="361,202,0,0" VerticalAlignment="Top" Width="40" Height="37" FontSize="25" Click="youthTicketPlus_Click"/>
             <Label Content="&lt;" Foreground="White" HorizontalAlignment="Left" Margin="37,-20,0,0" VerticalAlignment="Top" Height="75" Width="57" FontSize="50"/>
             <Rectangle Fill="#B83A3F" Panel.ZIndex="-1" HorizontalAlignment="Left" Height="55" Stroke="{x:Null}" StrokeThickness="0.5" VerticalAlignment="Top" Width="442"/>
             <Rectangle Fill="LightGray" HorizontalAlignment="Left" Height="7" Stroke="{x:Null}" StrokeThickness="0.5" VerticalAlignment="Top" Width="442" Margin="0,153,0,0"/>
             <Rectangle Fill="LightGray" HorizontalAlignment="Left" Height="7" Stroke="{x:Null}" StrokeThickness="0.5" VerticalAlignment="Top" Width="442" Margin="0,273,0,0"/>
-            <Label Content="Youth Ticket" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="22,285,0,0" TextOptions.TextFormattingMode="Display" FontSize="20"/>
+            <Label Content="Adult Monthly Pass" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="22,285,0,0" TextOptions.TextFormattingMode="Display" FontSize="20"/>
             <Label Content="$2.40" HorizontalAlignment="Left" Margin="20,356,0,0" VerticalAlignment="Top" FontSize="20"/>
             <Rectangle Fill="LightGray" HorizontalAlignment="Left" Height="7" Stroke="{x:Null}" StrokeThickness="0.5" VerticalAlignment="Top" Width="442" Margin="0,398,0,0"/>
-            <Label Content="Youth Ticket" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="22,410,0,0" TextOptions.TextFormattingMode="Display" FontSize="20"/>
+            <Label Content="Youth Monthly Pass" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="22,410,0,0" TextOptions.TextFormattingMode="Display" FontSize="20"/>
             <Label Content="$2.40" HorizontalAlignment="Left" Margin="22,475,0,0" VerticalAlignment="Top" FontSize="20"/>
             <Rectangle Fill="LightGray" HorizontalAlignment="Left" Height="7" Stroke="{x:Null}" StrokeThickness="0.5" VerticalAlignment="Top" Width="442" Margin="0,517,0,0"/>
-            <Label Content="Youth Ticket" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="22,529,0,0" TextOptions.TextFormattingMode="Display" FontSize="20"/>
+            <Label Content="Low Income Pass" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="22,529,0,0" TextOptions.TextFormattingMode="Display" FontSize="20"/>
             <Label Content="$2.40" HorizontalAlignment="Left" Margin="22,580,0,0" VerticalAlignment="Top" FontSize="20"/>
-            <Label Content="Remove" Foreground="Gray" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="273,295,0,0" FontSize="20"/>
-            <Button Content="-" Background="LightGray" HorizontalAlignment="Left" Margin="231,354,0,0" VerticalAlignment="Top" Width="40" Height="37" FontSize="25"/>
-            <Label Content="0" HorizontalAlignment="Left" Margin="306,356,0,0" VerticalAlignment="Top" FontSize="20"/>
-            <Button Content="+" Background="LightGray" HorizontalAlignment="Left" Margin="361,354,0,0" VerticalAlignment="Top" Width="40" Height="37" FontSize="25"/>
-            <Label Content="Remove" Foreground="Gray" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="273,423,0,0" FontSize="20"/>
-            <Button Content="-" Background="LightGray" HorizontalAlignment="Left" Margin="231,473,0,0" VerticalAlignment="Top" Width="40" Height="37" FontSize="25"/>
-            <Label Content="0" HorizontalAlignment="Left" Margin="306,475,0,0" VerticalAlignment="Top" FontSize="20"/>
-            <Button Content="+" Background="LightGray" HorizontalAlignment="Left" Margin="361,473,0,0" VerticalAlignment="Top" Width="40" Height="37" FontSize="25"/>
-            <Label Content="Remove" Foreground="Gray" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="273,530,0,0" FontSize="20"/>
-            <Button Content="-" Background="LightGray" HorizontalAlignment="Left" Margin="231,580,0,0" VerticalAlignment="Top" Width="40" Height="37" FontSize="25"/>
-            <Label Content="0" HorizontalAlignment="Left" Margin="306,582,0,0" VerticalAlignment="Top" FontSize="20"/>
-            <Button Content="+" Background="LightGray" HorizontalAlignment="Left" Margin="361,582,0,0" VerticalAlignment="Top" Width="40" Height="37" FontSize="25"/>
+            <Button Name="adultMonthlyMinus" Content="-" Background="LightGray" HorizontalAlignment="Left" Margin="231,327,0,0" VerticalAlignment="Top" Width="40" Height="37" FontSize="25" Click="adultMonthlyMinus_Click"/>
+            <Label Name="adultMonthlyAmountLabel" Content="0" HorizontalAlignment="Left" Margin="306,329,0,0" VerticalAlignment="Top" FontSize="20"/>
+            <Button Name="adultMonthlyPlus" Content="+" Background="LightGray" HorizontalAlignment="Left" Margin="361,327,0,0" VerticalAlignment="Top" Width="40" Height="37" FontSize="25" Click="adultMonthlyPlus_Click"/>
+            <Button Name="youthMonthlyMinus" Content="-" Background="LightGray" HorizontalAlignment="Left" Margin="231,446,0,0" VerticalAlignment="Top" Width="40" Height="37" FontSize="25" Click="youthMonthlyMinus_Click"/>
+            <Label Name="youthMonthlyAmountLabel" Content="0" HorizontalAlignment="Left" Margin="306,448,0,0" VerticalAlignment="Top" FontSize="20"/>
+            <Button Name="youthMonthlyPlus" Content="+" Background="LightGray" HorizontalAlignment="Left" Margin="361,448,0,0" VerticalAlignment="Top" Width="40" Height="37" FontSize="25" Click="youthMonthlyPlus_Click"/>
+            <Button Name="lowIncomeMinus" Content="-" Background="LightGray" HorizontalAlignment="Left" Margin="231,553,0,0" VerticalAlignment="Top" Width="40" Height="37" FontSize="25" Click="lowIncomeMinus_Click"/>
+            <Label Name="lowIncomeAmountLabel" Content="0" HorizontalAlignment="Left" Margin="306,555,0,0" VerticalAlignment="Top" FontSize="20"/>
+            <Button Name="lowIncomePlus" Content="+" Background="LightGray" HorizontalAlignment="Left" Margin="361,555,0,0" VerticalAlignment="Top" Width="40" Height="37" FontSize="25" Click="lowIncomePlus_Click"/>
             <Rectangle Fill="LightGray" HorizontalAlignment="Left" Height="7" Stroke="{x:Null}" StrokeThickness="0.5" VerticalAlignment="Top" Width="442" Margin="10,624,-10,0"/>
-            <Button Content="CHECKOUT $0.00" Foreground="white" Background="#B83A3F" HorizontalAlignment="Left" Margin="62,661,0,0" VerticalAlignment="Top" Width="328" Height="44" FontSize="30"/>
+            <Button Name="checkoutButton" Content="CHECKOUT $0.00" Foreground="white" Background="#B83A3F" HorizontalAlignment="Left" Margin="62,661,0,0" VerticalAlignment="Top" Width="328" Height="44" FontSize="30" Click="checkoutButton_Click"/>
 
 
         </Grid>

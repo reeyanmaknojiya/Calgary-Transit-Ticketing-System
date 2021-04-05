@@ -11,17 +11,15 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using System.Collections.Generic;
-using TransitHubXAML.Models;
 
 namespace TransitHubXAML
 {
     /// <summary>
-    /// Interaction logic for Cart.xaml
+    /// Interaction logic for thankYou.xaml
     /// </summary>
-    public partial class Cart : Window
+    public partial class thankYou : Window
     {
-        public Cart()
+        public thankYou()
         {
             InitializeComponent();
         }
