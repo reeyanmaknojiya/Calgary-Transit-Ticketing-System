@@ -82,6 +82,9 @@
     <Compile Include="storePage.xaml.cs">
       <DependentUpon>storePage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="thankYou.xaml.cs">
+      <DependentUpon>thankYou.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Verification.xaml.cs">
       <DependentUpon>Verification.xaml</DependentUpon>
     </Compile>
@@ -151,6 +154,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="storePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="thankYou.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
