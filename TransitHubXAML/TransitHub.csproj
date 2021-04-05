@@ -62,6 +62,7 @@
     <Compile Include="chooseLoginPage.xaml.cs">
       <DependentUpon>chooseLoginPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="User.cs" />
     <Compile Include="loginPage.xaml.cs">
       <DependentUpon>loginPage.xaml</DependentUpon>
     </Compile>

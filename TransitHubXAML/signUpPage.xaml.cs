@@ -31,7 +31,11 @@ namespace TransitHubXAML
 
         private void SignUp_Click(object sender, RoutedEventArgs e)
         {
+            User.firstName = firstNameText.Text;
+            User.lastName = lastNameText.Text;
+
             this.NavigationService.Navigate(new storePage());
         }
+
     }
 }
