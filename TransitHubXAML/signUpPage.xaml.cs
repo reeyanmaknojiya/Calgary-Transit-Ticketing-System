@@ -33,6 +33,12 @@ namespace TransitHubXAML
         {
             User.firstName = firstNameText.Text;
             User.lastName = lastNameText.Text;
+            User.bMonth = monthText.Text;
+            User.bDay = dayText.Text;
+            User.email = emailText.Text;
+            User.phone = phoneText.Text;
+            User.password = passText1.Text;
+            User.loggedIn = true;
 
             this.NavigationService.Navigate(new storePage());
         }

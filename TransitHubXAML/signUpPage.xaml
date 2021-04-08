@@ -26,13 +26,13 @@
         <TextBlock Grid.Column="1" Grid.Row="1" FontSize="30" Grid.ColumnSpan="2" Margin="68,0,65,0" Text="Create An Account"/>
         <Label Content="First Name" Grid.Column="2" HorizontalAlignment="Left" Margin="10,37,0,0" Grid.Row="4" VerticalAlignment="Top" Height="44" Width="173" FontSize="22"/>
         <TextBox x:Name="firstNameText" Grid.Column="2" HorizontalAlignment="Left" Height="42" Margin="17,74,0,0" Grid.Row="4" TextWrapping="Wrap" VerticalAlignment="Top" Width="166" FontSize="22"/>
-        <TextBox Grid.Column="2" HorizontalAlignment="Left" Height="42" Margin="17,502,0,0" Grid.Row="4" TextWrapping="Wrap" VerticalAlignment="Top" Width="354" FontSize="24"/>
+        <TextBox x:Name="passText2" Grid.Column="2" HorizontalAlignment="Left" Height="42" Margin="17,502,0,0" Grid.Row="4" TextWrapping="Wrap" VerticalAlignment="Top" Width="354" FontSize="24"/>
         <Button Content="Sign Up" Click="SignUp_Click " HorizontalAlignment="Left" Margin="18,567,0,0" VerticalAlignment="Top" Width="354" Height="49" FontSize="22" Background="#FFC43A3F" Foreground="White" Grid.Column="2" Grid.Row="4"/>
         <Label Content="Confirm Password" Grid.Column="2" HorizontalAlignment="Left" Margin="11,466,0,0" Grid.Row="4" VerticalAlignment="Top" Height="44" Width="249" FontSize="22"/>
         <Image Grid.Column="2" MouseDown="Back_Click" HorizontalAlignment="Left" Height="40" Grid.Row="1" VerticalAlignment="Top" Width="69" Source="Resources/back-arrow.png"/>
         <TextBox x:Name="lastNameText" Grid.Column="2" HorizontalAlignment="Left" Height="42" Margin="192,74,0,0" Grid.Row="4" TextWrapping="Wrap" VerticalAlignment="Top" Width="179" FontSize="22"/>
         <Label Content="Last Name" Grid.Column="2" HorizontalAlignment="Left" Margin="188,37,0,0" Grid.Row="4" VerticalAlignment="Top" Height="44" Width="173" FontSize="22"/>
-        <ComboBox Style="{StaticResource {x:Static ToolBar.ComboBoxStyleKey}}" Grid.Column="2" HorizontalAlignment="Left" Height="43" Margin="17,158,0,0" Grid.Row="4" VerticalAlignment="Top" Width="166" BorderBrush="#FFABADB3" FontSize="22">
+        <ComboBox x:Name="monthText" Style="{StaticResource {x:Static ToolBar.ComboBoxStyleKey}}" Grid.Column="2" HorizontalAlignment="Left" Height="43" Margin="17,158,0,0" Grid.Row="4" VerticalAlignment="Top" Width="166" BorderBrush="#FFABADB3" FontSize="22">
             <ComboBoxItem IsSelected="True">Month</ComboBoxItem>
             <ComboBoxItem >January</ComboBoxItem>
             <ComboBoxItem >February</ComboBoxItem>
@@ -48,13 +48,13 @@
             <ComboBoxItem>December</ComboBoxItem>
         </ComboBox>
         <TextBox x:Name="dayText" Grid.Column="2" HorizontalAlignment="Left" Height="42" Margin="192,159,0,0" Grid.Row="4" TextWrapping="Wrap" VerticalAlignment="Top" Width="79" Text="Day" FontSize="22" TextAlignment="Center" VerticalContentAlignment="Center" />
-        <TextBox Grid.Column="2" HorizontalAlignment="Left" Height="42" Margin="283,159,0,0" Grid.Row="4" TextWrapping="Wrap" VerticalAlignment="Top" Width="89" Text="Year" FontSize="22" TextAlignment="Center" VerticalContentAlignment="Center" RenderTransformOrigin="1.718,0.667"/>
-        <TextBox Grid.Column="2" HorizontalAlignment="Left" Height="42" Margin="17,247,0,0" Grid.Row="4" TextWrapping="Wrap" VerticalAlignment="Top" Width="354" FontSize="24"/>
+        <TextBox x:Name="yearText" Grid.Column="2" HorizontalAlignment="Left" Height="42" Margin="283,159,0,0" Grid.Row="4" TextWrapping="Wrap" VerticalAlignment="Top" Width="89" Text="Year" FontSize="22" TextAlignment="Center" VerticalContentAlignment="Center" RenderTransformOrigin="1.718,0.667"/>
+        <TextBox x:Name="emailText" Grid.Column="2" HorizontalAlignment="Left" Height="42" Margin="17,247,0,0" Grid.Row="4" TextWrapping="Wrap" VerticalAlignment="Top" Width="354" FontSize="24"/>
         <Label Content="Email" Grid.Column="2" HorizontalAlignment="Left" Margin="11,207,0,0" Grid.Row="4" VerticalAlignment="Top" Height="44" Width="173" FontSize="22"/>
-        <TextBox Grid.Column="2" HorizontalAlignment="Left" Height="42" Margin="17,333,0,0" Grid.Row="4" TextWrapping="Wrap" VerticalAlignment="Top" Width="354" FontSize="24"/>
+        <TextBox x:Name="phoneText" Grid.Column="2" HorizontalAlignment="Left" Height="42" Margin="17,333,0,0" Grid.Row="4" TextWrapping="Wrap" VerticalAlignment="Top" Width="354" FontSize="24"/>
         <Label Content="Phone Number" Grid.Column="2" HorizontalAlignment="Left" Margin="11,295,0,0" Grid.Row="4" VerticalAlignment="Top" Height="44" Width="173" FontSize="22"/>
         <Label Content="Password" Grid.Column="2" HorizontalAlignment="Left" Margin="11,380,0,0" Grid.Row="4" VerticalAlignment="Top" Height="44" Width="173" FontSize="24"/>
-        <TextBox Grid.Column="2" HorizontalAlignment="Left" Height="42" Margin="18,419,0,0" Grid.Row="4" TextWrapping="Wrap" VerticalAlignment="Top" Width="354" FontSize="24"/>
+        <TextBox x:Name="passText1" Grid.Column="2" HorizontalAlignment="Left" Height="42" Margin="18,419,0,0" Grid.Row="4" TextWrapping="Wrap" VerticalAlignment="Top" Width="354" FontSize="24"/>
         <Label Content="Birthday" Grid.Column="2" HorizontalAlignment="Left" Margin="10,121,0,0" Grid.Row="4" VerticalAlignment="Top" Height="44" Width="173" FontSize="22"/>
     </Grid>
 </Page>
