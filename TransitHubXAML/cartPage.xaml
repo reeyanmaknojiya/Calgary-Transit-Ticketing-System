@@ -23,7 +23,7 @@
             <Button Name="youthTicketMinus" Content="-" Background="LightGray" HorizontalAlignment="Left" Margin="231,202,0,0" VerticalAlignment="Top" Width="40" Height="37" FontSize="25" Click="youthTicketMinus_Click"/>
             <Button Name="youthTicketPlus" Content="+" Background="LightGray" HorizontalAlignment="Left" Margin="361,202,0,0" VerticalAlignment="Top" Width="40" Height="37" FontSize="25" Click="youthTicketPlus_Click"/>
             <Label Content="&lt;" Foreground="White" HorizontalAlignment="Left" Margin="37,-20,0,0" VerticalAlignment="Top" Height="75" Width="57" FontSize="50"/>
-            <Rectangle Fill="#B83A3F" Panel.ZIndex="-1" HorizontalAlignment="Left" Height="55" Stroke="{x:Null}" StrokeThickness="0.5" VerticalAlignment="Top" Width="442"/>
+            <Rectangle Fill="#B83A3F" Panel.ZIndex="-1" HorizontalAlignment="Left" Height="55" Stroke="{x:Null}" StrokeThickness="0.5" VerticalAlignment="Top" Width="450"/>
             <Rectangle Fill="LightGray" HorizontalAlignment="Left" Height="7" Stroke="{x:Null}" StrokeThickness="0.5" VerticalAlignment="Top" Width="442" Margin="0,153,0,0"/>
             <Rectangle Fill="LightGray" HorizontalAlignment="Left" Height="7" Stroke="{x:Null}" StrokeThickness="0.5" VerticalAlignment="Top" Width="442" Margin="0,273,0,0"/>
             <Label Content="Adult Monthly Pass" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="22,285,0,0" TextOptions.TextFormattingMode="Display" FontSize="20"/>

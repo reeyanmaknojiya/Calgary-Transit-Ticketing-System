@@ -35,6 +35,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="QRCoder, Version=1.4.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\QRCoder.1.4.1\lib\net40\QRCoder.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -56,14 +59,33 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="accountPage.xaml.cs">
+      <DependentUpon>accountPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="cartPage.xaml.cs">
       <DependentUpon>cartPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="checkout.xaml.cs">
       <DependentUpon>checkout.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Help.xaml.cs">
+      <DependentUpon>Help.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Models\Enums.cs" />
     <Compile Include="Models\storeItems.cs" />
+    <Compile Include="chooseLoginPage.xaml.cs">
+      <DependentUpon>chooseLoginPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ticketDisplay.xaml.cs">
+      <DependentUpon>ticketDisplay.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Wallet.xaml.cs">
+      <DependentUpon>Wallet.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs" />
+    <Compile Include="loginPage.xaml.cs">
+      <DependentUpon>loginPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="paymentInformationPage.xaml.cs">
       <DependentUpon>paymentInformationPage.xaml</DependentUpon>
     </Compile>
@@ -73,8 +95,8 @@
     <Compile Include="signUp.xaml.cs">
       <DependentUpon>signUp.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Store.xaml.cs">
-      <DependentUpon>Store.xaml</DependentUpon>
+    <Compile Include="signUpPage.xaml.cs">
+      <DependentUpon>signUpPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Account.xaml.cs">
       <DependentUpon>Account.xaml</DependentUpon>
@@ -88,6 +110,40 @@
     <Compile Include="Verification.xaml.cs">
       <DependentUpon>Verification.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AccountEdit.xaml.cs">
+      <DependentUpon>AccountEdit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AccountPaymentMethods.xaml.cs">
+      <DependentUpon>AccountPaymentMethods.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AccountReceipts.xaml.cs">
+      <DependentUpon>AccountReceipts.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AccountSaveCard.xaml.cs">
+      <DependentUpon>AccountSaveCard.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditAccountBirthday.xaml.cs">
+      <DependentUpon>EditAccountBirthday.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditAccountEmail.xaml.cs">
+      <DependentUpon>EditAccountEmail.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditAccountName.xaml.cs">
+      <DependentUpon>EditAccountName.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditAccountPassword.xaml.cs">
+      <DependentUpon>EditAccountPassword.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditAccountPhone.xaml.cs">
+      <DependentUpon>EditAccountPhone.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewReceipt1.xaml.cs">
+      <DependentUpon>ViewReceipt1.xaml</DependentUpon>
+    </Compile>
+    <Page Include="accountPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Cart.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -104,7 +160,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="chooseLoginPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Help.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="loginPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -145,9 +213,17 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Store.xaml">
+    <Page Include="signUpPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ticketDisplay.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Wallet.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Account.xaml">
       <SubType>Designer</SubType>
@@ -162,6 +238,46 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Verification.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AccountEdit.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AccountPaymentMethods.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EditAccountBirthday.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EditAccountName.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EditAccountEmail.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EditAccountPhone.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EditAccountPassword.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AccountReceipts.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AccountSaveCard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewReceipt1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -187,6 +303,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -238,7 +355,6 @@
     <Resource Include="Resources\cart_selected.png" />
     <Resource Include="Resources\help.png" />
     <Resource Include="Resources\help_selected.png" />
-    <Resource Include="Resources\my_tickets.png" />
     <Resource Include="Resources\my_tickets_selected.png" />
     <Resource Include="Resources\store.png" />
     <Resource Include="Resources\store_selected.png" />
@@ -254,6 +370,18 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\debit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\visa1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\mastercard1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\my_tickets.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

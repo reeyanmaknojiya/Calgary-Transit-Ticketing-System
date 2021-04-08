@@ -29,8 +29,10 @@ namespace TransitHubXAML
         public MainWindow()
         {
             currentIcon = 0;
+            User.loggedIn = false;
             InitializeComponent();
             Show();
+
            
      
         }
@@ -52,7 +54,7 @@ namespace TransitHubXAML
         {
             resetCurrentWindow();
             currentIcon = 2;
-            image2.Source = new BitmapImage(new Uri("Resources/my_tickets_selected.png", UriKind.Relative));
+            image2.Source = new BitmapImage(new Uri("Resources/cart_selected.png", UriKind.Relative));
             mainFrame.Navigate(new cartPage());
         }
 
@@ -60,7 +62,7 @@ namespace TransitHubXAML
         {
             resetCurrentWindow();
             currentIcon = 3;
-            image3.Source = new BitmapImage(new Uri("Resources/help_selected.png", UriKind.Relative));
+            image3.Source = new BitmapImage(new Uri("Resources/my_tickets_selected.png", UriKind.Relative));
             mainFrame.Navigate(new cartPage());
         }
 
@@ -69,8 +71,8 @@ namespace TransitHubXAML
             
             resetCurrentWindow();
             currentIcon = 4;
-            image4.Source = new BitmapImage(new Uri("Resources/account_selected.png", UriKind.Relative));
-            mainFrame.Navigate(new cartPage()); //TODO switch account to a page to make this work
+            image4.Source = new BitmapImage(new Uri("Resources/help_selected.png", UriKind.Relative));
+            mainFrame.Navigate(new cartPage());
         }
 
         //We go to cart page and we send it the array of items
@@ -78,10 +80,11 @@ namespace TransitHubXAML
         {
             resetCurrentWindow();
             currentIcon = 5;
-            image5.Source = new BitmapImage(new Uri("Resources/cart_selected.png", UriKind.Relative));
-           
-           
-            mainFrame.Navigate(new cartPage());
+            image5.Source = new BitmapImage(new Uri("Resources/account_selected.png", UriKind.Relative));
+            if (User.loggedIn == false)
+                mainFrame.Navigate(new chooseLoginPage());//TODO switch account to a page to make this work
+            else if (User.loggedIn == true)
+                mainFrame.Navigate(new accountPage());
         }
 
         private void resetCurrentWindow()
@@ -92,21 +95,44 @@ namespace TransitHubXAML
                     image1.Source = new BitmapImage(new Uri("Resources/store.png", UriKind.Relative));
                     break;
                 case 2:
-                    image2.Source = new BitmapImage(new Uri("Resources/my_tickets.png", UriKind.Relative));
+                    image2.Source = new BitmapImage(new Uri("Resources/cart.png", UriKind.Relative));
                     break;
                 case 3:
-                    image3.Source = new BitmapImage(new Uri("Resources/help.png", UriKind.Relative));
+                    image3.Source = new BitmapImage(new Uri("Resources/my_tickets.png", UriKind.Relative));
                     break;
                 case 4:
-                    image4.Source = new BitmapImage(new Uri("Resources/accountNav.png", UriKind.Relative));
+                    image4.Source = new BitmapImage(new Uri("Resources/help.png", UriKind.Relative));
                     break;
                 case 5:
-                    image5.Source = new BitmapImage(new Uri("Resources/cart.png", UriKind.Relative));
+                    image5.Source = new BitmapImage(new Uri("Resources/accountNav.png", UriKind.Relative));
                     break;
 
             }
         }
 
+        /*
+        private void chooseLogin_Click(object sender, RoutedEventArgs e)
+        {
+            mainFrame.Navigate(new chooseLoginPage());
+        }
+        */
+        // hide nav bar
+        private void frame_Navigated(object sender, NavigationEventArgs e)
+        {
+            Type pageType = e.Content.GetType();
+
+            if (pageType == typeof(loginPage) || pageType == typeof(signUpPage))
+            {
+                //hide nav bar
+                navBar.Visibility = System.Windows.Visibility.Hidden;
+            }
+            else
+            {
+                //display nav bar
+                navBar.Visibility = System.Windows.Visibility.Visible;
+            }
+        }
+        
        
     }
 }

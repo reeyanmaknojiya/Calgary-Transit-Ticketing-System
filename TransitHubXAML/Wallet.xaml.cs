@@ -17,9 +17,9 @@ namespace TransitHubXAML
     /// <summary>
     /// Interaction logic for Store.xaml
     /// </summary>
-    public partial class Store : Window
+    public partial class Wallet : Window
     {
-        public Store()
+        public Wallet()
         {
             InitializeComponent();
         }

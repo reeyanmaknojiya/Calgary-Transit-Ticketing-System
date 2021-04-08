@@ -10,19 +10,24 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
-using TransitHubXAML.Models;
 
 namespace TransitHubXAML
 {
     /// <summary>
-    /// Interaction logic for Cart.xaml
+    /// Interaction logic for LoginControl.xaml
     /// </summary>
-    public partial class Cart : Window
+    public partial class LoginControl : UserControl
     {
-        public Cart()
+        public LoginControl()
         {
             InitializeComponent();
+        }
+
+        private void Login_Click(object sender, RoutedEventArgs e)
+        {
+            
         }
     }
 }
