@@ -20,7 +20,7 @@
                 <RowDefinition Height="90"/>
             </Grid.RowDefinitions>
             <Button Name="button1" BorderThickness="0" Grid.Column="0" Grid.Row="0" Click="button1_Click" Background="White" Margin="0,5,0,-5" >
-                <Image Name="image1" Source="store.png" Height="69" Width="61"></Image>
+                <Image Name="image1" Source="Resources/store.png" Height="69" Width="61"></Image>
             </Button>
             <Button Name="button2" BorderThickness="0" Grid.Column="1" Grid.Row="0" Click="button2_Click" Background="White" Margin="0,5,0,-5" >
                 <Image Name="image2" Source="Resources/cart.png" Width="68" Height="69" ></Image>
