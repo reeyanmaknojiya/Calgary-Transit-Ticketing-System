@@ -383,8 +383,5 @@
   <ItemGroup>
     <Resource Include="Resources\my_tickets.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Resource Include="store.png" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
