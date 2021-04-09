@@ -34,7 +34,7 @@ namespace TransitHubXAML
         public cartPage()
         {
             InitializeComponent();
-            if (App.Current.Properties.Contains("itemsInCart"))
+            if (App.Current.Properties.Contains("itemsToCart"))
             {
                 int[] inCart = (int[])App.Current.Properties["itemsToCart"];
                 adultTicketAmountLabel.Content = inCart[(int)Enums.adultTicket].ToString();
@@ -45,7 +45,6 @@ namespace TransitHubXAML
             }
           
             this.Loaded += new RoutedEventHandler(checkoutButton_Click);
-           
         }
         private double calcCurrentCartTotal()
         {
