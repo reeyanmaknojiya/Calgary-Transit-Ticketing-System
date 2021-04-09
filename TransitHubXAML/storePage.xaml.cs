@@ -47,6 +47,7 @@ namespace TransitHubXAML
         public storePage()
         {   
             InitializeComponent();
+         
         }
 
         private void AddToCart_Click(object sender, RoutedEventArgs e)
@@ -73,6 +74,9 @@ namespace TransitHubXAML
                 items[(int)Enums.lowIncomeMonthly] = lowIncomeMonthlyAmount;
                 App.Current.Properties.Add("itemsToCart", items);
             }
+
+            App.Current.Properties["currCost"] = string.Format("{0:0.00}", calcCurrentCartTotal());
+            
         }
 
         private void adultMonthlyPlus_Click(object sender, RoutedEventArgs e)
@@ -81,7 +85,8 @@ namespace TransitHubXAML
             curr++;
             adultMonthlyAmount++;
             adultMonthlyCount.Content = curr.ToString();
-            ticketsAddToCart.Content = "ADD TO CART $" + calcCurrentCartTotal().ToString();
+            string temp = string.Format("{0:0.00}", calcCurrentCartTotal());
+            ticketsAddToCart.Content = "ADD TO CART $" + temp;
             passesAddToCart.Content = ticketsAddToCart.Content;
         }
         private void adultMonthlyMinus_Click(object sender, RoutedEventArgs e)
@@ -93,7 +98,8 @@ namespace TransitHubXAML
             curr--;
             adultMonthlyAmount--;
             adultMonthlyCount.Content = curr.ToString();
-            ticketsAddToCart.Content = "ADD TO CART $" + calcCurrentCartTotal().ToString();
+            string temp = string.Format("{0:0.00}", calcCurrentCartTotal());
+            ticketsAddToCart.Content = "ADD TO CART $" + temp;
             passesAddToCart.Content = ticketsAddToCart.Content;
         }
 
@@ -103,8 +109,9 @@ namespace TransitHubXAML
             curr++;
             adultTicketAmount++;
             adultTicketCount.Content = curr.ToString();
-            ticketsAddToCart.Content = "ADD TO CART $" + calcCurrentCartTotal().ToString();
-            passesAddToCart.Content = ticketsAddToCart.Content;
+            string temp = string.Format("{0:0.00}", calcCurrentCartTotal());
+            ticketsAddToCart.Content = "ADD TO CART $" + temp;
+            passesAddToCart.Content =  ticketsAddToCart.Content;
         }
 
         private void adultTicketMinus_Click(object sender, RoutedEventArgs e)
@@ -116,7 +123,8 @@ namespace TransitHubXAML
             curr--;
             adultTicketAmount--;
             adultTicketCount.Content = curr.ToString();
-            ticketsAddToCart.Content = "ADD TO CART $" + calcCurrentCartTotal().ToString();
+            string temp = string.Format("{0:0.00}", calcCurrentCartTotal());
+            ticketsAddToCart.Content = "ADD TO CART $" + temp;
             passesAddToCart.Content = ticketsAddToCart.Content;
         }
 
@@ -126,7 +134,8 @@ namespace TransitHubXAML
             curr++;
             youthTicketAmount++;
             youthTicketCount.Content = curr.ToString();
-            ticketsAddToCart.Content = "ADD TO CART $" + calcCurrentCartTotal().ToString();
+            string temp = string.Format("{0:0.00}", calcCurrentCartTotal());
+            ticketsAddToCart.Content = "ADD TO CART $" + temp;
             passesAddToCart.Content = ticketsAddToCart.Content;
         }
 
@@ -139,7 +148,8 @@ namespace TransitHubXAML
             curr--;
             youthTicketAmount--;
             youthTicketCount.Content = curr.ToString();
-            ticketsAddToCart.Content = "ADD TO CART $" + calcCurrentCartTotal().ToString();
+            string temp = string.Format("{0:0.00}", calcCurrentCartTotal());
+            ticketsAddToCart.Content = "ADD TO CART $" + temp;
             passesAddToCart.Content = ticketsAddToCart.Content;
 
         }
@@ -150,7 +160,8 @@ namespace TransitHubXAML
             curr++;
             youthMonthlyAmount++;
             youthMonthlyCount.Content = curr.ToString();
-            ticketsAddToCart.Content = "ADD TO CART $" + calcCurrentCartTotal().ToString();
+            string temp = string.Format("{0:0.00}", calcCurrentCartTotal());
+            ticketsAddToCart.Content = "ADD TO CART $" + temp;
             passesAddToCart.Content = ticketsAddToCart.Content;
         }
 
@@ -163,7 +174,8 @@ namespace TransitHubXAML
             curr--;
             youthMonthlyAmount--;
             youthMonthlyCount.Content = curr.ToString();
-            ticketsAddToCart.Content = "ADD TO CART $" + calcCurrentCartTotal().ToString();
+            string temp = string.Format("{0:0.00}", calcCurrentCartTotal());
+            ticketsAddToCart.Content = "ADD TO CART $" + temp;
             passesAddToCart.Content = ticketsAddToCart.Content;
         }
 
@@ -173,7 +185,8 @@ namespace TransitHubXAML
             curr++;
             lowIncomeMonthlyAmount++;
             lowIncomeCount.Content = curr.ToString();
-            ticketsAddToCart.Content = "ADD TO CART $" + calcCurrentCartTotal().ToString();
+            string temp = string.Format("{0:0.00}", calcCurrentCartTotal());
+            ticketsAddToCart.Content = "ADD TO CART $" + temp;
             passesAddToCart.Content = ticketsAddToCart.Content;
         }
 
@@ -186,7 +199,8 @@ namespace TransitHubXAML
             curr--;
             lowIncomeMonthlyAmount--;
             lowIncomeCount.Content = curr.ToString();
-            ticketsAddToCart.Content = "ADD TO CART $" + calcCurrentCartTotal().ToString();
+            string temp = string.Format("{0:0.00}", calcCurrentCartTotal());
+            ticketsAddToCart.Content = "ADD TO CART $" + temp;
             passesAddToCart.Content = ticketsAddToCart.Content;
         }
 

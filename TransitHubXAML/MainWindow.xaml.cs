@@ -28,14 +28,14 @@ namespace TransitHubXAML
 
         public MainWindow()
         {
-            currentIcon = 0;
+            currentIcon = 1;
             User.loggedIn = false;
             InitializeComponent();
             Show();
 
-           
-     
+            image1.Source = new BitmapImage(new Uri("Resources/store_selected.png", UriKind.Relative));
         }
+
         void storePage_onsendCartData(List<storeItems> list)
         {
             Console.WriteLine("Hello!");

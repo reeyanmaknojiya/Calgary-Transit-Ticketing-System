@@ -8,9 +8,60 @@
       d:DesignHeight="800" d:DesignWidth="450"
       Title="testPage">
 
+    <Page.Resources>
+        <SolidColorBrush x:Key="RedBrush" Color="White"/>
+
+        <SolidColorBrush x:Key="SolidBorderBrush" Color="#888" />
+
+        <SolidColorBrush x:Key="GreenBrush" Color="#B83A3F" />
+
+        <SolidColorBrush x:Key="DisabledBackgroundBrush" Color="#EEE" />
+
+        <SolidColorBrush x:Key="DisabledBorderBrush" Color="#AAA" />
+
+        <SolidColorBrush x:Key="DisabledForegroundBrush" Color="#888" />
+
+        <Style TargetType="{x:Type TabItem}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type TabItem}">
+                        <Grid>
+                            <Border 
+                                Name="Border"
+                                Margin="0,0,-4,0" 
+                                Background="{StaticResource RedBrush}"
+                                BorderBrush="{StaticResource  SolidBorderBrush}" 
+                                BorderThickness="1,1,1,1" 
+                                CornerRadius="2,12,0,0" >
+                                <ContentPresenter x:Name="ContentSite"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Center"
+                                    ContentSource="Header"
+                                    Margin="12,2,12,2"
+                                    RecognizesAccessKey="True"/>
+                            </Border>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsSelected" Value="True">
+                                <Setter Property="Panel.ZIndex" Value="100" />
+                                <Setter TargetName="Border" Property="Background" Value="{StaticResource GreenBrush}" />
+                                <Setter TargetName="Border" Property="BorderThickness" Value="1,1,1,0" />
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter TargetName="Border" Property="Background" Value="{StaticResource DisabledBackgroundBrush}" />
+                                <Setter TargetName="Border" Property="BorderBrush" Value="{StaticResource DisabledBorderBrush}" />
+                                <Setter Property="Foreground" Value="{StaticResource DisabledForegroundBrush}" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Page.Resources>
+    
     <Grid>
         <TabControl HorizontalAlignment="Left" Height="700" VerticalAlignment="Top" Width="450" >
-            <TabItem  Header="TICKETS" FontSize="59" Margin="0,0,-4,-2">
+            <TabItem Header="TICKETS" FontSize="59" Margin="0,0,12,-2">
                 <Canvas>
                     <Rectangle Fill="#B83A3F" Height="7" Stroke="Black" Width="472" Canvas.Left="-18"/>
                     <Label Content="Adult Ticket" Height="39" Canvas.Top="39" Width="138" Canvas.Left="10" FontSize="24"/>
@@ -39,7 +90,7 @@
                 </Canvas>
             </TabItem>
 
-            <TabItem Header="PASSES" FontSize="59" Margin="6,0,-27,-2">
+            <TabItem Header="PASSES" FontSize="59" Margin="-8,0,-7,-2">
                 <Canvas>
                     <Rectangle Fill="#B83A3F" Height="7" Stroke="Black" Width="472" Canvas.Left="-18"/>
                     <Label Content="Adult Monthly Pass" Height="39" Canvas.Top="12" Width="240" Canvas.Left="10" FontSize="24"/>
