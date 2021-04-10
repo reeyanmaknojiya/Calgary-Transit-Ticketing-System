@@ -76,15 +76,6 @@
     </Compile>
     <Compile Include="Models\Enums.cs" />
     <Compile Include="Models\storeItems.cs" />
-<<<<<<< HEAD
-    <Compile Include="chooseLoginPage.xaml.cs">
-      <DependentUpon>chooseLoginPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Test.xaml.cs">
-      <DependentUpon>Test.xaml</DependentUpon>
-    </Compile>
-=======
->>>>>>> Riley
     <Compile Include="ticketDisplay.xaml.cs">
       <DependentUpon>ticketDisplay.xaml</DependentUpon>
     </Compile>
@@ -223,10 +214,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="signUpPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Test.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

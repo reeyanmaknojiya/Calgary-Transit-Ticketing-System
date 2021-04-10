@@ -8,8 +8,8 @@
         Title="checkout" Height="800" Width="450">
     
     <Grid>
-        <Label MouseDown="back_button" Content="&lt;" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="33,2,0,0" VerticalAlignment="Top" Height="83" Width="96" FontSize="60"/>
-        <Label Content="CHECKOUT" HorizontalAlignment="Left" Margin="149,22,0,0" VerticalAlignment="Top" Width="255" FontSize="40"/>
+        <Label MouseDown="back_button" Content="&lt;" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="37,-10,0,0" VerticalAlignment="Top" Height="83" Width="96" FontSize="50" Foreground="White"/>
+        <Label Content="CHECKOUT" HorizontalAlignment="Left" Margin="137,3,0,0" VerticalAlignment="Top" Width="255" FontSize="40" Foreground="White"/>
         <Rectangle Name="visaRectangle" MouseDown="visaChange" MouseUp="Visa_Click" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="113" Margin="36,126,0,0" Stroke="#FFB83A3F" VerticalAlignment="Top" Width="383"/>
         <Label MouseDown="Visa_Click" Content="XXXXXX1234" HorizontalAlignment="Left" Margin="52,146,0,0" VerticalAlignment="Top" Width="101" FontSize="16"/>
         <Label MouseDown="Visa_Click" Content="Expires 09/09" HorizontalAlignment="Left" Margin="48,182,0,0" VerticalAlignment="Top" FontSize="16"/>
@@ -22,5 +22,6 @@
         <Image MouseDown="Visa_Click" Source="Resources/visa.PNG" HorizontalAlignment="Left" Height="62" Margin="269,152,0,0" VerticalAlignment="Top" Width="135"/>
         <Image MouseDown="Paypal_Click" Source="Resources/paypal.PNG" HorizontalAlignment="Left" Height="107" Margin="289,447,0,0" VerticalAlignment="Top" Width="115"/>
         <Button Content="ADD PAYMENT METHOD" Foreground="White"  Background="#B83A3F"  HorizontalAlignment="Left" Margin="36,660,0,0" VerticalAlignment="Top" Width="368" Height="46" FontSize="30"/>
+        <Rectangle Fill="#B83A3F" Panel.ZIndex="-1" HorizontalAlignment="Left" Height="71" Stroke="{x:Null}" StrokeThickness="0.5" VerticalAlignment="Top" Width="450"/>
     </Grid>
 </Page>
