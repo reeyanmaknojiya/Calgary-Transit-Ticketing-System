@@ -68,17 +68,23 @@
     <Compile Include="checkout.xaml.cs">
       <DependentUpon>checkout.xaml</DependentUpon>
     </Compile>
+    <Compile Include="chooseLoginPage.xaml.cs">
+      <DependentUpon>chooseLoginPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Help.xaml.cs">
       <DependentUpon>Help.xaml</DependentUpon>
     </Compile>
     <Compile Include="Models\Enums.cs" />
     <Compile Include="Models\storeItems.cs" />
+<<<<<<< HEAD
     <Compile Include="chooseLoginPage.xaml.cs">
       <DependentUpon>chooseLoginPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Test.xaml.cs">
       <DependentUpon>Test.xaml</DependentUpon>
     </Compile>
+=======
+>>>>>>> Riley
     <Compile Include="ticketDisplay.xaml.cs">
       <DependentUpon>ticketDisplay.xaml</DependentUpon>
     </Compile>
@@ -165,7 +171,7 @@
     </Page>
     <Page Include="chooseLoginPage.xaml">
       <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
     </Page>
     <Page Include="Help.xaml">
       <SubType>Designer</SubType>
