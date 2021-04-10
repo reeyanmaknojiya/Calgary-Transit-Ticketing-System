@@ -24,13 +24,5 @@
         <Image HorizontalAlignment="Left" Height="31" Margin="67,69,0,-72" VerticalAlignment="Top" Width="32" Source="Resources/google.png" RenderTransformOrigin="0.634,0.534"/>
         <Image HorizontalAlignment="Left" Height="28" Margin="69,142,0,-142" VerticalAlignment="Top" Width="31" Source="Resources/fb.png"/>
         <Image HorizontalAlignment="Left" Height="32" Margin="69,208,0,-212" VerticalAlignment="Top" Width="37" Source="Resources/a.png"/>
-        <TabControl HorizontalAlignment="Left" Height="26" Margin="696,10,-354,-8" VerticalAlignment="Top" Width="100">
-            <TabItem Header="TabItem">
-                <Grid Background="#FFE5E5E5"/>
-            </TabItem>
-            <TabItem Header="TabItem">
-                <Grid Background="#FFE5E5E5"/>
-            </TabItem>
-        </TabControl>
     </Grid>
 </Page>
