@@ -17,7 +17,7 @@ namespace TransitHubXAML
     /// <summary>
     /// Interaction logic for Help.xaml
     /// </summary>
-    public partial class Help : Window
+    public partial class Help : Page
     {
         public Help()
         {
