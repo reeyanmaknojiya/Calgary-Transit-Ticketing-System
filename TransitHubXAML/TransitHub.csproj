@@ -68,6 +68,9 @@
     <Compile Include="checkout.xaml.cs">
       <DependentUpon>checkout.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CustomControl\MenuWithSubMenuControl.xaml.cs">
+      <DependentUpon>MenuWithSubMenuControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Help.xaml.cs">
       <DependentUpon>Help.xaml</DependentUpon>
     </Compile>
@@ -79,6 +82,7 @@
     <Compile Include="ticketDisplay.xaml.cs">
       <DependentUpon>ticketDisplay.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewModel\MenuViewModel.cs" />
     <Compile Include="Wallet.xaml.cs">
       <DependentUpon>Wallet.xaml</DependentUpon>
     </Compile>
@@ -161,6 +165,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="chooseLoginPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CustomControl\MenuWithSubMenuControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -383,5 +391,6 @@
   <ItemGroup>
     <Resource Include="Resources\my_tickets.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
