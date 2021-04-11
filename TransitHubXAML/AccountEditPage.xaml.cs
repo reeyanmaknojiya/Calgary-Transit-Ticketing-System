@@ -34,7 +34,7 @@ namespace TransitHubXAML
         }
         private void Birthday_Loaded(object sender, RoutedEventArgs e)
         {
-            birthday.Content = User.bMonth + " " + User.bDay + " " + User.bYear;
+            birthday.Content = User.bMonth + " " + User.bDay + ", " + User.bYear;
         }
         private void Email_Loaded(object sender, RoutedEventArgs e)
         {
