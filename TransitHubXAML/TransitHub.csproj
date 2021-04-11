@@ -144,6 +144,21 @@
     <Compile Include="ViewReceipt1.xaml.cs">
       <DependentUpon>ViewReceipt1.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AccountPaymentMethodsPage.xaml.cs">
+      <DependentUpon>AccountPaymentMethodsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AccountReceiptsPage.xaml.cs">
+      <DependentUpon>AccountReceiptsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AccountSaveCardPage.xaml.cs">
+      <DependentUpon>AccountSaveCardPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AccountEditPage.xaml.cs">
+      <DependentUpon>AccountEditPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VerificationPage.xaml.cs">
+      <DependentUpon>VerificationPage.xaml</DependentUpon>
+    </Compile>
     <Page Include="accountPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -286,6 +301,26 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="ViewReceipt1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AccountPaymentMethodsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AccountReceiptsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AccountSaveCardPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AccountEditPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VerificationPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
