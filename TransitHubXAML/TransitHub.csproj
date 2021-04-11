@@ -68,17 +68,16 @@
     <Compile Include="checkout.xaml.cs">
       <DependentUpon>checkout.xaml</DependentUpon>
     </Compile>
+
     <Compile Include="CustomControl\MenuWithSubMenuControl.xaml.cs">
       <DependentUpon>MenuWithSubMenuControl.xaml</DependentUpon>
+
     </Compile>
     <Compile Include="Help.xaml.cs">
       <DependentUpon>Help.xaml</DependentUpon>
     </Compile>
     <Compile Include="Models\Enums.cs" />
     <Compile Include="Models\storeItems.cs" />
-    <Compile Include="chooseLoginPage.xaml.cs">
-      <DependentUpon>chooseLoginPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="ticketDisplay.xaml.cs">
       <DependentUpon>ticketDisplay.xaml</DependentUpon>
     </Compile>
@@ -181,7 +180,7 @@
     </Page>
     <Page Include="chooseLoginPage.xaml">
       <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
     </Page>
     <Page Include="CustomControl\MenuWithSubMenuControl.xaml">
       <SubType>Designer</SubType>
