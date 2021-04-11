@@ -1,9 +1,9 @@
-﻿<Window x:Class="TransitHubXAML.Help"
+﻿<Page x:Class="TransitHubXAML.Help"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:TransitHubXAML"
+        xmlns:local="clr-namespace:TransitHubXAML" xmlns:customcontrol="clr-namespace:TransitHubXAML.CustomControl"
         mc:Ignorable="d"
         Title="Help" Height="800" Width="450">
     <ScrollViewer>
@@ -56,14 +56,16 @@
                     <Label Content="Useful Links" Foreground="White" Grid.Row="0" VerticalAlignment="Top" FontSize="25" Margin="10,0,-10,0"/>
 
                     <Button Content="Calgary Transit Website" Height="50" Width="400" Margin="14,48,13,32" Grid.RowSpan="2"/>
-                    <Button Content="Feedback" Grid.Row="1" Height="50" Width="400"  Grid.RowSpan="2" Margin="14,47,13,43"/>
+                    <Button Content="Feedback" Grid.Row="1" Height="50" Width="400"  Grid.RowSpan="2" Margin="14,47,13,43" Click="Button_Click"/>
                 </Grid>
 
                 <Grid Grid.Row="3" Background="LightGreen">
                     <Label Content="FAQ" Foreground="White" Grid.Row="1" VerticalAlignment="Top" FontSize="25"/>
                     <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="147" Margin="131,278,0,0" Stroke="Black" VerticalAlignment="Top" Width="168"/>
+
+                    <customcontrol:MenuWithSubMenuControl SubMenuPadding="10,0,0,0" Margin="0,48,0,-48"/>
                 </Grid>
             </Grid>
         </StackPanel>
     </ScrollViewer>
-</Window>
+</Page>
