@@ -58,75 +58,76 @@
             </Setter>
         </Style>
     </Page.Resources>
-    
+
     <Grid>
         <TabControl HorizontalAlignment="Left" Height="700" VerticalAlignment="Top" Width="450" >
-            <TabItem Header="TICKETS" FontSize="59" Margin="0,0,12,-2">
+            <TabItem  Header="Tickets" Width="225" FontSize="40" Margin="0,0,0,0" BorderBrush="#FFE5E5E5">
                 <Canvas>
-                    <Rectangle Fill="#B83A3F" Height="7" Stroke="Black" Width="472" Canvas.Left="-18"/>
-                    <Label Content="Adult Ticket" Height="39" Canvas.Top="39" Width="138" Canvas.Left="10" FontSize="24"/>
-                    <Label Foreground="Blue" Tag="For passengers age 18 and older" FontSize="16" Canvas.Left="10" Canvas.Top="78">
-                        <TextBlock TextDecorations="Underline"  Text="{Binding Path=Tag, 
+                    <Label Content="Adult Ticket" Height="39" Canvas.Top="17" Width="138" Canvas.Left="10" FontSize="24"/>
+                    <Label Foreground="Blue" Tag="For passengers age 18+" FontSize="16" Canvas.Left="10" Canvas.Top="56">
+                        <TextBlock Text="{Binding Path=Tag, 
                               RelativeSource={RelativeSource Mode=FindAncestor,
-                                                             AncestorType={x:Type Label}}}"></TextBlock>
+                                                             AncestorType={x:Type Label}}}" Foreground="Black"></TextBlock>
                     </Label>
-                    <Label Content="$3.50" FontSize="24" Canvas.Left="10" Canvas.Top="109" />
-                    <Label Name="adultTicketCount" Content="0" FontSize="24" Canvas.Left="325" Canvas.Top="87" />
-                    <Button Name="adultTicketMinus" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="-" Height="51" Width="50" Canvas.Left="255" Canvas.Top="78" FontSize="35" Click="adultTicketMinus_Click"/>
-                    <Button Name="adultTicketPlus" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="+" Height="51" Width="50" Canvas.Left="367" Canvas.Top="78" FontSize="35" Click="adultTicketPlus_Click"/>
-                    <Label Content="Youth Ticket" Height="39" Canvas.Top="198" Width="138" Canvas.Left="10" FontSize="24"/>
-                    <Rectangle Fill="Gray" Height="7" Stroke="Black" Width="472" Canvas.Left="-28" Canvas.Top="156"/>
-                    <Label Foreground="Blue" Tag="For passengers ages 6-17" FontSize="16" Canvas.Left="10" Canvas.Top="242">
-                        <TextBlock TextDecorations="Underline"  Text="{Binding Path=Tag, 
+                    <Label Content="$3.50" FontSize="24" Canvas.Left="10" Canvas.Top="88" />
+                    <Label Name="adultTicketCount" Content="0" FontSize="24" Canvas.Left="325" Canvas.Top="65" />
+                    <Button Name="adultTicketMinus" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="-" Height="51" Width="50" Canvas.Left="255" Canvas.Top="56" FontSize="35" Click="adultTicketMinus_Click" Background="White" Foreground="#FF707070"/>
+                    <Button Name="adultTicketPlus" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="+" Height="51" Width="50" Canvas.Left="367" Canvas.Top="56" FontSize="35" Click="adultTicketPlus_Click" Background="White" Foreground="#FF707070"/>
+                    <Label Content="Youth Ticket" Height="39" Canvas.Top="146" Width="138" Canvas.Left="10" FontSize="24"/>
+                    <Rectangle Fill="#FFACACAC" Height="1" Stroke="#FFACACAC" Width="472" Canvas.Left="-28" Canvas.Top="138"/>
+                    <Label Foreground="Blue" Tag="For passengers ages 6-17" FontSize="16" Canvas.Left="10" Canvas.Top="190">
+                        <TextBlock Text="{Binding Path=Tag, 
                               RelativeSource={RelativeSource Mode=FindAncestor,
-                                                             AncestorType={x:Type Label}}}"></TextBlock>
+                                                             AncestorType={x:Type Label}}}" Foreground="Black"></TextBlock>
                     </Label>
-                    <Label Content="$2.40" FontSize="24" Canvas.Left="10" Canvas.Top="278" />
-                    <Button Name="youthTicketMinus" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="-" Height="51" Width="50" Canvas.Left="255" Canvas.Top="242" FontSize="35" Click="youthTicketMinus_Click"/>
-                    <Label  Name="youthTicketCount" Content="0" FontSize="24" Canvas.Left="325" Canvas.Top="247" />
-                    <Button Name="youthTicketPlus" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="+" Height="51" Width="50" Canvas.Left="367" Canvas.Top="242" FontSize="35" Click="youthTicketPlus_Click"/>
-                    <Rectangle Fill="Gray" Height="7" Stroke="Black" Width="472" Canvas.Left="-18" Canvas.Top="325"/>
-                    <Button Name="ticketsAddToCart" Background="#B83A3F" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="ADD TO CART $0.00" Height="86" Width="389" Canvas.Left="28" Canvas.Top="384" FontSize="35" Click="AddToCart_Click"/>
+                    <Label Content="$2.40" FontSize="24" Canvas.Left="10" Canvas.Top="221" />
+                    <Button Name="youthTicketMinus" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="-" Height="51" Width="50" Canvas.Left="255" Canvas.Top="186" FontSize="35" Click="youthTicketMinus_Click" Background="White" Foreground="#FF707070"/>
+                    <Label  Name="youthTicketCount" Content="0" FontSize="24" Canvas.Left="325" Canvas.Top="192" />
+                    <Button Name="youthTicketPlus" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="+" Height="51" Width="50" Canvas.Left="367" Canvas.Top="186" FontSize="35" Click="youthTicketPlus_Click" Background="White" Foreground="#FF707070"/>
+                    <Rectangle Fill="#FFACACAC" Height="1" Stroke="#FFACACAC" Width="472" Canvas.Left="-18" Canvas.Top="268"/>
+                    <Button Style="{StaticResource RedButton}" Name="ticketsAddToCart" Background="#B83A3F" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="Add To Cart $0.00" Height="62" Width="389" Canvas.Left="28" Canvas.Top="519" FontSize="28" Click="AddToCart_Click" BorderBrush="#FFB83A3F"/>
+                    <Rectangle Fill="#B83A3F" Height="7" Stroke="#FFB83A3F" Width="472" Canvas.Left="-18" Canvas.Top="-5"/>
                 </Canvas>
             </TabItem>
 
-            <TabItem Header="PASSES" FontSize="59" Margin="-8,0,-7,-2">
+            <TabItem Header="Passes" FontSize="40" Margin="0,0,-100,0">
                 <Canvas>
                     <Rectangle Fill="#B83A3F" Height="7" Stroke="Black" Width="472" Canvas.Left="-18"/>
                     <Label Content="Adult Monthly Pass" Height="39" Canvas.Top="12" Width="240" Canvas.Left="10" FontSize="24"/>
                     <Label  Foreground="Blue" Tag="For passengers age 18 and older" FontSize="16" Canvas.Left="10" Canvas.Top="56">
                         <TextBlock TextDecorations="Underline"  Text="{Binding Path=Tag, 
                               RelativeSource={RelativeSource Mode=FindAncestor,
-                                                             AncestorType={x:Type Label}}}"></TextBlock>
+                                                             AncestorType={x:Type Label}}}" Foreground="Black"></TextBlock>
                     </Label>
-                    <Label Content="$109.00" FontSize="24" Canvas.Left="10" Canvas.Top="87" />
+                    <Label Content="$109.00" FontSize="24" Canvas.Left="10" Canvas.Top="88" />
                     <Label Name="adultMonthlyCount" Content="0" FontSize="24" Canvas.Left="325" Canvas.Top="65" />
-                    <Button Name="adultMonthlyMinus" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="-" Height="51" Width="50" Canvas.Left="255" Canvas.Top="56" FontSize="35" Click="adultMonthlyMinus_Click"/>
-                    <Button Name="adultMonthlyPlus" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="+" Height="51" Width="50" Canvas.Left="367" Canvas.Top="56" FontSize="35" Click="adultMonthlyPlus_Click"/>
+                    <Button Name="adultMonthlyMinus" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="-" Height="51" Width="50" Canvas.Left="255" Canvas.Top="56" FontSize="35" Click="adultMonthlyMinus_Click" Background="White" Foreground="#FF707070"/>
+                    <Button Name="adultMonthlyPlus" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="+" Height="51" Width="50" Canvas.Left="367" Canvas.Top="56" FontSize="35" Click="adultMonthlyPlus_Click" Background="White" Foreground="#FF707070"/>
                     <Label Content="Youth Monthly Pass" Height="39" Canvas.Top="146" Width="240" Canvas.Left="10" FontSize="24"/>
                     <Rectangle Fill="Gray" Height="7" Stroke="Black" Width="472" Canvas.Left="-28" Canvas.Top="134"/>
                     <Label Foreground="Blue" Tag="For passengers ages 6-17" FontSize="16" Canvas.Left="10" Canvas.Top="190">
                         <TextBlock TextDecorations="Underline"  Text="{Binding Path=Tag, 
                               RelativeSource={RelativeSource Mode=FindAncestor,
-                                                             AncestorType={x:Type Label}}}"></TextBlock>
+                                                             AncestorType={x:Type Label}}}" Foreground="Black"></TextBlock>
                     </Label>
                     <Label Content="$79.00" FontSize="24" Canvas.Left="10" Canvas.Top="221" />
-                    <Button Name="youthMonthlyMinus" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="-" Height="51" Width="50" Canvas.Left="255" Canvas.Top="186" FontSize="35" Click="youthMonthlyMinus_Click"/>
-                    <Label Name="youthMonthlyCount" Content="0" FontSize="24" Canvas.Left="325" Canvas.Top="195" />
-                    <Button Name="youthMonthlyPlus" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="+" Height="51" Width="50" Canvas.Left="367" Canvas.Top="186" FontSize="35" Click="youthMonthlyPlus_Click"/>
-                    <Rectangle Fill="Gray" Height="7" Stroke="Black" Width="472" Canvas.Top="268"/>
-                    <Button Name="passesAddToCart" Background="#B83A3F" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="ADD TO CART $0.00" Height="86" Width="389" Canvas.Left="28" Canvas.Top="485" FontSize="35" Click="AddToCart_Click"/>
+                    <Button Name="youthMonthlyMinus" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="-" Height="51" Width="50" Canvas.Left="255" Canvas.Top="186" FontSize="35" Click="youthMonthlyMinus_Click" Background="White" Foreground="#FF707070"/>
+                    <Label Name="youthMonthlyCount" Content="0" FontSize="24" Canvas.Left="325" Canvas.Top="192" />
+                    <Button Name="youthMonthlyPlus" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="+" Height="51" Width="50" Canvas.Left="367" Canvas.Top="186" FontSize="35" Click="youthMonthlyPlus_Click" Background="White" Foreground="#FF707070"/>
+                    <Rectangle Fill="#FFACACAC" Height="1" Stroke="#FFACACAC" Width="472" Canvas.Top="268"/>
+                    <Button Style="{StaticResource RedButton}" Name="passesAddToCart" Background="#FFB83A3F" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="Add To Cart $0.00" Height="62" Width="389" Canvas.Left="28" Canvas.Top="519" FontSize="28" Click="AddToCart_Click" BorderBrush="#FFB83A3F"/>
                     <Label Content="Low Income Pass" Height="39" Canvas.Top="280" Width="240" Canvas.Left="10" FontSize="24"/>
                     <Label Foreground="Blue" Tag="For low income citizens" FontSize="16" Canvas.Left="10" Canvas.Top="324">
                         <TextBlock TextDecorations="Underline"  Text="{Binding Path=Tag, 
                               RelativeSource={RelativeSource Mode=FindAncestor,
-                                                             AncestorType={x:Type Label}}}"></TextBlock>
+                                                             AncestorType={x:Type Label}}}" Foreground="Black"></TextBlock>
                     </Label>
-                    <Label Content="$38.15" FontSize="24" Canvas.Left="10" Canvas.Top="360" />
-                    <Button Name="lowIncomeMonthlyMinus" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="-" Height="51" Width="50" Canvas.Left="255" Canvas.Top="324" FontSize="35" Click="lowIncomeMonthlyMinus_Click"/>
-                    <Label Name="lowIncomeCount" Content="0" FontSize="24" Canvas.Left="325" Canvas.Top="324" />
-                    <Button Name="lowIncomeMonthlyPlus" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="+" Height="51" Width="50" Canvas.Left="367" Canvas.Top="324" FontSize="35" Click="lowIncomeMonthlyPlus_Click"/>
-                    <Rectangle Fill="Gray" Height="8" Stroke="Black" Width="472" Canvas.Top="438"/>
+                    <Label Content="$38.15" FontSize="24" Canvas.Left="10" Canvas.Top="358" />
+                    <Button Name="lowIncomeMonthlyMinus" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="-" Height="51" Width="50" Canvas.Left="255" Canvas.Top="325" FontSize="35" Click="lowIncomeMonthlyMinus_Click" Background="White" Foreground="#FF707070"/>
+                    <Label Name="lowIncomeCount" Content="0" FontSize="24" Canvas.Left="325" Canvas.Top="329" />
+                    <Button Name="lowIncomeMonthlyPlus" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="+" Height="51" Width="50" Canvas.Left="367" Canvas.Top="324" FontSize="35" Click="lowIncomeMonthlyPlus_Click" Background="White" Foreground="#FF707070"/>
+                    <Rectangle Fill="#FFACACAC" Height="1" Stroke="#FFACACAC" Width="472" Canvas.Top="404"/>
+                    <Rectangle Fill="#B83A3F" Height="7" Stroke="#B83A3F" Width="472" Canvas.Left="-5" Canvas.Top="-5"/>
                 </Canvas>
             </TabItem>
 

@@ -125,11 +125,13 @@ namespace TransitHubXAML
             {
                 //hide nav bar
                 navBar.Visibility = System.Windows.Visibility.Hidden;
+                navBarBorder.Visibility = System.Windows.Visibility.Hidden;
             }
             else
             {
                 //display nav bar
                 navBar.Visibility = System.Windows.Visibility.Visible;
+                navBarBorder.Visibility = System.Windows.Visibility.Visible;
             }
         }
         
