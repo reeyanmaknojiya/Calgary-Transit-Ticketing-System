@@ -10,7 +10,7 @@ namespace TransitHubXAML
     // static file with user variables, already signed up user
     public static class User
     {
-        public static Boolean loggedIn { get; set; }
+        public static Boolean loggedIn = false;
         public static string firstName { get; set; }
         public static string lastName { get; set; }
         public static string bMonth { get; set; }

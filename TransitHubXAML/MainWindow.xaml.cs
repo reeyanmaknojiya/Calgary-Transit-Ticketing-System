@@ -27,7 +27,7 @@ namespace TransitHubXAML
         storePage sp = new storePage();
 
         public MainWindow()
-        {
+        {            
             currentIcon = 1;
             User.loggedIn = false;
             InitializeComponent();
@@ -47,7 +47,7 @@ namespace TransitHubXAML
             currentIcon = 1;
             image1.Source = new BitmapImage(new Uri("Resources/store_selected.png", UriKind.Relative));
             
-            mainFrame.Navigate(sp);
+            mainFrame.Navigate(new storePage());
         }
 
         private void button2_Click(object sender, RoutedEventArgs e)

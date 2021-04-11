@@ -47,11 +47,21 @@ namespace TransitHubXAML
         public storePage()
         {   
             InitializeComponent();
+
+            if (TempUser.loggedIn) //Not low income user presently
+            {
+                lowIncomeLabel.Visibility = System.Windows.Visibility.Hidden;
+                lowIncomeLabel1.Visibility = System.Windows.Visibility.Hidden;
+                lowIncomeLabel2.Visibility = System.Windows.Visibility.Hidden;
+                lowIncomeRectangle.Visibility = System.Windows.Visibility.Hidden;
+                lowIncomeMonthlyMinus.Visibility = System.Windows.Visibility.Hidden; 
+                lowIncomeMonthlyPlus.Visibility = System.Windows.Visibility.Hidden;
+                lowIncomeCount.Visibility = System.Windows.Visibility.Hidden;
+            }
         }
 
         private void AddToCart_Click(object sender, RoutedEventArgs e)
         {
-            //We go through all the amounts and set that as our 
 
             if (App.Current.Properties.Contains("itemsToCart"))
             {
@@ -203,6 +213,6 @@ namespace TransitHubXAML
             passesAddToCart.Content = ticketsAddToCart.Content;
         }
 
-    
+       
     }
 }
