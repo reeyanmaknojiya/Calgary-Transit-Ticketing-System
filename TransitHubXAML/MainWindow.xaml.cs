@@ -121,7 +121,7 @@ namespace TransitHubXAML
         {
             Type pageType = e.Content.GetType();
 
-            if (pageType == typeof(loginPage) || pageType == typeof(signUpPage))
+            if (pageType == typeof(loginPage) || pageType == typeof(signUpPage) || pageType == typeof(AccountEditPage))
             {
                 //hide nav bar
                 navBar.Visibility = System.Windows.Visibility.Hidden;
