@@ -37,6 +37,8 @@ namespace TransitHubXAML
                 User.email = "johnjohnson@gmail.com";
                 User.password = "johnson123";
                 User.phone = "(403)123-4567";
+
+                TempUser.loggedIn = false;
             }
             this.NavigationService.Navigate(new storePage());
         }

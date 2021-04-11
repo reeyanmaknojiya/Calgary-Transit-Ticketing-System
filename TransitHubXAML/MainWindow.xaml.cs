@@ -21,10 +21,7 @@ namespace TransitHubXAML
     /// </summary>
     public partial class MainWindow : Window
     {
-        private const int NUM_OF_ITEMS = 5;
         private int currentIcon;
-        private int[] items = new int[NUM_OF_ITEMS];
-        storePage sp = new storePage();
 
         public MainWindow()
         {            
@@ -36,10 +33,6 @@ namespace TransitHubXAML
             image1.Source = new BitmapImage(new Uri("Resources/store_selected.png", UriKind.Relative));
         }
 
-        void storePage_onsendCartData(List<storeItems> list)
-        {
-            Console.WriteLine("Hello!");
-        }
         private void button1_Click(object sender, RoutedEventArgs e)
         {
             
@@ -50,7 +43,7 @@ namespace TransitHubXAML
             mainFrame.Navigate(new storePage());
         }
 
-        private void button2_Click(object sender, RoutedEventArgs e)
+        public void button2_Click(object sender, RoutedEventArgs e)
         {
             resetCurrentWindow();
             currentIcon = 2;

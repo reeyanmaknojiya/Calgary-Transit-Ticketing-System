@@ -52,7 +52,15 @@ namespace TransitHubXAML
                 lowIncomeAmountLabel.Content = inCart[(int)Enums.lowIncomeMonthly].ToString();
             }
 
-            checkoutButton.Content = "CHECKOUT $" + string.Format("{0:0.00}",App.Current.Properties["currCost"]);
+            if (App.Current.Properties.Contains("currCost"))
+            {
+                checkoutButton.Content = "Checkout $" + string.Format("{0:0.00}", App.Current.Properties["currCost"]);
+            }
+            else
+            {
+                checkoutButton.Content = "Checkout $0.00";
+            }
+            
             
         }
         private double calcCurrentCartTotal()
@@ -72,7 +80,7 @@ namespace TransitHubXAML
             adultTicketAmount++;
             adultTicketAmountLabel.Content = curr.ToString();
             string temp = string.Format("{0:0.00}", calcCurrentCartTotal());
-            checkoutButton.Content = "CHECKOUT $" + temp;
+            checkoutButton.Content = "Checkout $" + temp;
 
         }
 
@@ -86,7 +94,7 @@ namespace TransitHubXAML
             adultTicketAmount--;
             adultTicketAmountLabel.Content = curr.ToString();
             string temp = string.Format("{0:0.00}", calcCurrentCartTotal());
-            checkoutButton.Content = "CHECKOUT $" + temp;
+            checkoutButton.Content = "Checkout $" + temp;
         }
 
         private void youthTicketMinus_Click(object sender, RoutedEventArgs e)
@@ -99,7 +107,7 @@ namespace TransitHubXAML
             youthTicketAmount--;
             youthTicketAmountLabel.Content = curr.ToString();
             string temp = string.Format("{0:0.00}", calcCurrentCartTotal());
-            checkoutButton.Content = "CHECKOUT $" + temp;
+            checkoutButton.Content = "Checkout $" + temp;
         }
 
         private void youthTicketPlus_Click(object sender, RoutedEventArgs e)
@@ -109,7 +117,7 @@ namespace TransitHubXAML
             youthTicketAmount++;
             youthTicketAmountLabel.Content = curr.ToString();
             string temp = string.Format("{0:0.00}", calcCurrentCartTotal());
-            checkoutButton.Content = "CHECKOUT $" + temp;
+            checkoutButton.Content = "Checkout $" + temp;
         }
 
         private void adultMonthlyMinus_Click(object sender, RoutedEventArgs e)
@@ -122,7 +130,7 @@ namespace TransitHubXAML
             adultMonthlyAmount--;
             adultMonthlyAmountLabel.Content = curr.ToString();
             string temp = string.Format("{0:0.00}", calcCurrentCartTotal());
-            checkoutButton.Content = "CHECKOUT $" + temp;
+            checkoutButton.Content = "Checkout $" + temp;
         }
 
         private void adultMonthlyPlus_Click(object sender, RoutedEventArgs e)
@@ -132,7 +140,7 @@ namespace TransitHubXAML
             adultMonthlyAmount++;
             adultMonthlyAmountLabel.Content = curr.ToString();
             string temp = string.Format("{0:0.00}", calcCurrentCartTotal());
-            checkoutButton.Content = "CHECKOUT $" + temp;
+            checkoutButton.Content = "Checkout $" + temp;
         }
 
         private void youthMonthlyMinus_Click(object sender, RoutedEventArgs e)
@@ -145,7 +153,7 @@ namespace TransitHubXAML
             youthMonthlyAmount--;
             youthMonthlyAmountLabel.Content = curr.ToString();
             string temp = string.Format("{0:0.00}", calcCurrentCartTotal());
-            checkoutButton.Content = "CHECKOUT $" + temp;
+            checkoutButton.Content = "Checkout $" + temp;
         }
 
         private void youthMonthlyPlus_Click(object sender, RoutedEventArgs e)
@@ -155,7 +163,7 @@ namespace TransitHubXAML
             youthMonthlyAmount++;
             youthMonthlyAmountLabel.Content = curr.ToString();
             string temp = string.Format("{0:0.00}", calcCurrentCartTotal());
-            checkoutButton.Content = "CHECKOUT $" + temp;
+            checkoutButton.Content = "Checkout $" + temp;
         }
 
         private void lowIncomeMinus_Click(object sender, RoutedEventArgs e)
@@ -168,7 +176,7 @@ namespace TransitHubXAML
             lowIncomeMonthlyAmount--;
             lowIncomeAmountLabel.Content = curr.ToString();
             string temp = string.Format("{0:0.00}", calcCurrentCartTotal());
-            checkoutButton.Content = "CHECKOUT $" + temp;
+            checkoutButton.Content = "Checkout $" + temp;
         }
 
         private void lowIncomePlus_Click(object sender, RoutedEventArgs e)
@@ -178,14 +186,25 @@ namespace TransitHubXAML
             lowIncomeMonthlyAmount++;
             lowIncomeAmountLabel.Content = curr.ToString();
             string temp = string.Format("{0:0.00}", calcCurrentCartTotal());
-            checkoutButton.Content = "CHECKOUT $" + temp;
+            checkoutButton.Content = "Checkout $" + temp;
 
         }
 
         private void checkoutButton_Click(object sender, RoutedEventArgs e)
         {
-            //TODO, we have to send the data to 
-            this.NavigationService.Navigate(new checkout());
+            if (adultTicketAmount == 0 &&
+               youthMonthlyAmount == 0 &&
+               adultMonthlyAmount == 0 &&
+               youthMonthlyAmount == 0 &&
+               lowIncomeMonthlyAmount == 0)
+            {
+                return;
+            }
+            else
+            {
+                //TODO, we have to send the data to 
+                this.NavigationService.Navigate(new checkout());
+            }
         }
 
         
