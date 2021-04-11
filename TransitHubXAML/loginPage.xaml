@@ -27,9 +27,9 @@
             Welcome Back!
         </TextBlock>
         <Label Content="Email " Grid.Column="2" HorizontalAlignment="Left" Margin="10,125,0,0" Grid.Row="4" VerticalAlignment="Top" Height="44" Width="173" FontSize="22"/>
-        <TextBox Grid.Column="2" HorizontalAlignment="Left" Height="42" Margin="17,165,0,0" Grid.Row="4" TextWrapping="Wrap" VerticalAlignment="Top" Width="354" FontSize="24"/>
+        <TextBox x:Name="EmailInput" Grid.Column="2" HorizontalAlignment="Left" Height="42" Margin="17,165,0,0" Grid.Row="4" TextWrapping="Wrap" VerticalAlignment="Top" Width="354" FontSize="24"/>
         <Label Content="Password" Grid.Column="2" HorizontalAlignment="Left" Margin="11,211,0,0" Grid.Row="4" VerticalAlignment="Top" Height="44" Width="173" FontSize="22"/>
-        <TextBox Grid.Column="2" HorizontalAlignment="Left" Height="42" Margin="18,251,0,0" Grid.Row="4" TextWrapping="Wrap" VerticalAlignment="Top" Width="354" FontSize="24"/>
+        <TextBox x:Name="PasswordInput" Grid.Column="2" HorizontalAlignment="Left" Height="42" Margin="18,251,0,0" Grid.Row="4" TextWrapping="Wrap" VerticalAlignment="Top" Width="354" FontSize="24"/>
         <Button Style="{StaticResource RedButton}" Content="Log In" Click="Login_Click" HorizontalAlignment="Left" Margin="18,355,0,0" VerticalAlignment="Top" Width="354" Height="49" FontSize="22" Background="#FFB83A3F" Foreground="White" Grid.Column="2" Grid.Row="4"/>
         <Label Content="Forgot Password?" Grid.Column="2" HorizontalAlignment="Left" Height="34" Margin="250,298,0,0" Grid.Row="4" VerticalAlignment="Top" Width="121" FontSize="14"/>
         <Label Content="Remember Me" Grid.Column="2" HorizontalAlignment="Left" Height="34" Margin="30,298,0,0" Grid.Row="4" VerticalAlignment="Top" Width="121" FontSize="14"/>
