@@ -64,29 +64,14 @@ namespace TransitHubXAML
                         User.phone = phoneN;
                         User.password = password;
                         User.loggedIn = true;
+
+                        this.NavigationService.Navigate(new storePage());
                     }
                 }
                 //account.Add(line);
                 line = sr.ReadLine();
             }
             sr.Close();
-            if (valid == true)
-            {
-                User.loggedIn = true;
-                User.firstName = "John";
-                User.lastName = "Johnson";
-                User.bMonth = "March";
-                User.bDay = "1";
-                User.bYear = "1989";
-                User.email = "johnjohnson@gmail.com";
-                User.password = "johnson123";
-                User.phone = "(403)123-4567";
-
-                TempUser.loggedIn = false;
-
-                this.NavigationService.Navigate(new storePage());
-
-            }
         }
 
         private void Back_Click(object sender, RoutedEventArgs e)
