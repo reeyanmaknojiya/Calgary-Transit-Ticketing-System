@@ -72,7 +72,7 @@ namespace TransitHubXAML
             resetCurrentWindow();
             currentIcon = 4;
             image4.Source = new BitmapImage(new Uri("Resources/help_selected.png", UriKind.Relative));
-            mainFrame.Navigate(new cartPage());
+            mainFrame.Navigate(new Help());
         }
 
         //We go to cart page and we send it the array of items
@@ -121,7 +121,7 @@ namespace TransitHubXAML
         {
             Type pageType = e.Content.GetType();
 
-            if (pageType == typeof(loginPage) || pageType == typeof(signUpPage))
+            if (pageType == typeof(loginPage) || pageType == typeof(signUpPage) || pageType == typeof(AccountEditPage))
             {
                 //hide nav bar
                 navBar.Visibility = System.Windows.Visibility.Hidden;

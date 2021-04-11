@@ -17,11 +17,21 @@ namespace TransitHubXAML
     /// <summary>
     /// Interaction logic for Help.xaml
     /// </summary>
-    public partial class Help : Window
+    public partial class Help : Page
     {
         public Help()
         {
             InitializeComponent();
+        }
+
+        private void Window_Scroll(object sender, System.Windows.Controls.Primitives.ScrollEventArgs e)
+        {
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

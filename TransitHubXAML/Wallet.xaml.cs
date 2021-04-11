@@ -15,9 +15,9 @@ using System.Windows.Shapes;
 namespace TransitHubXAML
 {
     /// <summary>
-    /// Interaction logic for Store.xaml
+    /// Interaction logic for Wallet.xaml
     /// </summary>
-    public partial class Wallet : Window
+    public partial class Wallet : Page
     {
         public Wallet()
         {
