@@ -1,0 +1,30 @@
+﻿<Page x:Class="TransitHubXAML.AccountPaymentMethodsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TransitHubXAML"
+      mc:Ignorable="d" 
+      Title="AccountPaymentMethodsPage" Height="800" Width="450">
+    <Grid>
+        <Button Content="Add New Card" HorizontalAlignment="Left" Margin="115,582,0,0" VerticalAlignment="Top" Width="223" Height="62" FontSize="30" Click="Button_Click_2"/>
+        <Image HorizontalAlignment="Left" MouseDown="Back_Click" Height="40" VerticalAlignment="Top" Width="64" Source="Resources/back-arrow.png" Margin="30,30,0,0"/>
+        <TextBlock FontSize="30" Margin="115,30,88,702.5" Text="Payment Methods"/>
+        <TextBlock FontSize="30" Margin="75,141,128,591" Text="Saved Cards"/>
+        <Rectangle Fill="LightGray" Stroke="LightGray" Margin="0,191,0,591"/>
+        <Rectangle Fill="LightGray" Stroke="LightGray" Margin="0,492,0,287"/>
+        <Rectangle Fill="LightGray" Stroke="LightGray" Margin="0,342,0,439"/>
+        <Image HorizontalAlignment="Left" Height="38" Margin="75,228,0,0" VerticalAlignment="Top" Width="60" Source="Resources/visa1.png" RenderTransformOrigin="0.526,1.513"/>
+        <Image HorizontalAlignment="Left" Height="42" Margin="75,376,0,0" VerticalAlignment="Top" Width="64" Source="Resources/mastercard1.jpeg" RenderTransformOrigin="0.526,1.513"/>
+        <TextBlock FontSize="25" Margin="140,226,29,506" Text="XXXX XXXX XXXX 1806" RenderTransformOrigin="0.376,0.438"/>
+        <TextBlock FontSize="25" Margin="144,378,29,354" Text="XXXX XXXX XXXX 0910"/>
+        <Button x:Name="DefaultButton" Content="Make Default" Visibility="Hidden" HorizontalAlignment="Left" Margin="75,294,0,0" VerticalAlignment="Top" Width="135" Height="34" FontSize="15" RenderTransformOrigin="0.506,0" Click="Button_Click"/>
+        <Button Content="Remove" HorizontalAlignment="Left" Margin="252,294,0,0" VerticalAlignment="Top" Width="135" Height="34" FontSize="15" Background="#FFC43A3F" Foreground="White" RenderTransformOrigin="0.506,0"/>
+        <Button x:Name="DefaultButton2" Content="Make Default" HorizontalAlignment="Left" Margin="75,444,0,0" VerticalAlignment="Top" Width="135" Height="34" FontSize="15" RenderTransformOrigin="0.506,0" Click="Button_Click_1"/>
+        <Button Content="Remove" HorizontalAlignment="Left" Margin="252,444,0,0" VerticalAlignment="Top" Width="135" Height="34" FontSize="15" Background="#FFC43A3F" Foreground="White" RenderTransformOrigin="0.506,0"/>
+        <TextBlock x:Name="DefaultLabel" FontSize="20" Margin="106,296,256,461" Text="Default"/>
+        <TextBlock x:Name="DefaultLabel2" Visibility="Hidden" FontSize="20" Margin="106,446,256,311" Text="Default"/>
+
+
+    </Grid>
+</Page>
