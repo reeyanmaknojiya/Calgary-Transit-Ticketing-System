@@ -68,8 +68,10 @@
     <Compile Include="checkout.xaml.cs">
       <DependentUpon>checkout.xaml</DependentUpon>
     </Compile>
-    <Compile Include="chooseLoginPage.xaml.cs">
-      <DependentUpon>chooseLoginPage.xaml</DependentUpon>
+
+    <Compile Include="CustomControl\MenuWithSubMenuControl.xaml.cs">
+      <DependentUpon>MenuWithSubMenuControl.xaml</DependentUpon>
+
     </Compile>
     <Compile Include="Help.xaml.cs">
       <DependentUpon>Help.xaml</DependentUpon>
@@ -79,6 +81,7 @@
     <Compile Include="ticketDisplay.xaml.cs">
       <DependentUpon>ticketDisplay.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewModel\MenuViewModel.cs" />
     <Compile Include="Wallet.xaml.cs">
       <DependentUpon>Wallet.xaml</DependentUpon>
     </Compile>
@@ -140,6 +143,21 @@
     <Compile Include="ViewReceipt1.xaml.cs">
       <DependentUpon>ViewReceipt1.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AccountPaymentMethodsPage.xaml.cs">
+      <DependentUpon>AccountPaymentMethodsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AccountReceiptsPage.xaml.cs">
+      <DependentUpon>AccountReceiptsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AccountSaveCardPage.xaml.cs">
+      <DependentUpon>AccountSaveCardPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AccountEditPage.xaml.cs">
+      <DependentUpon>AccountEditPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VerificationPage.xaml.cs">
+      <DependentUpon>VerificationPage.xaml</DependentUpon>
+    </Compile>
     <Page Include="accountPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -163,6 +181,10 @@
     <Page Include="chooseLoginPage.xaml">
       <SubType>Designer</SubType>
       <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="CustomControl\MenuWithSubMenuControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Help.xaml">
       <SubType>Designer</SubType>
@@ -281,6 +303,26 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="AccountPaymentMethodsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AccountReceiptsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AccountSaveCardPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AccountEditPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VerificationPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="PaymentInformation.xaml.cs">
@@ -383,5 +425,6 @@
   <ItemGroup>
     <Resource Include="Resources\my_tickets.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -35,6 +35,7 @@ namespace TransitHubXAML
             User.lastName = lastNameText.Text;
             User.bMonth = monthText.Text;
             User.bDay = dayText.Text;
+            User.bYear = yearText.Text;
             User.email = emailText.Text;
             User.phone = phoneText.Text;
             User.password = passText1.Text;
