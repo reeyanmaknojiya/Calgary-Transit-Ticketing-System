@@ -433,5 +433,10 @@
   <ItemGroup>
     <Resource Include="Resources\logout.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Accounts.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
