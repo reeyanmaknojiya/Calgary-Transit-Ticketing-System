@@ -23,7 +23,7 @@ namespace TransitHubXAML
     {
         public thankYou()
         {
-  
+            InitializeComponent();
             if (App.Current.Properties.Contains("itemsToCart"))
             {
                 int[] inCart = (int[])App.Current.Properties["itemsToCart"];
