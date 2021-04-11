@@ -27,7 +27,7 @@ namespace TransitHubXAML
         storePage sp = new storePage();
 
         public MainWindow()
-        {
+        {            
             currentIcon = 1;
             User.loggedIn = false;
             InitializeComponent();
@@ -47,7 +47,7 @@ namespace TransitHubXAML
             currentIcon = 1;
             image1.Source = new BitmapImage(new Uri("Resources/store_selected.png", UriKind.Relative));
             
-            mainFrame.Navigate(sp);
+            mainFrame.Navigate(new storePage());
         }
 
         private void button2_Click(object sender, RoutedEventArgs e)
@@ -63,7 +63,7 @@ namespace TransitHubXAML
             resetCurrentWindow();
             currentIcon = 3;
             image3.Source = new BitmapImage(new Uri("Resources/my_tickets_selected.png", UriKind.Relative));
-            mainFrame.Navigate(new cartPage());
+            mainFrame.Navigate(new Wallet());
         }
 
         private void button4_Click(object sender, RoutedEventArgs e)
@@ -125,11 +125,13 @@ namespace TransitHubXAML
             {
                 //hide nav bar
                 navBar.Visibility = System.Windows.Visibility.Hidden;
+                navBarBorder.Visibility = System.Windows.Visibility.Hidden;
             }
             else
             {
                 //display nav bar
                 navBar.Visibility = System.Windows.Visibility.Visible;
+                navBarBorder.Visibility = System.Windows.Visibility.Visible;
             }
         }
         

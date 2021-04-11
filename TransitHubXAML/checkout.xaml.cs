@@ -21,7 +21,15 @@ namespace TransitHubXAML
     {
         public checkout()
         {
+            
             InitializeComponent();
+
+            //TODO: Show no cards if its the temp user, show otherwise
+            if ((bool)App.Current.Properties["isTempUser"] == true)
+            {
+                visaRectangle.Visibility = System.Windows.Visibility.Hidden;
+                msRectangle.Visibility = System.Windows.Visibility.Hidden;
+            }
         }
 
         private void visaChange(object sender, MouseButtonEventArgs e)
@@ -60,6 +68,12 @@ namespace TransitHubXAML
         private void back_button(object sender, MouseButtonEventArgs e)
         {
             this.NavigationService.Navigate(new cartPage());
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            grid.Children.Add(new Rectangle());
+            //this.NavigationService.Navigate(new paymentInformationPage());
         }
     }
 }

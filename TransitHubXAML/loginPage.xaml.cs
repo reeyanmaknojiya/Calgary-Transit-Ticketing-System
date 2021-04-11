@@ -26,6 +26,18 @@ namespace TransitHubXAML
         }
         private void Login_Click(object sender, RoutedEventArgs e)
         {
+            if (EmailInput.Text == "johnson@gmail.com" & PasswordInput.Text == "johnson123")
+            {
+                User.loggedIn = true;
+                User.firstName = "John";
+                User.lastName = "Johnson";
+                User.bMonth = "March";
+                User.bDay = "1";
+                User.bYear = "1989";
+                User.email = "johnjohnson@gmail.com";
+                User.password = "johnson123";
+                User.phone = "(403)123-4567";
+            }
             this.NavigationService.Navigate(new storePage());
         }
 
