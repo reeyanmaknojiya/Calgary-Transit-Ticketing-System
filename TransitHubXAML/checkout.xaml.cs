@@ -25,10 +25,22 @@ namespace TransitHubXAML
             InitializeComponent();
 
             //TODO: Show no cards if its the temp user, show otherwise
-            if ((bool)App.Current.Properties["isTempUser"] == true)
+            if (!User.loggedIn)
             {
                 visaRectangle.Visibility = System.Windows.Visibility.Hidden;
+                visaLabel1.Visibility = System.Windows.Visibility.Hidden;
+                visaLabel2.Visibility = System.Windows.Visibility.Hidden;
+                visaImage.Visibility = System.Windows.Visibility.Hidden;
+
                 msRectangle.Visibility = System.Windows.Visibility.Hidden;
+                msLabel1.Visibility = System.Windows.Visibility.Hidden;
+                msLabel2.Visibility = System.Windows.Visibility.Hidden;
+                msImage.Visibility = System.Windows.Visibility.Hidden;
+
+                ppRectangle.Visibility = System.Windows.Visibility.Hidden;
+                ppLabel1.Visibility = System.Windows.Visibility.Hidden;
+                ppImage.Visibility = System.Windows.Visibility.Hidden;
+
             }
         }
 
@@ -72,8 +84,8 @@ namespace TransitHubXAML
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            grid.Children.Add(new Rectangle());
-            //this.NavigationService.Navigate(new paymentInformationPage());
+            
+            this.NavigationService.Navigate(new paymentInformationPage());
         }
     }
 }

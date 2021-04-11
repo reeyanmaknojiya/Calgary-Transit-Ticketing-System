@@ -13,19 +13,38 @@
         <Label Content="PAYMENT INFORMATION" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="75,-3,-110,0" Height="58" Width="477" FontSize="30" FontFamily="Open Sans"/>
         <Label Content="&lt;" Foreground="White" HorizontalAlignment="Left" Margin="26,-20,0,0" VerticalAlignment="Top" Height="75" Width="57" FontSize="50"/>
         <Rectangle Fill="#B83A3F" Panel.ZIndex="-1" HorizontalAlignment="Left" Height="55" Stroke="{x:Null}" StrokeThickness="0.5" VerticalAlignment="Top" Width="442"/>
-        <Label Content="CARDHOLDER NAME:" HorizontalAlignment="Left" Margin="26,77,0,0" VerticalAlignment="Top" Width="212" FontWeight="Bold" FontSize="20"/>
+        <Label Name="cardholderLabel" Content="Cardholder Name:" HorizontalAlignment="Left" Margin="26,77,0,0" VerticalAlignment="Top" Width="212" FontWeight="Bold" FontSize="20"/>
         <TextBox Name="cardHolder" HorizontalAlignment="Left" Height="26" Margin="26,119,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="393"/>
-        <Label Content="CARD NUMBER:" HorizontalAlignment="Left" Margin="26,181,0,0" VerticalAlignment="Top" Width="212" FontWeight="Bold" FontSize="20"/>
+        <Label Name="cardNumberLabel" Content="Card Number:" HorizontalAlignment="Left" Margin="26,181,0,0" VerticalAlignment="Top" Width="212" FontWeight="Bold" FontSize="20"/>
         <TextBox Name="cardNumber" HorizontalAlignment="Left" Height="26" Margin="26,223,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="393"/>
-        <Label Content="DATE:" HorizontalAlignment="Left" Margin="26,296,0,0" VerticalAlignment="Top" Width="72" FontWeight="Bold" FontSize="20"/>
-        <ComboBox HorizontalAlignment="Left" Margin="26,333,0,0" VerticalAlignment="Top" Width="72"/>
+        <Label Name="dateLabel" Content="Date:" HorizontalAlignment="Left" Margin="26,296,0,0" VerticalAlignment="Top" Width="72" FontWeight="Bold" FontSize="20"/>
+        <ComboBox Name="monthBox" HorizontalAlignment="Left" Margin="26,333,0,0" VerticalAlignment="Top" Width="72">
+            <ComboBoxItem Content="01"></ComboBoxItem>
+            <ComboBoxItem Content="02"></ComboBoxItem>
+            <ComboBoxItem Content="03"></ComboBoxItem>
+            <ComboBoxItem Content="04"></ComboBoxItem>
+            <ComboBoxItem Content="05"></ComboBoxItem>
+            <ComboBoxItem Content="06"></ComboBoxItem>
+            <ComboBoxItem Content="07"></ComboBoxItem>
+            <ComboBoxItem Content="08"></ComboBoxItem>
+            <ComboBoxItem Content="09"></ComboBoxItem>
+            <ComboBoxItem Content="10"></ComboBoxItem>
+            <ComboBoxItem Content="11"></ComboBoxItem>
+            <ComboBoxItem Content="12"></ComboBoxItem>
+        </ComboBox>
         <Label Content="/" HorizontalAlignment="Left" Margin="114,328,0,0" VerticalAlignment="Top" Width="24" FontWeight="Bold" FontSize="20"/>
-        <ComboBox HorizontalAlignment="Left" Margin="143,333,0,0" VerticalAlignment="Top" Width="86"/>
-        <Label Content="CVV:" HorizontalAlignment="Left" Margin="255,296,0,0" VerticalAlignment="Top" Width="72" FontWeight="Bold" FontSize="20"/>
+        <ComboBox Name="yearBox" HorizontalAlignment="Left" Margin="143,333,0,0" VerticalAlignment="Top" Width="86">
+            <ComboBoxItem Content="2021"></ComboBoxItem>
+            <ComboBoxItem Content="2022"></ComboBoxItem>
+            <ComboBoxItem Content="2023"></ComboBoxItem>
+            <ComboBoxItem Content="2024"></ComboBoxItem>
+            <ComboBoxItem Content="2025"></ComboBoxItem>
+        </ComboBox>
+        <Label Name="cvvLabel" Content="CVV:" HorizontalAlignment="Left" Margin="255,296,0,0" VerticalAlignment="Top" Width="72" FontWeight="Bold" FontSize="20"/>
         <TextBox Name="cvvIn" HorizontalAlignment="Left" Height="26" Margin="255,329,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="164"/>
-        <Label Content="ZIP/POSTAL CODE:" HorizontalAlignment="Left" Margin="26,395,0,0" VerticalAlignment="Top" Width="203" FontWeight="Bold" FontSize="20"/>
+        <Label Name="zipLabel" Content="ZIP Code:" HorizontalAlignment="Left" Margin="26,395,0,0" VerticalAlignment="Top" Width="203" FontWeight="Bold" FontSize="20"/>
         <TextBox Name="zipIn" HorizontalAlignment="Left" Height="26" Margin="26,453,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="164"/>
-        <Button Click="Button_Click" Content="CONTINUE AND PAY" Foreground="white" Background="#B83A3F" HorizontalAlignment="Left" Margin="59,529,0,0" VerticalAlignment="Top" Width="328" Height="44" FontSize="30"/>
+        <Button Click="Button_Click" Content="Continue and Pay" Foreground="white" Background="#B83A3F" HorizontalAlignment="Left" Margin="59,529,0,0" VerticalAlignment="Top" Width="328" Height="44" FontSize="30"/>
 
     </Grid>
 </Page>
