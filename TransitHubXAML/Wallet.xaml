@@ -9,57 +9,57 @@
         ResizeMode="NoResize">
 
     <Grid>
-        <TabControl HorizontalAlignment="Left" Height="700" VerticalAlignment="Top" Width="450" >
-            <TabItem  Header="TICKETS" FontSize="55" Margin="0,0,-4,-2">
-                <Canvas>
-                    <Rectangle Fill="#B83A3F" Height="7" Stroke="Black" Width="472" Canvas.Left="-18"/>
-                    <Label Content="Adult Monthly Pass - Feb" Height="45" Canvas.Top="25" Width="300" Canvas.Left="10" FontSize="24"/>
-                    <Label Content="Purchased: Feb 02, 2021" FontSize="16" Canvas.Left="10" Canvas.Top="60" />
-                    <Button Content="View" Height="45" Width="100" FontSize="24" HorizontalContentAlignment="Center" Canvas.Right="20" Canvas.Top="38"/>
-                    <Rectangle Fill="Gray" Height="7" Stroke="Black" Width="472" Canvas.Left="-28" Canvas.Top="115"/>
-                    <Label Content="Youth Ticket" Height="45" Canvas.Top="140" Width="300" Canvas.Left="10" FontSize="24"/>
-                    <Label Content="Purchased: Feb 05, 2021" FontSize="16" Canvas.Left="10" Canvas.Top="175" />
-                    <Button Content="View" Height="45" Width="100" FontSize="24" HorizontalContentAlignment="Center" Canvas.Right="20" Canvas.Top="153"/>
-                    <Rectangle Fill="Gray" Height="7" Stroke="Black" Width="472" Canvas.Left="-28" Canvas.Top="230"/>
-                    <Label Content="Adult Ticket" Height="45" Canvas.Top="255" Width="300" Canvas.Left="10" FontSize="24"/>
-                    <Label Content="Purchased: Feb 05, 2021" FontSize="16" Canvas.Left="10" Canvas.Top="290" />
-                    <Button Content="View" Height="45" Width="100" FontSize="24" HorizontalContentAlignment="Center" Canvas.Right="20" Canvas.Top="268"/>
-                    <Rectangle Fill="Gray" Height="7" Stroke="Black" Width="472" Canvas.Left="-28" Canvas.Top="345"/>
-                    <Label Content="Adult Ticket" Height="45" Canvas.Top="370" Width="300" Canvas.Left="10" FontSize="24"/>
-                    <Label Content="Purchased: Feb 05, 2021" FontSize="16" Canvas.Left="10" Canvas.Top="405" />
-                    <Button Content="View" Height="45" Width="100" FontSize="24" HorizontalContentAlignment="Center" Canvas.Right="20" Canvas.Top="383"/>
-                    <Rectangle Fill="Gray" Height="7" Stroke="Black" Width="472" Canvas.Left="-28" Canvas.Top="460"/>
-                    <Label Content="Adult Monthly Pass - Mar" Height="45" Canvas.Top="485" Width="300" Canvas.Left="10" FontSize="24"/>
-                    <Label Content="Purchased: Feb 28, 2021" FontSize="16" Canvas.Left="10" Canvas.Top="520" />
-                    <Button Content="View" Height="45" Width="100" FontSize="24" HorizontalContentAlignment="Center" Canvas.Right="20" Canvas.Top="498"/>
-                    <Rectangle Fill="Gray" Height="7" Stroke="Black" Width="472" Canvas.Left="-28" Canvas.Top="575"/>
-                </Canvas>
-            </TabItem>
+		<TabControl HorizontalAlignment="Left" Height="700" VerticalAlignment="Top" Width="450" >
+			<TabItem  Header="TICKETS" FontSize="55" Margin="0,0,-4,-2">
+				<Canvas>
+					<Rectangle Fill="#B83A3F" Height="7" Stroke="Black" Width="472" Canvas.Left="-18"/>
+					<Label Content="Adult Monthly Pass - Feb" Height="45" Canvas.Top="25" Width="300" Canvas.Left="10" FontSize="24"/>
+					<Label Content="Purchased: Feb 02, 2021" FontSize="16" Canvas.Left="10" Canvas.Top="60" />
+					<Button Content="View" Height="45" Width="100" FontSize="24" HorizontalContentAlignment="Center" Canvas.Right="20" Canvas.Top="38"/>
+					<Rectangle Fill="Gray" Height="7" Stroke="Black" Width="472" Canvas.Left="-28" Canvas.Top="115"/>
+					<Label Content="Youth Ticket" Height="45" Canvas.Top="140" Width="300" Canvas.Left="10" FontSize="24"/>
+					<Label Content="Purchased: Feb 05, 2021" FontSize="16" Canvas.Left="10" Canvas.Top="175" />
+					<Button Content="View" Height="45" Width="100" FontSize="24" HorizontalContentAlignment="Center" Canvas.Right="20" Canvas.Top="153"/>
+					<Rectangle Fill="Gray" Height="7" Stroke="Black" Width="472" Canvas.Left="-28" Canvas.Top="230"/>
+					<Label Content="Adult Ticket" Height="45" Canvas.Top="255" Width="300" Canvas.Left="10" FontSize="24"/>
+					<Label Content="Purchased: Feb 05, 2021" FontSize="16" Canvas.Left="10" Canvas.Top="290" />
+					<Button Content="View" Height="45" Width="100" FontSize="24" HorizontalContentAlignment="Center" Canvas.Right="20" Canvas.Top="268"/>
+					<Rectangle Fill="Gray" Height="7" Stroke="Black" Width="472" Canvas.Left="-28" Canvas.Top="345"/>
+					<Label Content="Adult Ticket" Height="45" Canvas.Top="370" Width="300" Canvas.Left="10" FontSize="24"/>
+					<Label Content="Purchased: Feb 05, 2021" FontSize="16" Canvas.Left="10" Canvas.Top="405" />
+					<Button Content="View" Height="45" Width="100" FontSize="24" HorizontalContentAlignment="Center" Canvas.Right="20" Canvas.Top="383"/>
+					<Rectangle Fill="Gray" Height="7" Stroke="Black" Width="472" Canvas.Left="-28" Canvas.Top="460"/>
+					<Label Content="Adult Monthly Pass - Mar" Height="45" Canvas.Top="485" Width="300" Canvas.Left="10" FontSize="24"/>
+					<Label Content="Purchased: Feb 28, 2021" FontSize="16" Canvas.Left="10" Canvas.Top="520" />
+					<Button Content="View" Height="45" Width="100" FontSize="24" HorizontalContentAlignment="Center" Canvas.Right="20" Canvas.Top="498"/>
+					<Rectangle Fill="Gray" Height="7" Stroke="Black" Width="472" Canvas.Left="-28" Canvas.Top="575"/>
+				</Canvas>
+			</TabItem>
 
-            <TabItem Header="HISTORY" FontSize="55" Margin="6,0,-17,-2">
-                <Canvas>
-                    <Rectangle Fill="#B83A3F" Height="7" Stroke="Black" Width="472" Canvas.Left="-18"/>
-                    <Label Content="Adult Monthly Pass - Jan" Height="39" Canvas.Top="25" Width="300" Canvas.Left="10" FontSize="24"/>
-                    <Label Content="Purchased: Dec 30, 2020" FontSize="16" Canvas.Left="10" Canvas.Top="60" />
-                    <Label Content="Expired: Jan 31, 2021" FontSize="16" Canvas.Left="10" Canvas.Top="90" Foreground="Red"/>
-                    <Rectangle Fill="Gray" Height="7" Stroke="Black" Width="472" Canvas.Left="-28" Canvas.Top="140"/>
-                    <Label Content="Adult Ticket" Height="39" Canvas.Top="165" Width="300" Canvas.Left="10" FontSize="24"/>
-                    <Label Content="Purchased: Jan 15, 2021" FontSize="16" Canvas.Left="10" Canvas.Top="200" />
-                    <Label Content="Used: Jan 20, 2021" FontSize="16" Canvas.Left="10" Canvas.Top="230" Foreground="Red"/>
-                    <Rectangle Fill="Gray" Height="7" Stroke="Black" Width="472" Canvas.Left="-28" Canvas.Top="280"/>
-                    <Label Content="Adult Ticket" Height="39" Canvas.Top="305" Width="300" Canvas.Left="10" FontSize="24"/>
-                    <Label Content="Purchased: Jan 1, 2021" FontSize="16" Canvas.Left="10" Canvas.Top="340" />
-                    <Label Content="Used: Jan 1, 2021" FontSize="16" Canvas.Left="10" Canvas.Top="370" Foreground="Red"/>
-                    <Rectangle Fill="Gray" Height="7" Stroke="Black" Width="472" Canvas.Left="-28" Canvas.Top="420"/>
-                    <Label Content="Youth Ticket" Height="39" Canvas.Top="445" Width="300" Canvas.Left="10" FontSize="24"/>
-                    <Label Content="Purchased: Dec 3, 2020" FontSize="16" Canvas.Left="10" Canvas.Top="480" />
-                    <Label Content="Expired: Dec 10, 2020" FontSize="16" Canvas.Left="10" Canvas.Top="510" Foreground="Red"/>
-                    <Rectangle Fill="Gray" Height="7" Stroke="Black" Width="472" Canvas.Left="-28" Canvas.Top="560"/>
-                </Canvas>
-            </TabItem>
+			<TabItem Header="HISTORY" FontSize="55" Margin="6,0,-17,-2">
+				<Canvas>
+					<Rectangle Fill="#B83A3F" Height="7" Stroke="Black" Width="472" Canvas.Left="-18"/>
+					<Label Content="Adult Monthly Pass - Jan" Height="39" Canvas.Top="25" Width="300" Canvas.Left="10" FontSize="24"/>
+					<Label Content="Purchased: Dec 30, 2020" FontSize="16" Canvas.Left="10" Canvas.Top="60" />
+					<Label Content="Expired: Jan 31, 2021" FontSize="16" Canvas.Left="10" Canvas.Top="90" Foreground="Red"/>
+					<Rectangle Fill="Gray" Height="7" Stroke="Black" Width="472" Canvas.Left="-28" Canvas.Top="140"/>
+					<Label Content="Adult Ticket" Height="39" Canvas.Top="165" Width="300" Canvas.Left="10" FontSize="24"/>
+					<Label Content="Purchased: Jan 15, 2021" FontSize="16" Canvas.Left="10" Canvas.Top="200" />
+					<Label Content="Used: Jan 20, 2021" FontSize="16" Canvas.Left="10" Canvas.Top="230" Foreground="Red"/>
+					<Rectangle Fill="Gray" Height="7" Stroke="Black" Width="472" Canvas.Left="-28" Canvas.Top="280"/>
+					<Label Content="Adult Ticket" Height="39" Canvas.Top="305" Width="300" Canvas.Left="10" FontSize="24"/>
+					<Label Content="Purchased: Jan 1, 2021" FontSize="16" Canvas.Left="10" Canvas.Top="340" />
+					<Label Content="Used: Jan 1, 2021" FontSize="16" Canvas.Left="10" Canvas.Top="370" Foreground="Red"/>
+					<Rectangle Fill="Gray" Height="7" Stroke="Black" Width="472" Canvas.Left="-28" Canvas.Top="420"/>
+					<Label Content="Youth Ticket" Height="39" Canvas.Top="445" Width="300" Canvas.Left="10" FontSize="24"/>
+					<Label Content="Purchased: Dec 3, 2020" FontSize="16" Canvas.Left="10" Canvas.Top="480" />
+					<Label Content="Expired: Dec 10, 2020" FontSize="16" Canvas.Left="10" Canvas.Top="510" Foreground="Red"/>
+					<Rectangle Fill="Gray" Height="7" Stroke="Black" Width="472" Canvas.Left="-28" Canvas.Top="560"/>
+				</Canvas>
+			</TabItem>
 
 
 
-        </TabControl>
+		</TabControl>
     </Grid>
 </Window>
