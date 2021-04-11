@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TransitHubXAML.Models;
-
 namespace TransitHubXAML
 {
-    // static file with user variables, already signed up user
-    public static class User
+    //User for temp accounts
+    public static class TempUser
     {
         public static Boolean loggedIn { get; set; }
         public static string firstName { get; set; }
@@ -25,7 +24,6 @@ namespace TransitHubXAML
 
         public static List<paypal> Paypal { get; set; }
 
-        public const bool isLowIncome = true;
-        
+        public const bool isLowIncome = false;
     }
 }

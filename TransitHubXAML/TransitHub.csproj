@@ -68,16 +68,21 @@
     <Compile Include="checkout.xaml.cs">
       <DependentUpon>checkout.xaml</DependentUpon>
     </Compile>
-
+    <Compile Include="chooseLoginPage.xaml.cs">
+      <DependentUpon>chooseLoginPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="CustomControl\MenuWithSubMenuControl.xaml.cs">
       <DependentUpon>MenuWithSubMenuControl.xaml</DependentUpon>
-
     </Compile>
     <Compile Include="Help.xaml.cs">
       <DependentUpon>Help.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Models\creditCard.cs" />
+    <Compile Include="Models\debitCard.cs" />
     <Compile Include="Models\Enums.cs" />
+    <Compile Include="Models\paypal.cs" />
     <Compile Include="Models\storeItems.cs" />
+    <Compile Include="TempUser.cs" />
     <Compile Include="ticketDisplay.xaml.cs">
       <DependentUpon>ticketDisplay.xaml</DependentUpon>
     </Compile>
@@ -425,6 +430,8 @@
   <ItemGroup>
     <Resource Include="Resources\my_tickets.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Resources\logout.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

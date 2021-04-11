@@ -63,7 +63,7 @@ namespace TransitHubXAML
             resetCurrentWindow();
             currentIcon = 3;
             image3.Source = new BitmapImage(new Uri("Resources/my_tickets_selected.png", UriKind.Relative));
-            mainFrame.Navigate(new cartPage());
+            mainFrame.Navigate(new Wallet());
         }
 
         private void button4_Click(object sender, RoutedEventArgs e)

@@ -94,7 +94,7 @@
                 <Canvas>
                     <Rectangle Fill="#B83A3F" Height="7" Stroke="Black" Width="472" Canvas.Left="-18"/>
                     <Label Content="Adult Monthly Pass" Height="39" Canvas.Top="12" Width="240" Canvas.Left="10" FontSize="24"/>
-                    <Label  Foreground="Blue" Tag="Additional Information Here" FontSize="16" Canvas.Left="10" Canvas.Top="56">
+                    <Label  Foreground="Blue" Tag="For passengers age 18 and older" FontSize="16" Canvas.Left="10" Canvas.Top="56">
                         <TextBlock TextDecorations="Underline"  Text="{Binding Path=Tag, 
                               RelativeSource={RelativeSource Mode=FindAncestor,
                                                              AncestorType={x:Type Label}}}"></TextBlock>
@@ -105,7 +105,7 @@
                     <Button Name="adultMonthlyPlus" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="+" Height="51" Width="50" Canvas.Left="367" Canvas.Top="56" FontSize="35" Click="adultMonthlyPlus_Click"/>
                     <Label Content="Youth Monthly Pass" Height="39" Canvas.Top="146" Width="240" Canvas.Left="10" FontSize="24"/>
                     <Rectangle Fill="Gray" Height="7" Stroke="Black" Width="472" Canvas.Left="-28" Canvas.Top="134"/>
-                    <Label Foreground="Blue" Tag="Additional Information Here" FontSize="16" Canvas.Left="10" Canvas.Top="190">
+                    <Label Foreground="Blue" Tag="For passengers ages 6-17" FontSize="16" Canvas.Left="10" Canvas.Top="190">
                         <TextBlock TextDecorations="Underline"  Text="{Binding Path=Tag, 
                               RelativeSource={RelativeSource Mode=FindAncestor,
                                                              AncestorType={x:Type Label}}}"></TextBlock>
@@ -117,7 +117,7 @@
                     <Rectangle Fill="Gray" Height="7" Stroke="Black" Width="472" Canvas.Top="268"/>
                     <Button Name="passesAddToCart" Background="#B83A3F" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="ADD TO CART $0.00" Height="86" Width="389" Canvas.Left="28" Canvas.Top="485" FontSize="35" Click="AddToCart_Click"/>
                     <Label Content="Low Income Pass" Height="39" Canvas.Top="280" Width="240" Canvas.Left="10" FontSize="24"/>
-                    <Label Foreground="Blue" Tag="Additional Information Here" FontSize="16" Canvas.Left="10" Canvas.Top="324">
+                    <Label Foreground="Blue" Tag="For low income citizens" FontSize="16" Canvas.Left="10" Canvas.Top="324">
                         <TextBlock TextDecorations="Underline"  Text="{Binding Path=Tag, 
                               RelativeSource={RelativeSource Mode=FindAncestor,
                                                              AncestorType={x:Type Label}}}"></TextBlock>

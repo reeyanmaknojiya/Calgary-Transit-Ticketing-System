@@ -40,14 +40,13 @@ namespace TransitHubXAML
                          (adultMonthlyPrice * adultMonthlyAmount) +
                          (youthMonthlyPrice * youthMonthlyAmount) +
                          (lowIncomeMonthlyPrice * lowIncomeMonthlyAmount);
-
+       
             return val;
         }
 
         public storePage()
         {   
             InitializeComponent();
-         
         }
 
         private void AddToCart_Click(object sender, RoutedEventArgs e)

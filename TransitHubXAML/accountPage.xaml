@@ -8,22 +8,37 @@
       d:DesignHeight="800" d:DesignWidth="450"
       Title="accountPage">
 
-    <Grid VerticalAlignment="Center" Height="514" Margin="0,158,0,100.5">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="222.5*"/>
-            <ColumnDefinition Width="222.5*"/>
-        </Grid.ColumnDefinitions>
-        <Image HorizontalAlignment="Left" Height="150" Margin="148,-172,0,0" VerticalAlignment="Top" Width="158" Source="Resources/logo.png" RenderTransformOrigin="0.526,1.513" Grid.ColumnSpan="2"/>
-        <Label x:Name="name" Content="Username" HorizontalContentAlignment="Center" FontSize="40" VerticalAlignment="Top" Grid.ColumnSpan="2" Margin="4,-18,10,0" Height="70" Width="435" Loaded="Name_Loaded"/>
-        <Button Content="   Account" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="25" Width="350" Grid.ColumnSpan="2" Margin="45,66,0,0" Height="46" Click="Button_Click"/>
-        <Button Content="      Payment Methods" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="25" Width="350" Grid.ColumnSpan="2" Margin="45,156,0,0" Height="46" Click="Button_Click_1"/>
-        <Button Content="    Purchase History" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="25" Width="350" Grid.ColumnSpan="2" Margin="45,246,0,0" Height="46" Click="Button_Click_2"/>
-        <Button Content="    Verification" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="25" Width="350" Grid.ColumnSpan="2" Margin="45,336,0,0" Height="46" Click="Button_Click_3"/>
-        <Button Content="Logout" Foreground="white" Background="#B83A3F" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="30" Width="450" Grid.ColumnSpan="2" Margin="0,416,0,0" Height="70"/>
-        <Image HorizontalAlignment="Left" Height="46" Margin="59,156,0,0" VerticalAlignment="Top" Width="66" Source="Resources/credit-card.png" RenderTransformOrigin="0.526,1.513"/>
-        <Image HorizontalAlignment="Left" Height="38" Margin="60,250,0,0" VerticalAlignment="Top" Width="57" Source="Resources/history.png" RenderTransformOrigin="0.526,1.513"/>
-        <Image HorizontalAlignment="Left" Height="38" Margin="62,340,0,0" VerticalAlignment="Top" Width="60" Source="Resources/checkmark.png" RenderTransformOrigin="0.526,1.513"/>
-        <Image HorizontalAlignment="Left" Height="38" Margin="62,70,0,0" VerticalAlignment="Top" Width="60" Source="Resources/account.png" RenderTransformOrigin="0.526,1.513"/>
-        <Image HorizontalAlignment="Left" Height="50" Margin="45,-140,0,0" VerticalAlignment="Top" Width="77" Source="Resources/back-arrow.png" RenderTransformOrigin="0.526,1.513"/>
-    </Grid>
+    <StackPanel>
+        <Grid VerticalAlignment="Center" Height="186">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150*"/>
+                <ColumnDefinition Width="150*"/>
+                <ColumnDefinition Width="150*"/>
+            </Grid.ColumnDefinitions>
+            <Image Grid.Column="0" HorizontalAlignment="Left" Height="95" Margin="10,37,0,0" VerticalAlignment="Top" Width="112" Source="Resources/back-arrow.png" RenderTransformOrigin="0.526,1.513"/>
+            <Image Source="Resources/logout.png" HorizontalAlignment="Left" Height="66" Margin="58,50,0,0" VerticalAlignment="Top" Width="66" Grid.Column="2"/>
+            <Image HorizontalAlignment="Left" Height="150" Margin="0,10,0,0" VerticalAlignment="Top" Width="158" Source="Resources/logo.png" RenderTransformOrigin="0.526,1.513" Grid.ColumnSpan="2" Grid.Column="1"/>
+            <Label Content="Logout" Grid.Column="2" HorizontalAlignment="Left" Margin="58,116,0,0" VerticalAlignment="Top" Width="60" FontSize="15"/>
+        </Grid>
+        <Grid VerticalAlignment="Center" Height="514" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="222.5*"/>
+                <ColumnDefinition Width="222.5*"/>
+            </Grid.ColumnDefinitions>
+
+
+            <Label x:Name="name" Content="Username" HorizontalContentAlignment="Center" FontSize="40" VerticalAlignment="Top" Grid.ColumnSpan="2" Margin="4,-18,10,0" Height="70" Width="435" Loaded="Name_Loaded"/>
+            <Button Content="   Account" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="25" Width="350" Grid.ColumnSpan="2" Margin="45,66,0,0" Height="46" Click="Button_Click"/>
+            <Button Content="      Payment Methods" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="25" Width="350" Grid.ColumnSpan="2" Margin="45,156,0,0" Height="46" Click="Button_Click_1"/>
+            <Button Content="    Purchase History" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="25" Width="350" Grid.ColumnSpan="2" Margin="45,246,0,0" Height="46" Click="Button_Click_2"/>
+            <Button Content="    Verification" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="25" Width="350" Grid.ColumnSpan="2" Margin="45,336,0,0" Height="46" Click="Button_Click_3"/>
+            <!--<Button Content="Logout" Foreground="white" Background="#B83A3F" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="30" Width="450" Grid.ColumnSpan="2" Margin="0,416,0,0" Height="70"/>-->
+            <Image HorizontalAlignment="Left" Height="46" Margin="59,156,0,0" VerticalAlignment="Top" Width="66" Source="Resources/credit-card.png" RenderTransformOrigin="0.526,1.513"/>
+            <Image HorizontalAlignment="Left" Height="38" Margin="60,250,0,0" VerticalAlignment="Top" Width="57" Source="Resources/history.png" RenderTransformOrigin="0.526,1.513"/>
+            <Image HorizontalAlignment="Left" Height="38" Margin="62,340,0,0" VerticalAlignment="Top" Width="60" Source="Resources/checkmark.png" RenderTransformOrigin="0.526,1.513"/>
+            <Image HorizontalAlignment="Left" Height="38" Margin="62,70,0,0" VerticalAlignment="Top" Width="60" Source="Resources/account.png" RenderTransformOrigin="0.526,1.513"/>
+
+
+        </Grid>
+    </StackPanel>
 </Page>

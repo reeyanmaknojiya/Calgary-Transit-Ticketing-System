@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Text.RegularExpressions;
 
 namespace TransitHubXAML
 {
@@ -20,9 +21,24 @@ namespace TransitHubXAML
     /// </summary>
     public partial class paymentInformationPage : Page
     {
+       
         public paymentInformationPage()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            //TODO: Verify input
+            //MatchCollection match = ;
+            //if (!Regex.Matches(cardHolder.Text, "/ ^[a - z,.'-]+$/i").Success)
+            //{
+            //    MessageBox.Show("Bad cardholder name");
+            //    return;
+            //}
+
+            App.Current.Properties["paymentMethod"] = "newCard";
+            this.NavigationService.Navigate(new thankYou());
         }
     }
 }
