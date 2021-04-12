@@ -23,7 +23,6 @@
         </Grid.RowDefinitions>
         <TextBlock Grid.Column="1" FontSize="30" Grid.ColumnSpan="2" Margin="121,9,73,21" Text="Edit Account" Grid.RowSpan="2"/>
         <Label Content="Name:" Grid.Column="2" HorizontalAlignment="Left" Margin="4,16,0,0" Grid.Row="4" VerticalAlignment="Top" Height="44" Width="173" FontSize="22"/>
-        <Button Content="Save Changes" HorizontalAlignment="Left" Margin="1,611,0,0" VerticalAlignment="Top" Width="449" Height="70" FontSize="30" Background="#FFC43A3F" Foreground="White" Grid.Row="4" Grid.ColumnSpan="4"/>
         <Image Grid.Column="2" MouseDown="Back_Click" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="69" Source="Resources/back-arrow.png" Margin="1,9,0,0" Grid.RowSpan="2"/>
         <Label x:Name="name" Loaded="Name_Loaded" Content="John Smith" Grid.Column="2" HorizontalAlignment="Left" Margin="5,56,0,0" Grid.Row="4" VerticalAlignment="Top" Height="44" Width="361" FontSize="25"/>
         <Label Content="Email:" Grid.Column="2" HorizontalAlignment="Left" Margin="5,258,0,0" Grid.Row="4" VerticalAlignment="Top" Height="44" Width="173" FontSize="22"/>
