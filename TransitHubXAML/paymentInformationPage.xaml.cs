@@ -31,7 +31,7 @@ namespace TransitHubXAML
         {
             //TODO: Verify input
             bool badInput = false;
-            if (!Regex.IsMatch(cardHolder.Text, "^[a-zA-Z]+\\s[a-zA-Z]+$"))
+            if (!Regex.IsMatch(cardHolder.Text, "^(\\s)*[A-Za-z]+((\\s)?((\\'|\\-|\\.)?([A-Za-z])+))*(\\s)*$"))
             {
                 //Bad name
                 cardHolder.Background = new SolidColorBrush(System.Windows.Media.Colors.LightSalmon);

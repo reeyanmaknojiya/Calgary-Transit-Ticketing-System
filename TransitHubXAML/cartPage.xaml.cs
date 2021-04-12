@@ -193,7 +193,7 @@ namespace TransitHubXAML
         private void checkoutButton_Click(object sender, RoutedEventArgs e)
         {
             if (adultTicketAmount == 0 &&
-               youthMonthlyAmount == 0 &&
+               youthTicketAmount == 0 &&
                adultMonthlyAmount == 0 &&
                youthMonthlyAmount == 0 &&
                lowIncomeMonthlyAmount == 0)
@@ -201,8 +201,20 @@ namespace TransitHubXAML
             else
             {
                 //TODO, we have to send the data to 
+                adultTicketAmount = 0;
+                youthTicketAmount = 0;
+                adultMonthlyAmount = 0;
+                youthMonthlyAmount = 0;
+                lowIncomeMonthlyAmount = 0;
+
+                adultTicketAmountLabel.Content = 0;
+                youthTicketAmountLabel.Content = 0;
+                adultMonthlyAmountLabel.Content = 0;
+                youthMonthlyAmountLabel.Content = 0;
+                lowIncomeAmountLabel.Content = 0;
                 this.NavigationService.Navigate(new checkout());
                 //reset everything
+              
             }
         }
 

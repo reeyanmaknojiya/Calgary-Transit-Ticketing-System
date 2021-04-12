@@ -27,7 +27,8 @@ namespace TransitHubXAML
             if (App.Current.Properties.Contains("itemsToCart"))
             {
                 int[] inCart = (int[])App.Current.Properties["itemsToCart"];
-                fillOutOrder(inCart); 
+                fillOutOrder(inCart);
+                App.Current.Properties.Remove("itemsToCart");
             }
         }
 
@@ -55,6 +56,8 @@ namespace TransitHubXAML
 
             DateTime date = DateTime.Now;
             dateLabel.Content = date.Day + "/" + date.Month + "/" + date.Year; 
+
+
         }
     }
 }

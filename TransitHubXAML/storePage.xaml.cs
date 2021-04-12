@@ -63,7 +63,7 @@ namespace TransitHubXAML
         private void AddToCart_Click(object sender, RoutedEventArgs e)
         {
             if(adultTicketAmount == 0 &&
-               youthMonthlyAmount == 0 &&
+               youthTicketAmount == 0 &&
                adultMonthlyAmount == 0 &&
                youthMonthlyAmount == 0 &&
                lowIncomeMonthlyAmount == 0)
@@ -107,7 +107,6 @@ namespace TransitHubXAML
 
             ticketsAddToCart.Content = "Add To Cart $0.00";
             passesAddToCart.Content = ticketsAddToCart.Content;
-
 
            
             MainWindow wnd = (MainWindow)Window.GetWindow(this);
