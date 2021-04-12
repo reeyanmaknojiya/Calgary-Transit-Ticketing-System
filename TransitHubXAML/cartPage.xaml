@@ -22,7 +22,6 @@
             <Button Name="adultTicketMinus" Content="-" Background="White" HorizontalAlignment="Left" Margin="243,102,0,0" VerticalAlignment="Top" Width="40" Height="37" FontSize="25" Click="adultTicketMinus_Click" Foreground="#FF707070"/>
             <Button Name="youthTicketMinus" Content="-" Background="White" HorizontalAlignment="Left" Margin="243,202,0,0" VerticalAlignment="Top" Width="40" Height="37" FontSize="25" Click="youthTicketMinus_Click" Foreground="#FF707070"/>
             <Button Name="youthTicketPlus" Content="+" Background="White" HorizontalAlignment="Left" Margin="353,202,0,0" VerticalAlignment="Top" Width="40" Height="37" FontSize="25" Click="youthTicketPlus_Click" Foreground="#FF707070"/>
-            <Label Content="&lt;" Foreground="White" HorizontalAlignment="Left" Margin="37,-10,0,0" VerticalAlignment="Top" Height="75" Width="57" FontSize="50"/>
             <Rectangle Fill="#B83A3F" Panel.ZIndex="-1" HorizontalAlignment="Left" Height="71" Stroke="{x:Null}" StrokeThickness="0.5" VerticalAlignment="Top" Width="450"/>
             <Rectangle Fill="#FFACACAC" HorizontalAlignment="Left" Height="1" Stroke="{x:Null}" StrokeThickness="0.5" VerticalAlignment="Top" Width="450" Margin="0,169,0,0"/>
             <Rectangle Fill="#FFACACAC" HorizontalAlignment="Left" Height="1" Stroke="{x:Null}" StrokeThickness="0.5" VerticalAlignment="Top" Width="452" Margin="0,269,-2,0"/>
