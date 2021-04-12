@@ -68,9 +68,6 @@
     <Compile Include="checkout.xaml.cs">
       <DependentUpon>checkout.xaml</DependentUpon>
     </Compile>
-    <Compile Include="chooseLoginPage.xaml.cs">
-      <DependentUpon>chooseLoginPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="CustomControl\MenuWithSubMenuControl.xaml.cs">
       <DependentUpon>MenuWithSubMenuControl.xaml</DependentUpon>
     </Compile>
@@ -216,6 +213,9 @@
     </Compile>
     <Compile Include="chooseLogin.xaml.cs">
       <DependentUpon>chooseLogin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="chooseLoginPage.xaml.cs">
+      <DependentUpon>chooseLoginPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
@@ -432,6 +432,12 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\invisible.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\eye.png" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Accounts.txt">
