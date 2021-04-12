@@ -163,6 +163,24 @@
     <Compile Include="VerificationPage.xaml.cs">
       <DependentUpon>VerificationPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="EditAccountBirthdayPage.xaml.cs">
+      <DependentUpon>EditAccountBirthdayPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditAccountEmailPage.xaml.cs">
+      <DependentUpon>EditAccountEmailPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditAccountNamePage.xaml.cs">
+      <DependentUpon>EditAccountNamePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditAccountPasswordPage.xaml.cs">
+      <DependentUpon>EditAccountPasswordPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditAccountPhonePage.xaml.cs">
+      <DependentUpon>EditAccountPhonePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LogoutConfirmationPage.xaml.cs">
+      <DependentUpon>LogoutConfirmationPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="windowAccess.cs" />
     <Page Include="accountPage.xaml">
       <SubType>Designer</SubType>
@@ -333,6 +351,30 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="VerificationPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EditAccountBirthdayPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EditAccountEmailPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EditAccountNamePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EditAccountPasswordPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EditAccountPhonePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LogoutConfirmationPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
