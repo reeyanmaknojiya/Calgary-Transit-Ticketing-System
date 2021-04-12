@@ -48,5 +48,9 @@ namespace TransitHubXAML
         {
             this.NavigationService.Navigate(new VerificationPage());
         }
+        private void Logout(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new LogoutConfirmationPage());
+        }
     }
 }
