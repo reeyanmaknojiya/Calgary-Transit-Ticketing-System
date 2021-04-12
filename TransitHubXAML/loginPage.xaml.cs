@@ -21,6 +21,7 @@ namespace TransitHubXAML
     /// </summary>
     public partial class loginPage : Page
     {
+        String password;
         public loginPage()
         {
             InitializeComponent();
@@ -28,6 +29,17 @@ namespace TransitHubXAML
         }
         private void Login_Click(object sender, RoutedEventArgs e)
         {
+            // get password
+            if (passwordUnmask.Visibility != Visibility.Visible)
+            {
+                password = passwordBox.Password;
+            }
+            else
+            {
+                password = passwordUnmask.Text;
+            }
+
+
             if (textBoxEmail.Text == "johnson@gmail.com" & passwordBox.Password == "johnson123")
             {
                 User.loggedIn = true;

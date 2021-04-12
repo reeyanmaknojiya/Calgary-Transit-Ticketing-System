@@ -53,9 +53,9 @@
         <TextBox x:Name="phoneText" Grid.Column="2" HorizontalAlignment="Left" Height="42" Margin="17,334,0,0" Grid.Row="4" TextWrapping="NoWrap" VerticalAlignment="Top" Width="354" FontSize="24"/>
         <Label Content="Phone Number" Grid.Column="2" HorizontalAlignment="Left" Margin="11,296,0,0" Grid.Row="4" VerticalAlignment="Top" Height="44" Width="173" FontSize="22"/>
         <Label Content="Password" Grid.Column="2" HorizontalAlignment="Left" Margin="11,382,0,0" Grid.Row="4" VerticalAlignment="Top" Height="44" Width="173" FontSize="24"/>
-        <TextBox x:Name="passwordUnmask" Grid.Column="2"  Visibility="Hidden" MaxLength="21" HorizontalAlignment="Left" Height="42" Margin="18,419,0,0" Grid.Row="4" TextWrapping="NoWrap" VerticalAlignment="Top" Width="354" FontSize="24"/>
+        <TextBox x:Name="passwordUnmask" Grid.Column="2"  Visibility="Hidden" MaxLength="21" HorizontalAlignment="Left" Height="42" Margin="18,421,0,0" Grid.Row="4" TextWrapping="NoWrap" VerticalAlignment="Top" Width="354" FontSize="24"/>
         <PasswordBox x:Name="passwordBox" Grid.Column="2" MaxLength="21" HorizontalAlignment="Left" Height="42" Margin="18,421,0,0" Grid.Row="4" VerticalAlignment="Top" Width="354" FontSize="24"/>
-        <TextBox x:Name="confirmPasswordUnmask" Grid.Column="2"  Visibility="Hidden" MaxLength="21" HorizontalAlignment="Left" Height="42" Margin="17,502,0,0" Grid.Row="4" TextWrapping="Wrap" VerticalAlignment="Top" Width="354" FontSize="24"/>
+        <TextBox x:Name="confirmPasswordUnmask" Grid.Column="2"  Visibility="Hidden" MaxLength="21" HorizontalAlignment="Left" Height="42" Margin="17,505,0,0" Grid.Row="4" TextWrapping="Wrap" VerticalAlignment="Top" Width="354" FontSize="24"/>
         <PasswordBox x:Name="confirmPasswordBox" Grid.Column="2" MaxLength="21" HorizontalAlignment="Left" Height="42" Margin="17,505,0,0" Grid.Row="4" VerticalAlignment="Top" Width="354" FontSize="24"/>
         <Label Content="Birthday" Grid.Column="2" HorizontalAlignment="Left" Margin="10,121,0,0" Grid.Row="4" VerticalAlignment="Top" Height="44" Width="173" FontSize="22"/>
         <Image x:Name="viewEye" Grid.Column="2" MouseDown="View_Password_Click" HorizontalAlignment="Left" Height="33" Margin="330,426,0,0" Grid.Row="4" VerticalAlignment="Top" Width="35" Source="Resources/invisible.png"/>

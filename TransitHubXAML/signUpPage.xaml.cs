@@ -23,6 +23,8 @@ namespace TransitHubXAML
     {
         String password;
         String confirmPassword;
+        bool valid = true;
+
         public signUpPage()
         {
             InitializeComponent();
@@ -36,8 +38,22 @@ namespace TransitHubXAML
 
         private void SignUp_Click(object sender, RoutedEventArgs e)
         {
+            // reset
+            firstNameText.BorderBrush = System.Windows.Media.Brushes.Gray;
+            lastNameText.BorderBrush = System.Windows.Media.Brushes.Gray;
+            dayText.BorderBrush = System.Windows.Media.Brushes.Gray;
+            yearText.BorderBrush = System.Windows.Media.Brushes.Gray;
+            monthText.BorderBrush = System.Windows.Media.Brushes.Gray;
+            emailText.BorderBrush = System.Windows.Media.Brushes.Gray;
+            phoneText.BorderBrush = System.Windows.Media.Brushes.Gray;
+            passwordUnmask.BorderBrush = System.Windows.Media.Brushes.Gray;
+            passwordBox.BorderBrush = System.Windows.Media.Brushes.Gray;
+            confirmPasswordUnmask.BorderBrush = System.Windows.Media.Brushes.Gray;
+            confirmPasswordBox.BorderBrush = System.Windows.Media.Brushes.Gray;
+            valid = true;
+
             // get password
-            if (passwordUnmask.Visibility == Visibility.Visible)
+            if (passwordUnmask.Visibility != Visibility.Visible)
             {
                 password = passwordBox.Password;
             } else
@@ -45,23 +61,83 @@ namespace TransitHubXAML
                 password = passwordUnmask.Text;
             }
 
-            if (confirmPasswordUnmask.Visibility == Visibility.Visible)
+            if (confirmPasswordUnmask.Visibility != Visibility.Visible)
             {
-                password = confirmPasswordBox.Password;
+                confirmPassword = confirmPasswordBox.Password;
             }
             else
             {
-                password = confirmPasswordUnmask.Text;
+                confirmPassword = confirmPasswordUnmask.Text;
             }
 
-            if (firstNameText.Text == "" ^ lastNameText.Text == "") {
-                nameError.Visibility = Visibility.Visible;
+            if (String.IsNullOrEmpty(firstNameText.Text)) {
+                //nameError.Visibility = Visibility.Visible;
+                firstNameText.BorderBrush = System.Windows.Media.Brushes.Red;
+                valid = false;
             }
-            else if (!Regex.IsMatch(emailText.Text, @"^[a-zA-Z][\w\.-]*[a-zA-Z0-9]@[a-zA-Z0-9][\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]$"))
+            if (String.IsNullOrEmpty(lastNameText.Text))
             {
-                emailError.Visibility = Visibility.Visible;
+                lastNameText.BorderBrush = System.Windows.Media.Brushes.Red;
+                valid = false;
             }
-            else
+            if (!Regex.IsMatch(dayText.Text, "\\d{2}") & !Regex.IsMatch(dayText.Text, "\\d{1}"))
+            {
+                dayText.BorderBrush = System.Windows.Media.Brushes.Red;
+                valid = false;
+            }
+            if (!String.IsNullOrEmpty(dayText.Text))
+            {
+                if (int.Parse(dayText.Text) > 31 ^ int.Parse(dayText.Text) < 1)
+                {
+                    dayText.BorderBrush = System.Windows.Media.Brushes.Red;
+                    valid = false;
+                }
+            }
+            if (!Regex.IsMatch(yearText.Text, "\\d{4}"))
+            {
+                yearText.BorderBrush = System.Windows.Media.Brushes.Red;
+                valid = false;
+            }
+            if (!String.IsNullOrEmpty(yearText.Text))
+            {
+                if (int.Parse(yearText.Text) > 2021 ^ int.Parse(yearText.Text) < 1900)
+                {
+                    yearText.BorderBrush = System.Windows.Media.Brushes.Red;
+                    valid = false;
+                }
+            }
+            if (!Regex.IsMatch(emailText.Text, @"^[a-zA-Z][\w\.-]*[a-zA-Z0-9]@[a-zA-Z0-9][\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]$"))
+            {
+                //emailError.Visibility = Visibility.Visible;
+                emailText.BorderBrush = System.Windows.Media.Brushes.Red;
+                valid = false;
+            }
+
+            ComboBoxItem typeItem = (ComboBoxItem)monthText.SelectedItem;
+            string month = typeItem.Content.ToString();
+
+            if (month == "Month")
+            {
+                monthText.BorderBrush = System.Windows.Media.Brushes.Red;
+                valid = false;
+            }
+
+            if (!Regex.IsMatch(phoneText.Text, "\\d{10}") & !Regex.IsMatch(phoneText.Text, "[(]\\d{3}[)]\\d{3}[-]?\\d{4}"))
+            {
+                phoneText.BorderBrush = System.Windows.Media.Brushes.Red;
+                valid = false;
+            }
+
+            if (password != confirmPassword ^ String.IsNullOrEmpty(password))
+            {
+                passwordUnmask.BorderBrush = System.Windows.Media.Brushes.Red;
+                passwordBox.BorderBrush = System.Windows.Media.Brushes.Red;
+                confirmPasswordUnmask.BorderBrush = System.Windows.Media.Brushes.Red;
+                confirmPasswordBox.BorderBrush = System.Windows.Media.Brushes.Red;
+                valid = false;
+            }
+
+            if (valid == true)
             {
                 User.firstName = firstNameText.Text;
                 User.lastName = lastNameText.Text;
@@ -70,7 +146,7 @@ namespace TransitHubXAML
                 User.bYear = yearText.Text;
                 User.email = emailText.Text;
                 User.phone = phoneText.Text;
-                User.password = passwordBox.Password;
+                User.password = password;
                 User.loggedIn = true;
 
                 this.NavigationService.Navigate(new storePage());
