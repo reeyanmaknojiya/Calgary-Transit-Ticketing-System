@@ -101,7 +101,7 @@
                     <Button Name="adultMonthlyMinus" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="-" Height="51" Width="50" Canvas.Left="255" Canvas.Top="56" FontSize="35" Click="adultMonthlyMinus_Click" Background="White" Foreground="#FF707070"/>
                     <Button Name="adultMonthlyPlus" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="+" Height="51" Width="50" Canvas.Left="367" Canvas.Top="56" FontSize="35" Click="adultMonthlyPlus_Click" Background="White" Foreground="#FF707070"/>
                     <Label Content="Youth Monthly Pass" Height="39" Canvas.Top="146" Width="240" Canvas.Left="10" FontSize="24"/>
-                    <Rectangle Fill="#FFACACAC" Height="1" Stroke="#FFACACAC" Width="472" Canvas.Left="-28" Canvas.Top="134"/>
+                    <Rectangle Fill="#FFACACAC" Height="1" Stroke="#FFACACAC" Width="472" Canvas.Left="-28" Canvas.Top="138"/>
                     <Label Foreground="black" Content="For passengers ages 6-17" FontSize="16" Canvas.Left="10" Canvas.Top="190">
                     </Label>
                     <Label Content="$79.00" FontSize="24" Canvas.Left="10" Canvas.Top="221" />

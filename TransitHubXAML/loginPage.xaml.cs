@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Text.RegularExpressions;
 
 namespace TransitHubXAML
 {
@@ -21,14 +22,25 @@ namespace TransitHubXAML
     /// </summary>
     public partial class loginPage : Page
     {
+        String password;
         public loginPage()
         {
             InitializeComponent();
+            loginErrorText.Content = "";
         }
         private void Login_Click(object sender, RoutedEventArgs e)
         {
-            string email = emailText.Text;
-            string password = passwordText.Text;
+            // get password
+            if (passwordUnmask.Visibility != Visibility.Visible)
+            {
+                password = passwordBox.Password;
+            }
+            else
+            {
+                password = passwordUnmask.Text;
+            }
+
+            string email = textBoxEmail.Text;
             bool valid = false;
 
             //Pass the filepath and filename to the StreamWriter Constructor
@@ -64,28 +76,33 @@ namespace TransitHubXAML
                         User.phone = phoneN;
                         User.password = password;
                         User.loggedIn = true;
+
+                        this.NavigationService.Navigate(new storePage());
                     }
                 }
                 //account.Add(line);
                 line = sr.ReadLine();
             }
             sr.Close();
-            if (valid == true)
+
+            if (valid == false)
             {
-                User.loggedIn = true;
-                User.firstName = "John";
-                User.lastName = "Johnson";
-                User.bMonth = "March";
-                User.bDay = "1";
-                User.bYear = "1989";
-                User.email = "johnjohnson@gmail.com";
-                User.password = "johnson123";
-                User.phone = "(403)123-4567";
-
-                TempUser.loggedIn = false;
-
+                loginErrorText.Content = "Incorrect login or password";
+                textBoxEmail.BorderBrush = System.Windows.Media.Brushes.Red;
+                passwordBox.BorderBrush = System.Windows.Media.Brushes.Red;
+                passwordUnmask.BorderBrush = System.Windows.Media.Brushes.Red;
+                passwordLabel.Margin = new Thickness(11, 223, 0, 0);
+                passwordBox.Margin = new Thickness(18, 263, 0, 0);
+                passwordUnmask.Margin = new Thickness(18, 263, 0, 0);
+                rememberCheckBox.Margin = new Thickness(18, 319, 0, 0);
+                rememberText.Margin = new Thickness(30, 310, 0, 0);
+                forgotPassText.Margin = new Thickness(250, 310, 0, 0);
+                viewEye.Margin = new Thickness(331, 267, 0, 0);
+                hideEye.Margin = new Thickness(331, 267, 0, 0);
+            }
+            else if (valid == true)
+            {
                 this.NavigationService.Navigate(new storePage());
-
             }
         }
 
@@ -98,5 +115,24 @@ namespace TransitHubXAML
         {
             this.NavigationService.Navigate(new signUpPage());
         }
+
+        private void View_Password_Click(object sender, RoutedEventArgs e)
+        {
+            passwordUnmask.Visibility = Visibility.Visible;
+            passwordBox.Visibility = Visibility.Collapsed;
+            passwordUnmask.Text = passwordBox.Password;
+            viewEye.Visibility = Visibility.Collapsed;
+            hideEye.Visibility = Visibility.Visible;
+        }
+
+        private void Hide_Password_Click(object sender, RoutedEventArgs e)
+        {
+            passwordUnmask.Visibility = Visibility.Collapsed;
+            passwordBox.Visibility = Visibility.Visible;
+            passwordBox.Password = passwordUnmask.Text;
+            viewEye.Visibility = Visibility.Visible;
+            hideEye.Visibility = Visibility.Collapsed;
+        }
+
     }
 }
