@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -43,6 +43,26 @@ namespace TransitHubXAML
         private void Phone_Loaded(object sender, RoutedEventArgs e)
         {
             phone.Content = User.phone;
+        }
+        private void Edit1(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new EditAccountNamePage());
+        }
+        private void Edit2(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new EditAccountBirthdayPage());
+        }
+        private void Edit3(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new EditAccountEmailPage());
+        }
+        private void Edit4(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new EditAccountPhonePage());
+        }
+        private void Edit5(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new EditAccountPasswordPage());
         }
     }
 }
