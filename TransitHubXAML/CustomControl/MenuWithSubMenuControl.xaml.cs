@@ -14,6 +14,8 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using TransitHubXAML.ViewModel;
 
+// Reference: https://www.youtube.com/watch?v=EedNnnzyQLw
+
 namespace TransitHubXAML.CustomControl
 {
     /// <summary>

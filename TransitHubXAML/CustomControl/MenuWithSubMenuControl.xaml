@@ -5,45 +5,36 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:TransitHubXAML.CustomControl"
              mc:Ignorable="d" 
-             x:Name="this"
-             >
+             x:Name="this">
+    <!--Reference: https://www.youtube.com/watch?v=EedNnnzyQLw-->
     <UserControl.Resources>
 
         <Thickness x:Key="DefaultSubMenuPadding" Left="10"/>
 
         <Style x:Key="MenuTextStyle" TargetType="{x:Type TextBlock}">
-            <Setter Property="Foreground" Value="Green"/>
             <Setter Property="VerticalAlignment" Value="Center"/>
-            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontSize" Value="15"/>
 
             <!--change foreground on mouseover and menu item selection-->
             <Style.Triggers>
-                <DataTrigger Binding="{Binding IsMouseOver, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=ToggleButton}}" Value="True">
-                    <Setter Property="Foreground" Value="Orange"/>
-                </DataTrigger>
                 <DataTrigger Binding="{Binding IsChecked, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=ToggleButton}}" Value="True">
-                    <Setter Property="Foreground" Value="Purple"/>
+                    <Setter Property="Foreground" Value="White"/>
                 </DataTrigger>
-                <DataTrigger Binding="{Binding IsMouseOver, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=ListBoxItem}}" Value="True">
-                    <Setter Property="Foreground" Value="Orange"/>
-                </DataTrigger>
-                <DataTrigger Binding="{Binding IsSelected, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=ListBoxItem}}" Value="True">
-                    <Setter Property="Foreground" Value="Blue"/>
+
+                <!--causing binding errors but changes the the subItemMenu text color-->
+                <DataTrigger Binding="{Binding IsVisible, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=ListBoxItem}}" Value="True">
+                    <Setter Property="Foreground" Value="White"/>
                 </DataTrigger>
             </Style.Triggers>
         </Style>
 
         <Style x:Key="MenuButtonStyle" TargetType="{x:Type ToggleButton}">
-            <Setter Property="Height" Value="auto"/>
+
             <Setter Property="BorderThickness" Value="0"/>
-            <Setter Property="Margin" Value="10,10,10,0"/>
-            <Setter Property="Background" Value="PaleVioletRed"/>
+            <Setter Property="Margin" Value="15,10,15,0"/>
+            <Setter Property="Background" Value="#B83A3F"/>
             <Setter Property="Focusable" Value="False"/>
             <Setter Property="HorizontalAlignment" Value="Stretch"/>
-            <Setter Property="HorizontalContentAlignment" Value="Center"/>
-            <Setter Property="TextBlock.VerticalAlignment" Value="Center"/>
-            <Setter Property="TextBlock.TextWrapping" Value="Wrap"/>
-
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="{x:Type ToggleButton}">
@@ -68,8 +59,9 @@
 
         <!--cutomizing listbox & listboxitems-->
         <Style TargetType="{x:Type ListBox}">
-            <Setter Property="BorderThickness" Value="10"/>
-            <Setter Property="Background" Value="Blue"/>
+            <Setter Property="BorderThickness" Value=".3"/>
+            <Setter Property="Background" Value="#B83A3F"/>
+            <Setter Property="Margin" Value="15,0,15,10"/>
             <Setter Property="SelectionMode" Value="Single"/>
             <Setter Property="Focusable" Value="False"/>
             <Setter Property="SelectedIndex" Value="0"/>
@@ -86,9 +78,8 @@
             </Style.Triggers>
         </Style>
         <Style TargetType="{x:Type ListBoxItem}">
-            <Setter Property="Background" Value="GreenYellow"/>
             <Setter Property="BorderThickness" Value="0"/>
-            <!--<Setter Property="Height" Value="30"/>-->
+
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="{x:Type ListBoxItem}">
@@ -121,13 +112,15 @@
                                  Content="{Binding MenuText}"
                                  GroupName="MainMenu"
                                  Height="30"
-                                 Style="{StaticResource MenuButtonStyle}"/>
+                                 Style="{StaticResource MenuButtonStyle}"
+                                 />
 
                     <!--sub menu list-->
                     <ListBox
                         ItemsSource="{Binding SubMenuList}"
                         ScrollViewer.VerticalScrollBarVisibility="Disabled"
-                        ScrollViewer.HorizontalScrollBarVisibility="Disabled"/>
+                        ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                        />
                 </StackPanel>
             </DataTemplate>
         </ItemsControl.ItemTemplate>

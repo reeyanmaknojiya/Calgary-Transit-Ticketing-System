@@ -6,66 +6,84 @@
         xmlns:local="clr-namespace:TransitHubXAML" xmlns:customcontrol="clr-namespace:TransitHubXAML.CustomControl"
         mc:Ignorable="d"
         Title="Help" Height="800" Width="450">
-    <ScrollViewer>
-        <StackPanel>
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="80"/>
-                    <RowDefinition Height="350"/>
-                    <RowDefinition Height="200"/>
-                    <RowDefinition/>
-                </Grid.RowDefinitions>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="70"/>
+        </Grid.RowDefinitions>
 
-                <Grid Background="MediumVioletRed">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition/>
-                        <ColumnDefinition/>
-                        <ColumnDefinition/>
-                        <ColumnDefinition/>
-                        <ColumnDefinition/>
-                    </Grid.ColumnDefinitions>
+        <!--header-->
+        <Grid Grid.Row="0">
+            <Grid Background="#B83A3F">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
 
-                    <TextBlock Text="&lt;" Foreground="Black" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="50"/>
-                    <TextBlock Text="HELP" Foreground="Black" Grid.Column="2" Grid.ColumnSpan="3" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="40"/>
-                </Grid>
+                <!--<Image Source="Resources/back-arrow.png"  Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50"/>-->
+                <TextBlock Text="HELP" Foreground="Black" Grid.Column="1" Grid.ColumnSpan="3" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="50" Margin="76,2,0,6"/>
+                <!--<Button Name="backBttn" Background="Transparent" Click="backBttn_Click">
+                    <Image Source="Resources/back-arrow.png"  Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50"/>
+                </Button>-->
+            </Grid>
+        </Grid>
 
-                <Grid Grid.Row="1" Background="CornflowerBlue">
+        <!--Body-->
+        <Grid Grid.Row="1"/>
+
+        <ScrollViewer Grid.Row="1">
+            <StackPanel>
+                <Grid Grid.Row="1" Background="Transparent">
                     <Grid.RowDefinitions>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="40"/>
                         <RowDefinition Height="50"/>
                         <RowDefinition Height="60"/>
                         <RowDefinition Height="70"/>
-                        <RowDefinition Height="70"/>
                         <RowDefinition Height="60"/>
                     </Grid.RowDefinitions>
-                    <Label Content="Customer Service" Foreground="White" Grid.Row="0" VerticalAlignment="Top" FontSize="25"/>
+                    <Label Content="Customer Service" Foreground="Black" Grid.Row="0" VerticalAlignment="Top" FontSize="25"/>
 
-                    <Label Content="General Inquiries" Foreground="White" Grid.Row="1" VerticalAlignment="Top" FontSize="25" Margin="14,0,-14,0"/>
-                    <Button Content="403-262-1000" Grid.Row="1" Height="50" Width="400" Margin="14,43,13,39" Grid.RowSpan="2"/>
-                    <Button Content="(TTY) 403-262-8087" Grid.Row="2" Height="50" Width="400" Margin="14,41,13,51" Grid.RowSpan="2"/>
+                    <Label Content="General Inquiries" Foreground="Black" VerticalAlignment="Top" FontSize="25" Margin="10,38,0,0" Grid.RowSpan="2"/>
+                    <Button Content="403-262-1000" Grid.Row="2" Height="50" Width="390" FontSize="18" BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Center" VerticalAlignment="Top" Background="#B83A3F" Foreground="white" />
+                    <Button Content="(TTY) 403-262-8087" Grid.Row="3" Height="50" Width="390" Grid.RowSpan="2" FontSize="18" BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,4,0,68" Background="#B83A3F" Foreground="white"/>
 
-                    <Label Content="Lost Property" Foreground="White" Grid.Row="3" VerticalAlignment="Top" FontSize="25" Margin="14,39,-14,0" Grid.RowSpan="2"/>
-                    <Button Content="403-268-1600" Grid.Row="4" Height="50" Width="400" Margin="14,10,13,1"/>
+                    <Label Content="Lost Property" Foreground="Black" Grid.Row="4" VerticalAlignment="Top" FontSize="25" Margin="10,8,0,0"/>
+                    <Button Content="403-268-1600" Grid.Row="4" Height="50" Width="390" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,56,0,0" Grid.RowSpan="2" Background="#B83A3F" Foreground="white" BorderBrush="Black"/>
                 </Grid>
 
-                <Grid Grid.Row="2" Background="LightPink">
+                <Grid Grid.Row="2" Background="White">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="60"/>
                         <RowDefinition Height="70"/>
                         <RowDefinition Height="70"/>
                     </Grid.RowDefinitions>
-                    <Label Content="Useful Links" Foreground="White" Grid.Row="0" VerticalAlignment="Top" FontSize="25" Margin="10,0,-10,0"/>
+                    <Label Content="Useful Links" Foreground="Black" Grid.Row="0" VerticalAlignment="Top" FontSize="25"/>
 
-                    <Button Content="Calgary Transit Website" Height="50" Width="400" Margin="14,48,13,32" Grid.RowSpan="2"/>
-                    <Button Content="Feedback" Grid.Row="1" Height="50" Width="400"  Grid.RowSpan="2" Margin="14,47,13,43" Click="Button_Click"/>
+                    <Button Content="Calgary Transit Website" Height="50" Width="390" Margin="14,48,13,32" Grid.RowSpan="2" FontSize="18" Background="#B83A3F" Foreground="white" BorderBrush="Black" BorderThickness="1"/>
+                    <Button Content="Feedback" Grid.Row="1" Height="50" Width="390"  Grid.RowSpan="2" Margin="14,47,13,43" FontSize="18" Background="#B83A3F" Foreground="white" BorderBrush="Black" BorderThickness="1"/>
                 </Grid>
 
-                <Grid Grid.Row="3" Background="LightGreen">
-                    <Label Content="FAQ" Foreground="White" Grid.Row="1" VerticalAlignment="Top" FontSize="25"/>
-                    <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="147" Margin="131,278,0,0" Stroke="Black" VerticalAlignment="Top" Width="168"/>
+                <Grid Grid.Row="3" Background="White">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="60"/>
+                    </Grid.RowDefinitions>
+                    <Label Content="FAQ" Foreground="Black" Grid.Row="0" VerticalAlignment="Top" FontSize="25"/>
 
-                    <customcontrol:MenuWithSubMenuControl SubMenuPadding="10,0,0,0" Margin="0,48,0,-48"/>
+                    <!--Reference: https://www.youtube.com/watch?v=EedNnnzyQLw-->
+                    <customcontrol:MenuWithSubMenuControl SubMenuPadding="15,0,0,0" Margin="0,48,0,-48"/>
                 </Grid>
-            </Grid>
-        </StackPanel>
-    </ScrollViewer>
+            </StackPanel>
+        </ScrollViewer>
+
+        <!--nav bar-->
+        <Grid Grid.Row="2"
+            Background="Gold"/>
+    </Grid>
 </Page>
