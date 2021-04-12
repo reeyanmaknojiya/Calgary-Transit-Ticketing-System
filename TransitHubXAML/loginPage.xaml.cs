@@ -72,6 +72,10 @@ namespace TransitHubXAML
                 line = sr.ReadLine();
             }
             sr.Close();
+            if (valid == true)
+            {
+                this.NavigationService.Navigate(new storePage());
+            }
         }
 
         private void Back_Click(object sender, RoutedEventArgs e)
