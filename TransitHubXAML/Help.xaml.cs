@@ -23,15 +23,5 @@ namespace TransitHubXAML
         {
             InitializeComponent();
         }
-
-        private void Window_Scroll(object sender, System.Windows.Controls.Primitives.ScrollEventArgs e)
-        {
-
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
     }
 }
