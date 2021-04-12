@@ -55,9 +55,9 @@ namespace TransitHubXAML
             receiptNumber.Content = rand.Next(9999, 99999).ToString();
 
             DateTime date = DateTime.Now;
-            dateLabel.Content = date.Day + "/" + date.Month + "/" + date.Year; 
+            dateLabel.Content = date.Day + "/" + date.Month + "/" + date.Year;
 
-
+            App.Current.Properties["currCost"] = "0.00";
         }
     }
 }

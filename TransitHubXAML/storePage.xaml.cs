@@ -92,7 +92,7 @@ namespace TransitHubXAML
             }
 
             App.Current.Properties["currCost"] = string.Format("{0:0.00}", calcCurrentCartTotal());
-            //TODO: Wipe out data once we Add To Cart
+           
             adultTicketAmount = 0;
             youthTicketAmount = 0;
             adultMonthlyAmount = 0;

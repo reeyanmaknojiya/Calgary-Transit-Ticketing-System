@@ -31,9 +31,21 @@ namespace TransitHubXAML
         private int adultMonthlyAmount = 0;
         private int youthMonthlyAmount = 0;
         private int lowIncomeMonthlyAmount = 0;
+        public int[] items = new int[5];
         public cartPage()
         {
             InitializeComponent();
+
+            if (TempUser.loggedIn) //Not low income user presently
+            {
+                botRect.Visibility = System.Windows.Visibility.Hidden;
+                lowIncomePassLabel.Visibility = System.Windows.Visibility.Hidden;
+                lowIncomePassLabel1.Visibility = System.Windows.Visibility.Hidden;
+                lowIncomeMinus.Visibility = System.Windows.Visibility.Hidden;
+                lowIncomeAmountLabel.Visibility = System.Windows.Visibility.Hidden;
+                lowIncomePlus.Visibility = System.Windows.Visibility.Hidden;
+            }
+
             if (App.Current.Properties.Contains("itemsToCart"))
             {
                 int[] inCart = (int[])App.Current.Properties["itemsToCart"];
@@ -52,14 +64,15 @@ namespace TransitHubXAML
                 lowIncomeAmountLabel.Content = inCart[(int)Enums.lowIncomeMonthly].ToString();
             }
 
-            if (App.Current.Properties.Contains("currCost"))
-            {
-                checkoutButton.Content = "Checkout $" + string.Format("{0:0.00}", App.Current.Properties["currCost"]);
-            }
-            else
-            {
-                checkoutButton.Content = "Checkout $0.00";
-            }
+            checkoutButton.Content = "Checkout $" + string.Format("{0:0.00}", calcCurrentCartTotal());
+            //if (App.Current.Properties.Contains("currCost"))
+            //{
+            //    checkoutButton.Content = "Checkout $" + string.Format("{0:0.00}", App.Current.Properties["currCost"]);
+            //}
+            //else
+            //{
+            //    checkoutButton.Content = "Checkout $0.00";
+            //}
             
             
         }
@@ -200,7 +213,29 @@ namespace TransitHubXAML
                 return;
             else
             {
-                //TODO, we have to send the data to 
+                if (App.Current.Properties.Contains("itemsToCart"))
+                {
+                    var temp = (int[])App.Current.Properties["itemsToCart"];
+                    App.Current.Properties.Remove("itemsToCart");
+                    temp[(int)Enums.adultTicket] = adultTicketAmount;
+                    temp[(int)Enums.youthTicket] = youthTicketAmount;
+                    temp[(int)Enums.adultMonthly] = adultMonthlyAmount;
+                    temp[(int)Enums.youthMonthly] = youthMonthlyAmount;
+                    temp[(int)Enums.lowIncomeMonthly] = lowIncomeMonthlyAmount;
+                   
+                    App.Current.Properties.Add("itemsToCart", temp);
+                }
+                else
+                {
+                    items[(int)Enums.adultTicket] = adultTicketAmount;
+                    items[(int)Enums.youthTicket] = youthTicketAmount;
+                    items[(int)Enums.adultMonthly] = adultMonthlyAmount;
+                    items[(int)Enums.youthMonthly] = youthMonthlyAmount;
+                    items[(int)Enums.lowIncomeMonthly] = lowIncomeMonthlyAmount;
+                    App.Current.Properties.Add("itemsToCart", items);
+                }
+                App.Current.Properties["currCost"] = string.Format("{0:0.00}", calcCurrentCartTotal());
+
                 adultTicketAmount = 0;
                 youthTicketAmount = 0;
                 adultMonthlyAmount = 0;

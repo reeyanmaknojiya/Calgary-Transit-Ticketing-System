@@ -9,15 +9,15 @@
     <Grid>
         <Label Content="Order Confirmation" HorizontalAlignment="Center" Margin="93,10,85,0" VerticalAlignment="Top" Width="272" FontSize="30" Foreground="White"/>
         <Label Content="Thank You" HorizontalAlignment="Left" Margin="152,93,0,0" VerticalAlignment="Top" FontSize="30"/>
-        <GroupBox Header="" HorizontalAlignment="Left" Height="100" Margin="28,154,0,0" VerticalAlignment="Top" Width="389">
-            <TextBlock Name="OrderDetailsText" HorizontalAlignment="Left" Margin="24,7,0,0" TextWrapping="Wrap" Text="Adult Ticket x2 &#xA;Youth Ticket x1" VerticalAlignment="Top" Height="60" Width="268" FontSize="20"/>
+        <GroupBox Header="" HorizontalAlignment="Left" Height="209" Margin="28,154,0,0" VerticalAlignment="Top" Width="389">
+            <TextBlock Name="OrderDetailsText" HorizontalAlignment="Left" Margin="24,7,0,0" TextWrapping="Wrap" Text="Adult Ticket x2 &#xA;Youth Ticket x1" VerticalAlignment="Top" Height="159" Width="268" FontSize="20"/>
         </GroupBox>
-        <Label Content="Order Date" HorizontalAlignment="Left" Margin="41,288,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <Label Name="dateLabel" Content="01/21/2021" HorizontalAlignment="Left" Margin="287,288,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <Label Content="Total" HorizontalAlignment="Left" Margin="41,327,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <Label Name="totalLabel" Content="$XXX.XX" HorizontalAlignment="Left" Margin="287,327,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <Label Content="Receipt Number" HorizontalAlignment="Left" Margin="41,366,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <Label Name="receiptNumber" Content="54687" HorizontalAlignment="Left" Margin="287,366,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label Content="Order Date" HorizontalAlignment="Left" Margin="37,405,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label Name="dateLabel" Content="01/21/2021" HorizontalAlignment="Left" Margin="283,405,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label Content="Total" HorizontalAlignment="Left" Margin="37,444,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label Name="totalLabel" Content="$XXX.XX" HorizontalAlignment="Left" Margin="283,444,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label Content="Receipt Number" HorizontalAlignment="Left" Margin="37,483,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label Name="receiptNumber" Content="54687" HorizontalAlignment="Left" Margin="283,483,0,0" VerticalAlignment="Top" FontSize="20"/>
         <Rectangle Fill="#B83A3F" Panel.ZIndex="-1" HorizontalAlignment="Left" Height="71" Stroke="{x:Null}" StrokeThickness="0.5" VerticalAlignment="Top" Width="450"/>
 
     </Grid>

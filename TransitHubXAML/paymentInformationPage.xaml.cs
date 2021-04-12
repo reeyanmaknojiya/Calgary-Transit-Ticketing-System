@@ -113,5 +113,10 @@ namespace TransitHubXAML
                 this.NavigationService.Navigate(new thankYou());
             }
         }
+
+        private void Label_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            this.NavigationService.Navigate(new checkout());
+        }
     }
 }

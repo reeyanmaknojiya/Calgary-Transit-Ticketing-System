@@ -76,7 +76,7 @@ namespace TransitHubXAML
                         User.phone = phoneN;
                         User.password = password;
                         User.loggedIn = true;
-
+                        TempUser.loggedIn = false;
                         this.NavigationService.Navigate(new storePage());
                     }
                 }
@@ -103,6 +103,9 @@ namespace TransitHubXAML
             else if (valid == true)
             {
                 this.NavigationService.Navigate(new storePage());
+                windowAccess.Wnd.image1.Source = new BitmapImage(new Uri("Resources/store_selected.png", UriKind.Relative));
+                windowAccess.Wnd.image5.Source = new BitmapImage(new Uri("Resources/accountNav.png", UriKind.Relative));
+                windowAccess.Wnd.currentIcon = 1;
             }
         }
 

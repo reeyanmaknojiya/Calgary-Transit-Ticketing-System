@@ -79,6 +79,9 @@
     <Compile Include="Models\Enums.cs" />
     <Compile Include="Models\paypal.cs" />
     <Compile Include="Models\storeItems.cs" />
+    <Compile Include="popUp.xaml.cs">
+      <DependentUpon>popUp.xaml</DependentUpon>
+    </Compile>
     <Compile Include="TempUser.cs" />
     <Compile Include="ticketDisplay.xaml.cs">
       <DependentUpon>ticketDisplay.xaml</DependentUpon>
@@ -160,6 +163,7 @@
     <Compile Include="VerificationPage.xaml.cs">
       <DependentUpon>VerificationPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="windowAccess.cs" />
     <Page Include="accountPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -229,6 +233,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="paymentInformationPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="popUp.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

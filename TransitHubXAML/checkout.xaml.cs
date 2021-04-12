@@ -61,20 +61,33 @@ namespace TransitHubXAML
 
         private void Paypal_Click(object sender, MouseButtonEventArgs e)
         {
+            ppRectangle.Fill = (SolidColorBrush)(new BrushConverter().ConvertFrom("#FFF4F4F5"));
             App.Current.Properties["paymentMethod"] = "paypal";
-            this.NavigationService.Navigate(new thankYou());
+
+            Window wnd = new popUp();
+            wnd.Show();
+            //this.NavigationService.Navigate(new thankYou());
         }
 
         private void MasterCard_Click(object sender, MouseButtonEventArgs e)
         {
+            msRectangle.Fill = (SolidColorBrush)(new BrushConverter().ConvertFrom("#FFF4F4F5"));
             App.Current.Properties["paymentMethod"] = "mastercard";
-            this.NavigationService.Navigate(new thankYou());
+
+            Window wnd = new popUp();
+            wnd.Show();
+            //this.NavigationService.Navigate(new thankYou());
         }
 
         private void Visa_Click(object sender, MouseButtonEventArgs e)
         {
+            visaRectangle.Fill = (SolidColorBrush)(new BrushConverter().ConvertFrom("#FFF4F4F5"));
             App.Current.Properties["paymentMethod"] = "visa";
-            this.NavigationService.Navigate(new thankYou());
+
+            Window wnd = new popUp();
+            wnd.Show();
+            
+            //this.NavigationService.Navigate(new thankYou());
         }
 
         private void back_button(object sender, MouseButtonEventArgs e)
@@ -84,7 +97,6 @@ namespace TransitHubXAML
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            
             this.NavigationService.Navigate(new paymentInformationPage());
         }
     }

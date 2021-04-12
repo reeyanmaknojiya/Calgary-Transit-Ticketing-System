@@ -21,10 +21,11 @@ namespace TransitHubXAML
     /// </summary>
     public partial class MainWindow : Window
     {
-        private int currentIcon;
+        public int currentIcon;
 
         public MainWindow()
-        {            
+        {
+            windowAccess.Wnd = this;
             currentIcon = 1;
             User.loggedIn = false;
             InitializeComponent();
@@ -84,6 +85,8 @@ namespace TransitHubXAML
         {
             switch (currentIcon)
             {
+                case 0:
+                    break;
                 case 1:
                     image1.Source = new BitmapImage(new Uri("Resources/store.png", UriKind.Relative));
                     break;

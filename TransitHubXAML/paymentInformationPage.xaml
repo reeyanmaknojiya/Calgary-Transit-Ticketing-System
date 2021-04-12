@@ -10,8 +10,8 @@
 
     
     <Grid>
-        <Label Content="PAYMENT INFORMATION" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="75,-3,-110,0" Height="58" Width="477" FontSize="30" FontFamily="Open Sans"/>
-        <Label Content="&lt;" Foreground="White" HorizontalAlignment="Left" Margin="26,-20,0,0" VerticalAlignment="Top" Height="75" Width="57" FontSize="50"/>
+        <Label Content="Payment Information" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="75,-3,-110,0" Height="58" Width="477" FontSize="30" FontFamily="Open Sans"/>
+        <Label MouseDown="Label_MouseDown" Content="&lt;" Foreground="White" HorizontalAlignment="Left" Margin="26,-20,0,0" VerticalAlignment="Top" Height="75" Width="57" FontSize="50"/>
         <Rectangle Fill="#B83A3F" Panel.ZIndex="-1" HorizontalAlignment="Left" Height="55" Stroke="{x:Null}" StrokeThickness="0.5" VerticalAlignment="Top" Width="442"/>
         <Label Name="cardholderLabel" Content="Cardholder Name:" HorizontalAlignment="Left" Margin="26,77,0,0" VerticalAlignment="Top" Width="212" FontWeight="Bold" FontSize="20"/>
         <TextBox Name="cardHolder" HorizontalAlignment="Left" Height="26" Margin="26,119,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="393"/>
