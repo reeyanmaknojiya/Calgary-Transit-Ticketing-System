@@ -83,6 +83,9 @@
       <DependentUpon>popUp.xaml</DependentUpon>
     </Compile>
     <Compile Include="TempUser.cs" />
+    <Compile Include="Ticket.xaml.cs">
+      <DependentUpon>Ticket.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ticketDisplay.xaml.cs">
       <DependentUpon>ticketDisplay.xaml</DependentUpon>
     </Compile>
@@ -269,6 +272,10 @@
     <Page Include="signUpPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Ticket.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="ticketDisplay.xaml">
       <SubType>Designer</SubType>
@@ -493,6 +500,7 @@
     <Content Include="Accounts.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Resource Include="Resources\ORCode.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

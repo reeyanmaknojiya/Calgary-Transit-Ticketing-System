@@ -24,8 +24,8 @@
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
 
-            <Label Content="&lt;" Foreground="Black" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="50"/>
-            <TextBlock Text="TICKET DISPLAY" Foreground="Black" Grid.Column="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="40"/>
+            <Label Content="&lt;" Foreground="White" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="50"/>
+            <TextBlock Text="TICKET DISPLAY" Foreground="White" Grid.Column="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="40"/>
         </Grid>
 
         <Grid Grid.Row="1">
