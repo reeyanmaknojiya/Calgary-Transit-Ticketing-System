@@ -10,7 +10,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="70"/>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="70"/>
+            <RowDefinition Height="90"/>
         </Grid.RowDefinitions>
 
         <!--header-->
@@ -72,7 +72,7 @@
                     <Grid.RowDefinitions>
                         <RowDefinition Height="*"/>
                         <RowDefinition Height="*"/>
-                        <RowDefinition Height="60"/>
+                        <RowDefinition Height="110"/>
                     </Grid.RowDefinitions>
                     <Label Content="FAQ" Foreground="Black" Grid.Row="0" VerticalAlignment="Top" FontSize="25"/>
 
