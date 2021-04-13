@@ -10,24 +10,23 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace TransitHubXAML
 {
     /// <summary>
-    /// Interaction logic for Wallet.xaml
+    /// Interaction logic for forgotPassPage.xaml
     /// </summary>
-    public partial class Wallet : Page
+    public partial class forgotPassPage : Page
     {
-        public Wallet()
+        public forgotPassPage()
         {
             InitializeComponent();
         }
-
-        private void Adult_Pass_Click(object sender, RoutedEventArgs e)
+        private void Back_Click(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new ticketDisplay());
+            this.NavigationService.Navigate(new loginPage());
         }
-
     }
 }

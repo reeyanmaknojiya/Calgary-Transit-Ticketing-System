@@ -15,9 +15,9 @@
                 <ColumnDefinition Width="150*"/>
                 <ColumnDefinition Width="150*"/>
             </Grid.ColumnDefinitions>
-            <Image Source="Resources/logout.png" MouseDown="Logout" HorizontalAlignment="Left" Height="66" Margin="58,50,0,0" VerticalAlignment="Top" Width="66" Grid.Column="2"/>
+            <Image Source="Resources/logout.png" MouseDown="Logout" HorizontalAlignment="Left" Height="55" Margin="71,50,0,0" VerticalAlignment="Top" Width="53" Grid.Column="2"/>
             <Image HorizontalAlignment="Left" Height="150" Margin="0,10,0,0" VerticalAlignment="Top" Width="158" Source="Resources/logo.png" RenderTransformOrigin="0.526,1.513" Grid.ColumnSpan="2" Grid.Column="1"/>
-            <Label Content="Logout" Grid.Column="2" HorizontalAlignment="Left" Margin="58,116,0,0" VerticalAlignment="Top" Width="60" FontSize="15"/>
+            <Label Content="Logout" Grid.Column="2" HorizontalAlignment="Left" Margin="64,110,0,0" VerticalAlignment="Top" Width="60" FontSize="15"/>
         </Grid>
         <Grid VerticalAlignment="Center" Height="514" >
             <Grid.ColumnDefinitions>

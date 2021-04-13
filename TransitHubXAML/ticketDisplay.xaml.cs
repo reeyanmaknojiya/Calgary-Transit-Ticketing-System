@@ -20,7 +20,7 @@ namespace TransitHubXAML
     /// <summary>
     /// Interaction logic for ticketDisplay.xaml
     /// </summary>
-    public partial class ticketDisplay : Window
+    public partial class ticketDisplay : Page
     {
         public ticketDisplay()
         {
@@ -76,6 +76,13 @@ namespace TransitHubXAML
 
                 return bitmapImage;
             }
+        }
+
+
+        
+        private void Image_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            this.NavigationService.Navigate(new Wallet());
         }
     }
 }

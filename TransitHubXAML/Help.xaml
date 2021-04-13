@@ -8,24 +8,17 @@
         Title="Help" Height="800" Width="450">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="70"/>
+            <RowDefinition Height="77"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="90"/>
         </Grid.RowDefinitions>
 
         <!--header-->
         <Grid Grid.Row="0">
-            <Grid Background="#B83A3F">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                </Grid.ColumnDefinitions>
+            <Grid  Background="#B83A3F" Margin="0,0,0,12">
 
                 <!--<Image Source="Resources/back-arrow.png"  Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50"/>-->
-                <TextBlock Text="HELP" Foreground="Black" Grid.Column="1" Grid.ColumnSpan="3" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="50" Margin="76,2,0,6"/>
+                <TextBlock Text="Help" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="30" Margin="192,15,0,0"/>
                 <!--<Button Name="backBttn" Background="Transparent" Click="backBttn_Click">
                     <Image Source="Resources/back-arrow.png"  Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50"/>
                 </Button>-->
@@ -46,13 +39,13 @@
                         <RowDefinition Height="70"/>
                         <RowDefinition Height="60"/>
                     </Grid.RowDefinitions>
-                    <Label Content="Customer Service" Foreground="Black" Grid.Row="0" VerticalAlignment="Top" FontSize="25"/>
+                    <Label Content="Customer Service" Foreground="Black" Grid.Row="0" VerticalAlignment="Top" FontSize="25" Margin="11,0,-11,0"/>
 
-                    <Label Content="General Inquiries" Foreground="Black" VerticalAlignment="Top" FontSize="25" Margin="10,38,0,0" Grid.RowSpan="2"/>
+                    <Label Content="General Inquiries" Foreground="Black" VerticalAlignment="Top" FontSize="25" Margin="22,38,-12,0" Grid.RowSpan="2"/>
                     <Button Content="403-262-1000" Grid.Row="2" Height="50" Width="390" FontSize="18" BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Center" VerticalAlignment="Top" Background="#B83A3F" Foreground="white" />
                     <Button Content="(TTY) 403-262-8087" Grid.Row="3" Height="50" Width="390" Grid.RowSpan="2" FontSize="18" BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,4,0,68" Background="#B83A3F" Foreground="white"/>
 
-                    <Label Content="Lost Property" Foreground="Black" Grid.Row="4" VerticalAlignment="Top" FontSize="25" Margin="10,8,0,0"/>
+                    <Label Content="Lost Property" Foreground="Black" Grid.Row="4" VerticalAlignment="Top" FontSize="25" Margin="22,10,-11,0"/>
                     <Button Content="403-268-1600" Grid.Row="4" Height="50" Width="390" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,56,0,0" Grid.RowSpan="2" Background="#B83A3F" Foreground="white" BorderBrush="Black"/>
                 </Grid>
 
@@ -62,7 +55,7 @@
                         <RowDefinition Height="70"/>
                         <RowDefinition Height="70"/>
                     </Grid.RowDefinitions>
-                    <Label Content="Useful Links" Foreground="Black" Grid.Row="0" VerticalAlignment="Top" FontSize="25"/>
+                    <Label Content="Useful Links" Foreground="Black" Grid.Row="0" VerticalAlignment="Top" FontSize="25" Margin="22,0,-22,0"/>
 
                     <Button Content="Calgary Transit Website" Height="50" Width="390" Margin="14,48,13,32" Grid.RowSpan="2" FontSize="18" Background="#B83A3F" Foreground="white" BorderBrush="Black" BorderThickness="1"/>
                     <Button Content="Feedback" Grid.Row="1" Height="50" Width="390"  Grid.RowSpan="2" Margin="14,47,13,43" FontSize="18" Background="#B83A3F" Foreground="white" BorderBrush="Black" BorderThickness="1"/>
@@ -74,7 +67,7 @@
                         <RowDefinition Height="*"/>
                         <RowDefinition Height="110"/>
                     </Grid.RowDefinitions>
-                    <Label Content="FAQ" Foreground="Black" Grid.Row="0" VerticalAlignment="Top" FontSize="25"/>
+                    <Label Content="FAQ" Foreground="Black" Grid.Row="0" VerticalAlignment="Top" FontSize="25" Margin="10,0,-10,0"/>
 
                     <!--Reference: https://www.youtube.com/watch?v=EedNnnzyQLw-->
                     <customcontrol:MenuWithSubMenuControl SubMenuPadding="15,0,0,0" Margin="0,48,0,-48"/>

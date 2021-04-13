@@ -1,5 +1,8 @@
-﻿using System;
+﻿using QRCoder;
+using System;
 using System.Collections.Generic;
+using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,18 +18,18 @@ using System.Windows.Shapes;
 namespace TransitHubXAML
 {
     /// <summary>
-    /// Interaction logic for Wallet.xaml
+    /// Interaction logic for ticketDisplay.xaml
     /// </summary>
-    public partial class Wallet : Page
+    public partial class Ticket : Page
     {
-        public Wallet()
+        public Ticket()
         {
             InitializeComponent();
         }
 
-        private void Adult_Pass_Click(object sender, RoutedEventArgs e)
+        private void Back_Click(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new ticketDisplay());
+            this.NavigationService.Navigate(new Wallet());
         }
 
     }

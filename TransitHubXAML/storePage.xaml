@@ -61,7 +61,7 @@
 
     <Grid>
         <TabControl HorizontalAlignment="Left" Height="700" VerticalAlignment="Top" Width="450" >
-            <TabItem Name="ticketTab" Header="Tickets" Width="225" FontSize="40" Margin="0,0,0,0" BorderBrush="#FFE5E5E5">
+            <TabItem Name="ticketTab" Header="Tickets" Width="220" FontSize="30" Margin="0,0,0,-17" BorderBrush="#FFE5E5E5">
                 <Canvas>
                     <Label Content="Adult Ticket" Height="39" Canvas.Top="17" Width="138" Canvas.Left="10" FontSize="24"/>
                     <Label Foreground="Blue" Tag="For passengers age 18+" FontSize="16" Canvas.Left="10" Canvas.Top="56">
@@ -85,15 +85,15 @@
                     <Label  Name="youthTicketCount" Content="0" FontSize="24" Canvas.Left="325" Canvas.Top="192" />
                     <Button Name="youthTicketPlus" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="+" Height="51" Width="50" Canvas.Left="367" Canvas.Top="186" FontSize="35" Click="youthTicketPlus_Click" Background="White" Foreground="#FF707070"/>
                     <Rectangle Fill="#FFACACAC" Height="1" Stroke="#FFACACAC" Width="472" Canvas.Left="-18" Canvas.Top="268"/>
-                    <Button Style="{StaticResource RedButton}" Name="ticketsAddToCart" Background="#B83A3F" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="Add To Cart $0.00" Height="62" Width="389" Canvas.Left="28" Canvas.Top="519" FontSize="28" Click="AddToCart_Click" BorderBrush="#FFB83A3F"/>
-                    <Rectangle Fill="#B83A3F" Height="7" Stroke="#FFB83A3F" Width="472" Canvas.Left="-18" Canvas.Top="-5"/>
+                    <Button Style="{StaticResource RedButton}" Name="ticketsAddToCart" Background="#B83A3F" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="Add To Cart $0.00" Height="49" Width="354" Canvas.Left="46" Canvas.Top="519" FontSize="22" Click="AddToCart_Click" BorderBrush="#FFB83A3F"/>
+                    <!--<Rectangle Fill="#B83A3F" Height="7" Stroke="#FFB83A3F" Width="472" Canvas.Left="-18" Canvas.Top="-5"/>-->
                 </Canvas>
             </TabItem>
 
-            <TabItem Header="Passes" FontSize="40" Margin="0,0,-80,0">
+            <TabItem Header="Passes" Width="220" FontSize="30" Margin="0,0,0,-17">
                 <Canvas>
-                    <Rectangle Fill="#B83A3F" Height="7" Stroke="Black" Width="472" Canvas.Left="-18"/>
-                    <Label Content="Adult Monthly Pass" Height="39" Canvas.Top="12" Width="240" Canvas.Left="10" FontSize="24"/>
+                    <!--<Rectangle Fill="#B83A3F" Height="7" Stroke="Black" Width="472" Canvas.Left="-18"/>-->
+                    <Label Content="Adult Monthly Pass" Height="39" Canvas.Top="17" Width="240" Canvas.Left="10" FontSize="24"/>
                     <Label  Foreground="Black" Content="For passengers age 18+" FontSize="16" Canvas.Left="10" Canvas.Top="56">
                     </Label>
                     <Label Content="$109.00" FontSize="24" Canvas.Left="10" Canvas.Top="88" />
@@ -109,7 +109,7 @@
                     <Label Name="youthMonthlyCount" Content="0" FontSize="24" Canvas.Left="325" Canvas.Top="192" />
                     <Button Name="youthMonthlyPlus" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="+" Height="51" Width="50" Canvas.Left="367" Canvas.Top="186" FontSize="35" Click="youthMonthlyPlus_Click" Background="White" Foreground="#FF707070"/>
                     <Rectangle Fill="#FFACACAC" Height="1" Stroke="#FFACACAC" Width="472" Canvas.Top="268"/>
-                    <Button Style="{StaticResource RedButton}" Name="passesAddToCart" Background="#FFB83A3F" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="Add To Cart $0.00" Height="62" Width="389" Canvas.Left="28" Canvas.Top="519" FontSize="28" Click="AddToCart_Click" BorderBrush="#FFB83A3F"/>
+                    <Button Style="{StaticResource RedButton}" Name="passesAddToCart" Background="#FFB83A3F" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="Add To Cart $0.00"  Height="49" Width="354" Canvas.Left="46" Canvas.Top="519" FontSize="22" Click="AddToCart_Click" BorderBrush="#FFB83A3F"/>
                     <Label Name="lowIncomeLabel" Content="Low Income Pass" Height="39" Canvas.Top="280" Width="240" Canvas.Left="10" FontSize="24"/>
                     <Label Name="lowIncomeLabel1" Foreground="Black" Content="For low income citizens" FontSize="16" Canvas.Left="10" Canvas.Top="324"/>
                     <Label Name="lowIncomeLabel2"  Content="$38.15" FontSize="24" Canvas.Left="10" Canvas.Top="358" />
@@ -117,7 +117,7 @@
                     <Label Name="lowIncomeCount" Content="0" FontSize="24" Canvas.Left="325" Canvas.Top="329" />
                     <Button Name="lowIncomeMonthlyPlus" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="+" Height="51" Width="50" Canvas.Left="367" Canvas.Top="324" FontSize="35" Click="lowIncomeMonthlyPlus_Click" Background="White" Foreground="#FF707070"/>
                     <Rectangle Name="lowIncomeRectangle"  Fill="#FFACACAC" Height="1" Stroke="#FFACACAC" Width="472" Canvas.Top="404"/>
-                    <Rectangle Fill="#B83A3F" Height="7" Stroke="#B83A3F" Width="472" Canvas.Left="-5" Canvas.Top="-5"/>
+                    <!--<Rectangle Fill="#B83A3F" Height="7" Stroke="#B83A3F" Width="472" Canvas.Left="-5" Canvas.Top="-5"/>-->
                 </Canvas>
             </TabItem>
 
