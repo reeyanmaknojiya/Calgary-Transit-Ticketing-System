@@ -118,7 +118,11 @@ namespace TransitHubXAML
         {
             this.NavigationService.Navigate(new signUpPage());
         }
-
+        private void Forgot_Click(object sender, RoutedEventArgs e)
+        {
+            forgotPassText.Foreground = Brushes.Red;
+            this.NavigationService.Navigate(new forgotPassPage());
+        }
         private void View_Password_Click(object sender, RoutedEventArgs e)
         {
             passwordUnmask.Visibility = Visibility.Visible;

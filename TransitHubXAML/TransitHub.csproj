@@ -71,6 +71,9 @@
     <Compile Include="CustomControl\MenuWithSubMenuControl.xaml.cs">
       <DependentUpon>MenuWithSubMenuControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="forgotPassPage.xaml.cs">
+      <DependentUpon>forgotPassPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Help.xaml.cs">
       <DependentUpon>Help.xaml</DependentUpon>
     </Compile>
@@ -207,6 +210,10 @@
       <Generator>XamlIntelliSenseFileGenerator</Generator>
     </Page>
     <Page Include="CustomControl\MenuWithSubMenuControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="forgotPassPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -493,6 +500,7 @@
     <Content Include="Accounts.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Resource Include="Resources\back-arrow-white.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
