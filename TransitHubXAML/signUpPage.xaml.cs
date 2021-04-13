@@ -31,6 +31,10 @@ namespace TransitHubXAML
             InitializeComponent();
             emailError.Visibility = Visibility.Hidden;
             nameError.Visibility = Visibility.Hidden;
+            bDayError.Visibility = Visibility.Hidden;
+            phoneError.Visibility = Visibility.Hidden;
+            passwordError.Visibility = Visibility.Hidden;
+            passwordErrorEmpty.Visibility = Visibility.Hidden;
         }
         private void Back_Click(object sender, RoutedEventArgs e)
         {
@@ -111,6 +115,7 @@ namespace TransitHubXAML
             {
                 //emailError.Visibility = Visibility.Visible;
                 emailText.BorderBrush = System.Windows.Media.Brushes.Red;
+
                 valid = false;
             }
 

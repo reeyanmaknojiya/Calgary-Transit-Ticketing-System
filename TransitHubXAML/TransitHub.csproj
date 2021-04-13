@@ -256,7 +256,6 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    
     <Compile Include="CardConfirmationPage.xaml.cs">
       <DependentUpon>CardConfirmationPage.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -269,7 +268,6 @@
       <DependentUpon>ReceiptPage2.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    
     <Page Include="PaymentInformation.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -533,6 +531,8 @@
     <Content Include="Accounts.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Resource Include="Resources\logout-red.png" />
+    <Resource Include="logout-red.png" />
     <Resource Include="Resources\ORCode.jpg" />
     <Resource Include="Resources\back-arrow-white.png" />
   </ItemGroup>

@@ -66,6 +66,10 @@
         <Label Content="Day" Grid.Column="2" HorizontalAlignment="Left" Margin="187,121,0,0" Grid.Row="4" VerticalAlignment="Top" Height="44" Width="84" FontSize="22"/>
         <Label Content="Year" Grid.Column="2" HorizontalAlignment="Left" Margin="279,121,0,0" Grid.Row="4" VerticalAlignment="Top" Height="44" Width="84" FontSize="22"/>
         <Label x:Name="nameError" Content="Please enter your name" Grid.Column="2" HorizontalAlignment="Left" Margin="11,111,0,0" Grid.Row="4" VerticalAlignment="Top" Height="44" Width="173" Foreground="#FFCB3A40"/>
-        <Rectangle Fill="#B83A3F" Panel.ZIndex="-1" HorizontalAlignment="Left" Height="64" Stroke="{x:Null}" StrokeThickness="0.5" VerticalAlignment="Top" Width="450" Grid.ColumnSpan="4" Grid.RowSpan="5"/>
+        <Rectangle Fill="#B83A3F" Panel.ZIndex="-1" HorizontalAlignment="Left" Height="77" Stroke="{x:Null}" StrokeThickness="0.5" VerticalAlignment="Top" Width="450" Grid.ColumnSpan="4" Grid.RowSpan="5"/>
+        <Label x:Name="bDayError" Content="Please enter a valid birthday" Grid.Column="2" HorizontalAlignment="Left" Margin="11,197,0,0" Grid.Row="4" VerticalAlignment="Top" Height="44" Width="173" Foreground="#FFCB3A40"/>
+        <Label x:Name="phoneError" Content="Please enter a valid phone number (only digits)" Grid.Column="2" HorizontalAlignment="Left" Margin="13,373,0,0" Grid.Row="4" VerticalAlignment="Top" Height="44" Width="313" Foreground="#FFCB3A40"/>
+        <Label x:Name="passwordErrorEmpty" Content="Please enter a password" Grid.Column="2" HorizontalAlignment="Left" Margin="13,460,0,0" Grid.Row="4" VerticalAlignment="Top" Height="44" Width="313" Foreground="#FFCB3A40"/>
+        <Label x:Name="passwordError" Content="Please enter a password" Grid.Column="2" HorizontalAlignment="Left" Margin="13,460,0,0" Grid.Row="4" VerticalAlignment="Top" Height="44" Width="313" Foreground="#FFCB3A40"/>
     </Grid>
 </Page>
