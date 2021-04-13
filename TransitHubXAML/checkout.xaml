@@ -9,20 +9,23 @@
 
     <ScrollViewer VerticalScrollBarVisibility="Auto">
         <Grid Name="grid">
-            <Label MouseDown="back_button" Content="&lt;" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="33,2,0,0" VerticalAlignment="Top" Height="83" Width="96" FontSize="60"/>
-            <Label Content="CHECKOUT" HorizontalAlignment="Left" Margin="149,22,0,0" VerticalAlignment="Top" Width="255" FontSize="40"/>
-            <Rectangle Name="visaRectangle" MouseDown="visaChange" MouseUp="Visa_Click" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="113" Margin="36,126,0,0" Stroke="#FFB83A3F" VerticalAlignment="Top" Width="383"/>
+            <Image MouseDown="back_button" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="69" Source="Resources/back-arrow-white.png" Margin="30,20,0,0"/>
+            <!--<Label MouseDown="back_button" Content="&lt;" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="33,2,0,0" VerticalAlignment="Top" Height="83" Width="96" FontSize="60"/>-->
+            <Rectangle Fill="#B83A3F" Panel.ZIndex="-1" HorizontalAlignment="Left" Height="64" Stroke="{x:Null}" StrokeThickness="0.5" VerticalAlignment="Top" Width="450"/>
+            <Label Content="Checkout" Foreground="White" HorizontalAlignment="Left" Margin="133,6,0,0" VerticalAlignment="Top" Width="183" FontSize="40"/>
+            <Rectangle Name="visaRectangle" MouseDown="visaChange" MouseUp="Visa_Click" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="113" Margin="33,126,0,0" Stroke="#FFB83A3F" VerticalAlignment="Top" Width="386"/>
             <Label Name="visaLabel1"  MouseDown="Visa_Click" Content="XXXXXX1234" HorizontalAlignment="Left" Margin="52,146,0,0" VerticalAlignment="Top" Width="101" FontSize="16"/>
             <Label Name="visaLabel2" MouseDown="Visa_Click" Content="Expires 09/09" HorizontalAlignment="Left" Margin="48,182,0,0" VerticalAlignment="Top" FontSize="16"/>
-            <Rectangle Name="msRectangle" MouseDown="msChange" MouseUp="MasterCard_Click" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="113" Margin="33,290,0,0" Stroke="#FFB83A3F" VerticalAlignment="Top" Width="383"/>
-            <Label Name="msLabel1" MouseDown="MasterCard_Click" Content="XXXXXX4567" HorizontalAlignment="Left" Margin="58,308,0,0" VerticalAlignment="Top" Width="101" FontSize="16"/>
-            <Label  Name="msLabel2" MouseDown="MasterCard_Click" Content="Expires 09/09" HorizontalAlignment="Left" Margin="52,344,0,0" VerticalAlignment="Top" FontSize="16"/>
-            <Image Name="msImage" MouseDown="MasterCard_Click" Source="Resources/masterCard.PNG" HorizontalAlignment="Left" Height="85" Margin="279,305,0,0" VerticalAlignment="Top" Width="137"/>
-            <Rectangle Name="ppRectangle" MouseDown="ppChange" MouseUp="Paypal_Click" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="113" Margin="33,447,0,0" Stroke="#FFB83A3F" VerticalAlignment="Top" Width="383"/>
-            <Label Name="ppLabel1" MouseDown="Paypal_Click" Content="my_email@realemail.com" HorizontalAlignment="Left" Margin="48,490,0,0" VerticalAlignment="Top" Width="189" FontSize="16"/>
+            <Rectangle Name="msRectangle" MouseDown="msChange" MouseUp="MasterCard_Click" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="113" Margin="33,280,0,0" Stroke="#FFB83A3F" VerticalAlignment="Top" Width="383"/>
+            <Label Name="msLabel1" MouseDown="MasterCard_Click" Content="XXXXXX4567" HorizontalAlignment="Left" Margin="58,298,0,0" VerticalAlignment="Top" Width="101" FontSize="16"/>
+            <Label  Name="msLabel2" MouseDown="MasterCard_Click" Content="Expires 09/09" HorizontalAlignment="Left" Margin="52,334,0,0" VerticalAlignment="Top" FontSize="16"/>
+            <Image Name="msImage" MouseDown="MasterCard_Click" Source="Resources/masterCard.PNG" HorizontalAlignment="Left" Height="85" Margin="279,295,0,0" VerticalAlignment="Top" Width="137"/>
+            <Rectangle Name="ppRectangle" MouseDown="ppChange" MouseUp="Paypal_Click" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="113" Margin="33,437,0,0" Stroke="#FFB83A3F" VerticalAlignment="Top" Width="383"/>
+            <Label Name="ppLabel1" MouseDown="Paypal_Click" Content="my_email@realemail.com" HorizontalAlignment="Left" Margin="48,480,0,0" VerticalAlignment="Top" Width="189" FontSize="16"/>
             <Image Name="visaImage" MouseDown="Visa_Click" Source="Resources/visa.PNG" HorizontalAlignment="Left" Height="62" Margin="269,152,0,0" VerticalAlignment="Top" Width="135"/>
-            <Image Name="ppImage" MouseDown="Paypal_Click" Source="Resources/paypal.PNG" HorizontalAlignment="Left" Height="107" Margin="289,447,0,0" VerticalAlignment="Top" Width="115"/>
-            <Button Name="oneTimeCard" Click="Button_Click" Content="Pay without saving card" Foreground="White"  Background="#B83A3F"  HorizontalAlignment="Left" Margin="36,585,0,0" VerticalAlignment="Top" Width="368" Height="46" FontSize="30"/>
+            <Image Name="ppImage" MouseDown="Paypal_Click" Source="Resources/paypal.PNG" HorizontalAlignment="Left" Height="107" Margin="289,437,0,0" VerticalAlignment="Top" Width="115"/>
+            <Button Style="{StaticResource RedButton}" Name="oneTimeCard" Click="Button_Click" Content="One Time Checkout" Foreground="White"  Background="#B83A3F"  HorizontalAlignment="Left" Margin="33,581,0,0" VerticalAlignment="Top" Width="368" Height="49" FontSize="22"/>
+            <Label Content="Card will not be saved" HorizontalAlignment="Left" Margin="33,639,0,0" VerticalAlignment="Top" Width="126"/>
         </Grid>
     </ScrollViewer>
 </Page>

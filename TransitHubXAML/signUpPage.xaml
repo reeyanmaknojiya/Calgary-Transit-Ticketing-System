@@ -46,8 +46,8 @@
             <ComboBoxItem>November</ComboBoxItem>
             <ComboBoxItem>December</ComboBoxItem>
         </ComboBox>
-        <TextBox x:Name="dayText" Grid.Column="2" MaxLength="2" HorizontalAlignment="Left" Height="42" Margin="192,159,0,0" Grid.Row="4" TextWrapping="Wrap" VerticalAlignment="Top" Width="79" FontSize="22" TextAlignment="Center" VerticalContentAlignment="Center" />
-        <TextBox x:Name="yearText" Grid.Column="2" MaxLength="4" HorizontalAlignment="Left" Height="42" Margin="283,159,0,0" Grid.Row="4" TextWrapping="Wrap" VerticalAlignment="Top" Width="89" FontSize="22" TextAlignment="Center" VerticalContentAlignment="Center" RenderTransformOrigin="1.718,0.667"/>
+        <TextBox x:Name="dayText"  Grid.Column="2" MaxLength="2" HorizontalAlignment="Left" Height="42" Margin="192,159,0,0" Grid.Row="4" TextWrapping="Wrap" VerticalAlignment="Top" Width="79" FontSize="22" TextAlignment="Left" VerticalContentAlignment="Center" />
+        <TextBox x:Name="yearText" Grid.Column="2" MaxLength="4" HorizontalAlignment="Left" Height="42" Margin="283,159,0,0" Grid.Row="4" TextWrapping="Wrap" VerticalAlignment="Top" Width="89" FontSize="22" TextAlignment="Left" VerticalContentAlignment="Center" RenderTransformOrigin="1.718,0.667"/>
         <TextBox x:Name="emailText" Grid.Column="2" HorizontalAlignment="Left" Height="42" Margin="17,247,0,0" Grid.Row="4" TextWrapping="NoWrap" VerticalAlignment="Top" Width="354" FontSize="24"/>
         <Label Content="Email" Grid.Column="2" HorizontalAlignment="Left" Margin="11,207,0,0" Grid.Row="4" VerticalAlignment="Top" Height="44" Width="173" FontSize="22"/>
         <TextBox x:Name="phoneText" Grid.Column="2" HorizontalAlignment="Left" Height="42" Margin="17,334,0,0" Grid.Row="4" TextWrapping="NoWrap" VerticalAlignment="Top" Width="354" FontSize="24"/>
@@ -66,6 +66,6 @@
         <Label Content="Day" Grid.Column="2" HorizontalAlignment="Left" Margin="187,121,0,0" Grid.Row="4" VerticalAlignment="Top" Height="44" Width="84" FontSize="22"/>
         <Label Content="Year" Grid.Column="2" HorizontalAlignment="Left" Margin="279,121,0,0" Grid.Row="4" VerticalAlignment="Top" Height="44" Width="84" FontSize="22"/>
         <Label x:Name="nameError" Content="Please enter your name" Grid.Column="2" HorizontalAlignment="Left" Margin="11,111,0,0" Grid.Row="4" VerticalAlignment="Top" Height="44" Width="173" Foreground="#FFCB3A40"/>
-        <Rectangle Fill="#B83A3F" Panel.ZIndex="-1" HorizontalAlignment="Left" Height="77" Stroke="{x:Null}" StrokeThickness="0.5" VerticalAlignment="Top" Width="450" Grid.ColumnSpan="4" Grid.RowSpan="5"/>
+        <Rectangle Fill="#B83A3F" Panel.ZIndex="-1" HorizontalAlignment="Left" Height="64" Stroke="{x:Null}" StrokeThickness="0.5" VerticalAlignment="Top" Width="450" Grid.ColumnSpan="4" Grid.RowSpan="5"/>
     </Grid>
 </Page>

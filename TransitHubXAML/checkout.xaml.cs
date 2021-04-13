@@ -27,6 +27,7 @@ namespace TransitHubXAML
             //TODO: Show no cards if its the temp user, show otherwise
             if (!User.loggedIn)
             {
+                oneTimeCard.Content = "Guest Checkout";
                 visaRectangle.Visibility = System.Windows.Visibility.Hidden;
                 visaLabel1.Visibility = System.Windows.Visibility.Hidden;
                 visaLabel2.Visibility = System.Windows.Visibility.Hidden;

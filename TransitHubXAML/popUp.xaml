@@ -8,8 +8,8 @@
         Title="popUp" Height="200" Width="200">
     <Grid>
         <Label Name="_label"  HorizontalContentAlignment="Center" Content="Hello world!" Margin="12,19,10,99"/>
-        <Button Click="goBack_Click"  Foreground="White"  Background="#B83A3F" Name="goBack" Content="Back" Margin="10,82,109,33"></Button>
-        <Button Click="proceed_Click" Foreground="White"  Background="#B83A3F" Name="proceed" Content="Continue" Margin="109,82,10,33"></Button>
+        <Button Style="{StaticResource RedButton}" Click="goBack_Click"  Foreground="White"  Background="#B83A3F" Name="goBack" Content="Back" Margin="10,82,109,33"></Button>
+        <Button Style="{StaticResource RedButton}" Click="proceed_Click" Foreground="White"  Background="#B83A3F" Name="proceed" Content="Continue" Margin="109,82,10,33"></Button>
         <Popup Placement="Center"/>
 
 

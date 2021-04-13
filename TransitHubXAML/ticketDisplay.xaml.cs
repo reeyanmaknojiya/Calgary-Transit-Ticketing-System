@@ -77,5 +77,12 @@ namespace TransitHubXAML
                 return bitmapImage;
             }
         }
+
+
+        
+        private void Image_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            this.NavigationService.Navigate(new Wallet());
+        }
     }
 }
