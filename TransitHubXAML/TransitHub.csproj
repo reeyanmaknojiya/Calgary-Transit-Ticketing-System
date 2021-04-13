@@ -253,6 +253,20 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    
+    <Compile Include="CardConfirmationPage.xaml.cs">
+      <DependentUpon>CardConfirmationPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ReceiptPage1.xaml.cs">
+      <DependentUpon>ReceiptPage1.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ReceiptPage2.xaml.cs">
+      <DependentUpon>ReceiptPage2.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    
     <Page Include="PaymentInformation.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -278,6 +292,18 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="ticketDisplay.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CardConfirmationPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ReceiptPage1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ReceiptPage2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
