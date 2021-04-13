@@ -533,11 +533,8 @@
     <Content Include="Accounts.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-<<<<<<< HEAD
     <Resource Include="Resources\ORCode.jpg" />
-=======
     <Resource Include="Resources\back-arrow-white.png" />
->>>>>>> 189fff7b24400260cd993388ad212c96f157e33e
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

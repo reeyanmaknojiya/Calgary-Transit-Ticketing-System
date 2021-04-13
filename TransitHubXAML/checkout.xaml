@@ -14,10 +14,10 @@
             <Rectangle Fill="#B83A3F" Panel.ZIndex="-1" HorizontalAlignment="Left" Height="64" Stroke="{x:Null}" StrokeThickness="0.5" VerticalAlignment="Top" Width="450"/>
             <Label Content="Checkout" Foreground="White" HorizontalAlignment="Left" Margin="133,6,0,0" VerticalAlignment="Top" Width="183" FontSize="40"/>
             <Rectangle Name="visaRectangle" MouseDown="visaChange" MouseUp="Visa_Click" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="113" Margin="33,126,0,0" Stroke="#FFB83A3F" VerticalAlignment="Top" Width="386"/>
-            <Label Name="visaLabel1"  MouseDown="Visa_Click" Content="XXXXXX1234" HorizontalAlignment="Left" Margin="52,146,0,0" VerticalAlignment="Top" Width="101" FontSize="16"/>
+            <Label Name="visaLabel1"  MouseDown="Visa_Click" Content="XXXXXXXXXXXX1806" HorizontalAlignment="Left" Margin="52,146,0,0" VerticalAlignment="Top" Width="101" FontSize="16"/>
             <Label Name="visaLabel2" MouseDown="Visa_Click" Content="Expires 09/09" HorizontalAlignment="Left" Margin="48,182,0,0" VerticalAlignment="Top" FontSize="16"/>
             <Rectangle Name="msRectangle" MouseDown="msChange" MouseUp="MasterCard_Click" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="113" Margin="33,280,0,0" Stroke="#FFB83A3F" VerticalAlignment="Top" Width="383"/>
-            <Label Name="msLabel1" MouseDown="MasterCard_Click" Content="XXXXXX4567" HorizontalAlignment="Left" Margin="58,298,0,0" VerticalAlignment="Top" Width="101" FontSize="16"/>
+            <Label Name="msLabel1" MouseDown="MasterCard_Click" Content="XXXXXXXXXXXX0910" HorizontalAlignment="Left" Margin="58,298,0,0" VerticalAlignment="Top" Width="101" FontSize="16"/>
             <Label  Name="msLabel2" MouseDown="MasterCard_Click" Content="Expires 09/09" HorizontalAlignment="Left" Margin="52,334,0,0" VerticalAlignment="Top" FontSize="16"/>
             <Image Name="msImage" MouseDown="MasterCard_Click" Source="Resources/masterCard.PNG" HorizontalAlignment="Left" Height="85" Margin="279,295,0,0" VerticalAlignment="Top" Width="137"/>
             <Rectangle Name="ppRectangle" MouseDown="ppChange" MouseUp="Paypal_Click" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="113" Margin="33,437,0,0" Stroke="#FFB83A3F" VerticalAlignment="Top" Width="383"/>
