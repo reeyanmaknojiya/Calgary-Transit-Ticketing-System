@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,27 +16,17 @@ using System.Windows.Shapes;
 namespace TransitHubXAML
 {
     /// <summary>
-    /// Interaction logic for AccountReceiptsPage.xaml
+    /// Interaction logic for forgotPassPage.xaml
     /// </summary>
-    public partial class AccountReceiptsPage : Page
+    public partial class forgotPassPage : Page
     {
-        public AccountReceiptsPage()
+        public forgotPassPage()
         {
             InitializeComponent();
         }
         private void Back_Click(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new accountPage());
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            this.NavigationService.Navigate(new ReceiptPage2());
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            this.NavigationService.Navigate(new ReceiptPage1());
+            this.NavigationService.Navigate(new loginPage());
         }
     }
 }
