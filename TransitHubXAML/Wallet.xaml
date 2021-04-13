@@ -65,7 +65,7 @@
                 <Canvas>
                     <Label Content="Adult Monthly Pass - Feb" Height="45" Canvas.Top="25" Width="300" Canvas.Left="10" FontSize="24"/>
 					<Label Content="Purchased: Feb 02, 2021" FontSize="16" Canvas.Left="10" Canvas.Top="60" />
-					<Button Content="View" Height="45" Width="100" FontSize="24" HorizontalContentAlignment="Center" Canvas.Right="20" Canvas.Top="38"/>
+                    <Button Content="View" Click="Adult_Pass_Click" Height="45" Width="100" FontSize="24" HorizontalContentAlignment="Center" Canvas.Right="20" Canvas.Top="38"/>
 					<Rectangle Fill="Gray" Height="7" Stroke="Black" Width="472" Canvas.Left="-28" Canvas.Top="115"/>
 					<Label Content="Youth Ticket" Height="45" Canvas.Top="140" Width="300" Canvas.Left="10" FontSize="24"/>
 					<Label Content="Purchased: Feb 05, 2021" FontSize="16" Canvas.Left="10" Canvas.Top="175" />

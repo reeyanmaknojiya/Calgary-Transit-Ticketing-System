@@ -20,7 +20,7 @@ namespace TransitHubXAML
     /// <summary>
     /// Interaction logic for ticketDisplay.xaml
     /// </summary>
-    public partial class ticketDisplay : Window
+    public partial class ticketDisplay : Page
     {
         public ticketDisplay()
         {
