@@ -22,9 +22,14 @@ namespace TransitHubXAML
     /// </summary>
     public partial class ticketDisplay : Page
     {
-        public ticketDisplay()
-        {
+        private String type;
+        private String purchaseDate;
+        public ticketDisplay(String type, String date)
+        { 
             InitializeComponent();
+
+            ticketTypeLabel.Content = type;
+            purchasedLabel.Content = date;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -48,15 +53,10 @@ namespace TransitHubXAML
 
             var date1 = DateTime.Now;
 
-            purchasedLabel.Content = $"PURCHASED ON: {date1:MMMM dd, yyyy}";
+            activateButton.Height = 0;
+            activateButton.Width = 0;
 
-            activatedLabel.Content = $"ACTIVATED ON: {date1:MMMM dd, yyyy}";
-
-            var ticketTypes = new[] { "YOUTH TICKET", "ADULT TICKET" };
-
-            var randomTicketType = ticketTypes[r.Next(0, ticketTypes.Length)];
-
-            ticketTypeLabel.Content = $"{randomTicketType}";
+            activatedLabel.Content = $"Activated on: {date1:MMMM dd, yyyy H:mm:ss}";
         }
 
         /*

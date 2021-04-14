@@ -26,7 +26,7 @@
 
             <!--<Label Content="&lt;" Foreground="Black" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="50"/>-->
             <Image MouseDown="Image_MouseDown"  HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="69" Source="Resources/back-arrow-white.png" Margin="31,14,0,0" Grid.ColumnSpan="2"/>
-            <TextBlock Text="Ticket Display" Foreground="White" Grid.Column="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="40" Margin="28,2,0,8"/>
+            <TextBlock Text="Ticket Display" Foreground="White" Grid.Column="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="30" Margin="35,4,0,8"/>
         </Grid>
 
         <Grid Grid.Row="1">
@@ -36,16 +36,13 @@
                 <RowDefinition/>
             </Grid.RowDefinitions>
 
-            <Label x:Name="ticketTypeLabel" Content="" Foreground="LightGreen" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20"/>
-            <Label x:Name="purchasedLabel" Content="" Foreground="White" Grid.Row="1" VerticalAlignment="Center" FontSize="20"/>
-            <Label x:Name="activatedLabel" Content="" Foreground="Black" Grid.Row="2" VerticalAlignment="Center" FontSize="20"/>
+            <Label x:Name="ticketTypeLabel" Content="" Foreground="Black" Grid.Row="0" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontSize="40"/>
+            <Label x:Name="purchasedLabel" Content="" Foreground="Black" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20"/>
+            <Label x:Name="activatedLabel" Content="" Foreground="Green" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20"/>
         </Grid>
 
-        <Image x:Name="image" HorizontalAlignment="Center" VerticalAlignment="Center" Height="400" Width="400" Grid.Row="2"/>
-        <Button Content="Generate" HorizontalAlignment="Center" Grid.Row="3" VerticalAlignment="Center" Width="252" Height="60" Click="Button_Click" Margin="96,23,96,17"/>
+        <Image x:Name="image" HorizontalAlignment="Center" VerticalAlignment="Center" Height="400" Width="400" Grid.Row="2" />
+        <Button x:Name="activateButton" Style="{StaticResource RedButton}" Content="Activate" Background="#B83A3F" Foreground="White"  HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" Height="58" Width="384" FontSize="30" Click="Button_Click" Margin="98,36,99.6,104"/>
 
-        <Grid Background="DarkGreen" Grid.Row="4">
-            <TextBlock Text="NAV BAR HERE" Foreground="Black" Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        </Grid>
     </Grid>
 </Page>

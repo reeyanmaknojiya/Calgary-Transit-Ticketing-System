@@ -24,9 +24,19 @@ namespace TransitHubXAML
             InitializeComponent();
         }
 
-        private void Adult_Pass_Click(object sender, RoutedEventArgs e)
+        private void Ticket_1_Click(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new ticketDisplay());
+            this.NavigationService.Navigate(new ticketDisplay(ticket1.Content.ToString(), ticketDate1.Content.ToString()));
+        }
+
+        private void Ticket_2_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new ticketDisplay(ticket2.Content.ToString(), ticketDate2.Content.ToString()));
+        }
+
+        private void Ticket_3_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new ticketDisplay(ticket3.Content.ToString(), ticketDate3.Content.ToString()));
         }
 
     }
