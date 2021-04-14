@@ -87,6 +87,9 @@
       <DependentUpon>popUp.xaml</DependentUpon>
     </Compile>
     <Compile Include="TempUser.cs" />
+    <Compile Include="activatedTicketDisplay.xaml.cs">
+      <DependentUpon>activatedTicketDisplay.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ticketDisplay.xaml.cs">
       <DependentUpon>ticketDisplay.xaml</DependentUpon>
     </Compile>
@@ -292,6 +295,10 @@
     <Page Include="signUpPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="activatedTicketDisplay.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="ticketDisplay.xaml">
       <SubType>Designer</SubType>

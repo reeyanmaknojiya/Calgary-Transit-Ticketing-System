@@ -19,6 +19,10 @@ namespace TransitHubXAML
     /// </summary>
     public partial class Wallet : Page
     {
+        private Boolean isTicket1;
+        private Boolean isTicket2;
+        private Boolean isTicket3;
+
         public Wallet()
         {
             InitializeComponent();
@@ -26,17 +30,26 @@ namespace TransitHubXAML
 
         private void Ticket_1_Click(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new ticketDisplay(ticket1.Content.ToString(), ticketDate1.Content.ToString()));
+            if (!isTicket1)
+            {
+                isTicket1 = true;
+                this.NavigationService.Navigate(new ticketDisplay(ticket1.Content.ToString(), ticketDate1.Content.ToString(), this));
+            } else
+            {
+                this.NavigationService.Navigate(new activatedTicketDisplay(ticket1.Content.ToString(), ticketDate1.Content.ToString(), this));
+            }
+            
+
         }
 
         private void Ticket_2_Click(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new ticketDisplay(ticket2.Content.ToString(), ticketDate2.Content.ToString()));
+            this.NavigationService.Navigate(new ticketDisplay(ticket2.Content.ToString(), ticketDate2.Content.ToString(), this));
         }
 
         private void Ticket_3_Click(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new ticketDisplay(ticket3.Content.ToString(), ticketDate3.Content.ToString()));
+            this.NavigationService.Navigate(new ticketDisplay(ticket3.Content.ToString(), ticketDate3.Content.ToString(), this));
         }
 
     }

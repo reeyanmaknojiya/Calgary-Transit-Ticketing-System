@@ -20,21 +20,21 @@ namespace TransitHubXAML
     /// <summary>
     /// Interaction logic for ticketDisplay.xaml
     /// </summary>
-    public partial class ticketDisplay : Page
+    public partial class activatedTicketDisplay : Page
     {
+        private String type;
+        private String purchaseDate;
         private Page wallet;
-        public ticketDisplay(String type, String date, Page wallet)
-        { 
+        public activatedTicketDisplay(String type, String date, Page wallet)
+        {
+
             InitializeComponent();
 
             this.wallet = wallet;
 
             ticketTypeLabel.Content = type;
             purchasedLabel.Content = date;
-        }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
             char[] letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789".ToCharArray();
             Random r = new Random();
             String randomString = "";
@@ -54,10 +54,8 @@ namespace TransitHubXAML
 
             var date1 = DateTime.Now;
 
-            activateButton.Height = 0;
-            activateButton.Width = 0;
-
             activatedLabel.Content = $"Activated on: {date1:MMMM dd, yyyy}";
+
         }
 
         /*
