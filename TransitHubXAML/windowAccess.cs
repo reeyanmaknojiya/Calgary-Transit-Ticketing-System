@@ -9,5 +9,7 @@ namespace TransitHubXAML
     public static class windowAccess
     {
         public static MainWindow Wnd { get; set; }
+
+        public static int [] cartItems {get; set;}
     }
 }

@@ -85,7 +85,7 @@
                     <Label  Name="youthTicketCount" Content="0" FontSize="24" Canvas.Left="325" Canvas.Top="192" />
                     <Button Name="youthTicketPlus" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="+" Height="51" Width="50" Canvas.Left="367" Canvas.Top="186" FontSize="35" Click="youthTicketPlus_Click" Background="White" Foreground="#FF707070"/>
                     <Rectangle Fill="#FFACACAC" Height="1" Stroke="#FFACACAC" Width="472" Canvas.Left="-18" Canvas.Top="268"/>
-                    <Button Style="{StaticResource RedButton}" Name="ticketsAddToCart" Background="#B83A3F" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="Add To Cart $0.00" Height="57" Width="382" Canvas.Left="30" Canvas.Top="530" FontSize="30" Click="AddToCart_Click" BorderBrush="#FFB83A3F"/>
+                    <Button Style="{StaticResource RedButton}" Name="ticketsAddToCart" Background="#B83A3F" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="Add To Cart $0.00" Height="58" Width="384" Canvas.Left="30" Canvas.Top="530" FontSize="30" Click="AddToCart_Click" BorderBrush="#FFB83A3F"/>
                     <!--<Rectangle Fill="#B83A3F" Height="7" Stroke="#FFB83A3F" Width="472" Canvas.Left="-18" Canvas.Top="-5"/>-->
                 </Canvas>
             </TabItem>

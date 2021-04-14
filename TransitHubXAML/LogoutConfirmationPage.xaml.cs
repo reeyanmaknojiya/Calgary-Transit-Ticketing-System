@@ -28,6 +28,7 @@ namespace TransitHubXAML
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             User.loggedIn = false;
+            TempUser.loggedIn = true;
             this.NavigationService.Navigate(new chooseLoginPage());
         }
         private void Button_Click2(object sender, RoutedEventArgs e)

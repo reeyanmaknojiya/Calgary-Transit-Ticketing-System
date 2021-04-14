@@ -56,7 +56,6 @@ namespace TransitHubXAML
                 youthMonthlyAmount = inCart[(int)Enums.youthMonthly];
                 lowIncomeMonthlyAmount = inCart[(int)Enums.lowIncomeMonthly];
 
-
                 adultTicketAmountLabel.Content = inCart[(int)Enums.adultTicket].ToString();
                 youthTicketAmountLabel.Content = inCart[(int)Enums.youthTicket].ToString();
                 adultMonthlyAmountLabel.Content = inCart[(int)Enums.adultMonthly].ToString();
@@ -94,7 +93,7 @@ namespace TransitHubXAML
             adultTicketAmountLabel.Content = curr.ToString();
             string temp = string.Format("{0:0.00}", calcCurrentCartTotal());
             checkoutButton.Content = "Checkout $" + temp;
-
+            updateItemsArr();
         }
 
         private void adultTicketMinus_Click(object sender, RoutedEventArgs e)
@@ -108,6 +107,7 @@ namespace TransitHubXAML
             adultTicketAmountLabel.Content = curr.ToString();
             string temp = string.Format("{0:0.00}", calcCurrentCartTotal());
             checkoutButton.Content = "Checkout $" + temp;
+            updateItemsArr();
         }
 
         private void youthTicketMinus_Click(object sender, RoutedEventArgs e)
@@ -121,6 +121,7 @@ namespace TransitHubXAML
             youthTicketAmountLabel.Content = curr.ToString();
             string temp = string.Format("{0:0.00}", calcCurrentCartTotal());
             checkoutButton.Content = "Checkout $" + temp;
+            updateItemsArr();
         }
 
         private void youthTicketPlus_Click(object sender, RoutedEventArgs e)
@@ -131,6 +132,7 @@ namespace TransitHubXAML
             youthTicketAmountLabel.Content = curr.ToString();
             string temp = string.Format("{0:0.00}", calcCurrentCartTotal());
             checkoutButton.Content = "Checkout $" + temp;
+            updateItemsArr();
         }
 
         private void adultMonthlyMinus_Click(object sender, RoutedEventArgs e)
@@ -144,6 +146,7 @@ namespace TransitHubXAML
             adultMonthlyAmountLabel.Content = curr.ToString();
             string temp = string.Format("{0:0.00}", calcCurrentCartTotal());
             checkoutButton.Content = "Checkout $" + temp;
+            updateItemsArr();
         }
 
         private void adultMonthlyPlus_Click(object sender, RoutedEventArgs e)
@@ -154,6 +157,7 @@ namespace TransitHubXAML
             adultMonthlyAmountLabel.Content = curr.ToString();
             string temp = string.Format("{0:0.00}", calcCurrentCartTotal());
             checkoutButton.Content = "Checkout $" + temp;
+            updateItemsArr();
         }
 
         private void youthMonthlyMinus_Click(object sender, RoutedEventArgs e)
@@ -167,6 +171,7 @@ namespace TransitHubXAML
             youthMonthlyAmountLabel.Content = curr.ToString();
             string temp = string.Format("{0:0.00}", calcCurrentCartTotal());
             checkoutButton.Content = "Checkout $" + temp;
+            updateItemsArr();
         }
 
         private void youthMonthlyPlus_Click(object sender, RoutedEventArgs e)
@@ -177,6 +182,7 @@ namespace TransitHubXAML
             youthMonthlyAmountLabel.Content = curr.ToString();
             string temp = string.Format("{0:0.00}", calcCurrentCartTotal());
             checkoutButton.Content = "Checkout $" + temp;
+            updateItemsArr();
         }
 
         private void lowIncomeMinus_Click(object sender, RoutedEventArgs e)
@@ -190,6 +196,7 @@ namespace TransitHubXAML
             lowIncomeAmountLabel.Content = curr.ToString();
             string temp = string.Format("{0:0.00}", calcCurrentCartTotal());
             checkoutButton.Content = "Checkout $" + temp;
+            updateItemsArr();
         }
 
         private void lowIncomePlus_Click(object sender, RoutedEventArgs e)
@@ -200,6 +207,7 @@ namespace TransitHubXAML
             lowIncomeAmountLabel.Content = curr.ToString();
             string temp = string.Format("{0:0.00}", calcCurrentCartTotal());
             checkoutButton.Content = "Checkout $" + temp;
+            updateItemsArr();
 
         }
 
@@ -213,27 +221,28 @@ namespace TransitHubXAML
                 return;
             else
             {
-                if (App.Current.Properties.Contains("itemsToCart"))
-                {
-                    var temp = (int[])App.Current.Properties["itemsToCart"];
-                    App.Current.Properties.Remove("itemsToCart");
-                    temp[(int)Enums.adultTicket] = adultTicketAmount;
-                    temp[(int)Enums.youthTicket] = youthTicketAmount;
-                    temp[(int)Enums.adultMonthly] = adultMonthlyAmount;
-                    temp[(int)Enums.youthMonthly] = youthMonthlyAmount;
-                    temp[(int)Enums.lowIncomeMonthly] = lowIncomeMonthlyAmount;
+                updateItemsArr();
+                //if (App.Current.Properties.Contains("itemsToCart"))
+                //{
+                //    var temp = (int[])App.Current.Properties["itemsToCart"];
+                //    App.Current.Properties.Remove("itemsToCart");
+                //    temp[(int)Enums.adultTicket] = adultTicketAmount;
+                //    temp[(int)Enums.youthTicket] = youthTicketAmount;
+                //    temp[(int)Enums.adultMonthly] = adultMonthlyAmount;
+                //    temp[(int)Enums.youthMonthly] = youthMonthlyAmount;
+                //    temp[(int)Enums.lowIncomeMonthly] = lowIncomeMonthlyAmount;
                    
-                    App.Current.Properties.Add("itemsToCart", temp);
-                }
-                else
-                {
-                    items[(int)Enums.adultTicket] = adultTicketAmount;
-                    items[(int)Enums.youthTicket] = youthTicketAmount;
-                    items[(int)Enums.adultMonthly] = adultMonthlyAmount;
-                    items[(int)Enums.youthMonthly] = youthMonthlyAmount;
-                    items[(int)Enums.lowIncomeMonthly] = lowIncomeMonthlyAmount;
-                    App.Current.Properties.Add("itemsToCart", items);
-                }
+                //    App.Current.Properties.Add("itemsToCart", temp);
+                //}
+                //else
+                //{
+                //    items[(int)Enums.adultTicket] = adultTicketAmount;
+                //    items[(int)Enums.youthTicket] = youthTicketAmount;
+                //    items[(int)Enums.adultMonthly] = adultMonthlyAmount;
+                //    items[(int)Enums.youthMonthly] = youthMonthlyAmount;
+                //    items[(int)Enums.lowIncomeMonthly] = lowIncomeMonthlyAmount;
+                //    App.Current.Properties.Add("itemsToCart", items);
+                //}
                 App.Current.Properties["currCost"] = string.Format("{0:0.00}", calcCurrentCartTotal());
 
                 adultTicketAmount = 0;
@@ -253,6 +262,29 @@ namespace TransitHubXAML
             }
         }
 
-        
+        private void updateItemsArr()
+        {
+            if (App.Current.Properties.Contains("itemsToCart"))
+            {
+                var temp = (int[])App.Current.Properties["itemsToCart"];
+                App.Current.Properties.Remove("itemsToCart");
+                temp[(int)Enums.adultTicket] = adultTicketAmount;
+                temp[(int)Enums.youthTicket] = youthTicketAmount;
+                temp[(int)Enums.adultMonthly] = adultMonthlyAmount;
+                temp[(int)Enums.youthMonthly] = youthMonthlyAmount;
+                temp[(int)Enums.lowIncomeMonthly] = lowIncomeMonthlyAmount;
+
+                App.Current.Properties.Add("itemsToCart", temp);
+            }
+            else
+            {
+                items[(int)Enums.adultTicket] = adultTicketAmount;
+                items[(int)Enums.youthTicket] = youthTicketAmount;
+                items[(int)Enums.adultMonthly] = adultMonthlyAmount;
+                items[(int)Enums.youthMonthly] = youthMonthlyAmount;
+                items[(int)Enums.lowIncomeMonthly] = lowIncomeMonthlyAmount;
+                App.Current.Properties.Add("itemsToCart", items);
+            }
+        }
     }
 }

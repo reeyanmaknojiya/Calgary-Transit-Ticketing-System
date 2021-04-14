@@ -24,7 +24,6 @@ namespace TransitHubXAML
             
             InitializeComponent();
 
-            //TODO: Show no cards if its the temp user, show otherwise
             if (!User.loggedIn)
             {
                 oneTimeCard.Content = "Guest Checkout";
@@ -41,7 +40,6 @@ namespace TransitHubXAML
                 ppRectangle.Visibility = System.Windows.Visibility.Hidden;
                 ppLabel1.Visibility = System.Windows.Visibility.Hidden;
                 ppImage.Visibility = System.Windows.Visibility.Hidden;
-
             }
         }
 
