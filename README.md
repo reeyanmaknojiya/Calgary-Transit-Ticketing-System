@@ -51,7 +51,23 @@ OR
 Note: Could use Tab key or mouse click to alternate between text fields
 
 ## Store / Cart Pages
-1. here
+1. Use the plus and minus buttons to select want items
+	- Example: 1 Adult Ticket
+2. Click "Add to Cart" button
+3. While on Cart page, make any edits to order that you wish
+	- Example: Add 1 Youth Ticket
+4. Click "Checkout" button
+5. Click "Guest Checkout" if not logged in
+6. Enter Card Information
+ 	- Example Information
+	- "John Doe" for "Cardholder Name"
+	- 1111222233334444 for "Card Number"
+	- 01 for "Month"
+	- 2021 for "Year"
+	- 123 for "CVV"
+	- T2N1N4 for "ZIP Code"
+7. Click on "Continue and Pay"
+
 
 ## My Tickets / Ticket Viewer Pages
 1. Select "View" button
