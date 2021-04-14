@@ -9,10 +9,10 @@
     <Grid>
         <TextBox x:Name="phoneText" FontSize="24" HorizontalAlignment="Left" Height="42" Margin="58,240,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="332"/>
         <Label Content="Enter Phone Number" HorizontalAlignment="Left" Margin="58,196,0,0" VerticalAlignment="Top" Height="44" Width="224" FontSize="22"/>
-        <Image MouseDown="Back_Click" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="64" Source="Resources/back-arrow.png" Margin="30,30,0,0"/>
-        <TextBlock FontSize="30" Margin="161,30,106,702.5" Text="Edit Phone"/>
-        <Button Content="Confirm" HorizontalAlignment="Left" Margin="227,665,0,0" VerticalAlignment="Top" Width="223" Height="70" FontSize="30" Background="#FFC43A3F" Foreground="White" Click="Button_Click_1"/>
-        <Button Content="Cancel" HorizontalAlignment="Left" Margin="4,665,0,0" VerticalAlignment="Top" Width="223" Height="70" FontSize="30" Click="Button_Click"/>
+        <Image MouseDown="Back_Click" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="64" Source="Resources/back-arrow-white.png" Margin="33,13,0,0"/>
+        <Button Content="Confirm" HorizontalAlignment="Left" Margin="30,521,0,0" VerticalAlignment="Top" Width="387" Height="58" FontSize="30" Background="#B83A3F" Foreground="White" Click="Button_Click_1"/>
+        <Label Content="Edit Phone" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="156,11,0,0" Height="58" Width="192" FontSize="30" FontFamily="Open Sans"/>
+        <Rectangle Fill="#B83A3F" Panel.ZIndex="-1" HorizontalAlignment="Left" Height="65" Stroke="{x:Null}" StrokeThickness="0.5" VerticalAlignment="Top" Width="466" Margin="-16,0,0,0"/>
 
     </Grid>
 </Page>

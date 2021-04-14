@@ -93,6 +93,9 @@
     <Compile Include="ticketDisplay.xaml.cs">
       <DependentUpon>ticketDisplay.xaml</DependentUpon>
     </Compile>
+    <Compile Include="VerificationConfirmationPage.xaml.cs">
+      <DependentUpon>VerificationConfirmationPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewModel\MenuViewModel.cs" />
     <Compile Include="Wallet.xaml.cs">
       <DependentUpon>Wallet.xaml</DependentUpon>
@@ -310,6 +313,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="ReceiptPage2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VerificationConfirmationPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

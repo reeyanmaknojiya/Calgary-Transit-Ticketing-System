@@ -7,10 +7,9 @@
       mc:Ignorable="d" 
       Title="ReceiptPage2" Height="800" Width="450">
     <Grid>
-        <Image HorizontalAlignment="Left" MouseDown="Back_Click" Height="40" VerticalAlignment="Top" Width="64" Source="Resources/back-arrow.png" Margin="30,30,0,0"/>
-        <TextBlock FontSize="30" Margin="155,30,108,702.5" Text="View Receipt"/>
-        <TextBlock FontSize="28" Margin="10,106,249,626.5" Text="Receipt #00001"/>
-        <TextBlock FontSize="25" Margin="0,106,10,626.5" Text="Feb 06, 2021" HorizontalAlignment="Right" />
+        <Image HorizontalAlignment="Left" MouseDown="Back_Click" Height="40" VerticalAlignment="Top" Width="64" Source="Resources/back-arrow-white.png" Margin="33,13,0,0"/>
+        <TextBlock FontSize="28" Margin="10,106,249,626.5" Text="Receipt #00002"/>
+        <TextBlock FontSize="25" Margin="0,106,10,626.5" Text="March 26, 2021" HorizontalAlignment="Right" />
         <TextBlock FontSize="22" Margin="10,168,249,564.5" Text="Name: John Smith"/>
         <TextBlock FontSize="22" Margin="10,199,6,534" Text="Email: john.smith@gmail.com"/>
         <TextBlock FontSize="22" Margin="10,230,151,502.5" Text="Card: XXXX XXXX XXXX 1806"/>
@@ -24,7 +23,8 @@
         <TextBlock FontSize="25" Margin="0,350,125,382.5" Text="$3.50" HorizontalAlignment="Right" />
         <Rectangle Fill="Gray" Stroke="Black" Margin="0,339,0,455"/>
         <TextBlock FontSize="30" Margin="0,454,36,278" Text="Total: $10.50" HorizontalAlignment="Right"/>
-        <Button Content="Download Receipt" Foreground="white" Background="#B83A3F" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="30" Width="444" Margin="0,702,0,0" Height="70" RenderTransformOrigin="0.498,1.486"/>
+        <Label Content="View Receipt" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="139,11,0,0" Height="58" Width="188" FontSize="30" FontFamily="Open Sans"/>
+        <Rectangle Fill="#B83A3F" Panel.ZIndex="-1" HorizontalAlignment="Left" Height="65" Stroke="{x:Null}" StrokeThickness="0.5" VerticalAlignment="Top" Width="466" Margin="-16,0,0,0"/>
 
     </Grid>
 </Page>

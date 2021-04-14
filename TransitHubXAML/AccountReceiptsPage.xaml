@@ -8,20 +8,21 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="AccountReceiptsPage" Height="800" Width="450">
     <Grid>
-        <Image HorizontalAlignment="Left" MouseDown="Back_Click" Height="40" VerticalAlignment="Top" Width="64" Source="Resources/back-arrow.png" Margin="30,30,0,0"/>
-        <TextBlock FontSize="30" Margin="129,30,88,702.5" Text="Purchase History"/>
+        <Image HorizontalAlignment="Left" MouseDown="Back_Click" Height="40" VerticalAlignment="Top" Width="64" Source="Resources/back-arrow-white.png" Margin="33,13,0,0"/>
         <TextBlock FontSize="30" Margin="10,122,249,610.5" Text="Past Receipts"/>
         <TextBlock FontSize="25" Margin="10,202,249,530.5" Text="Receipt #00002"/>
         <TextBlock FontSize="30" Margin="249,202,10,530.5" Text="Total: $10.50" HorizontalAlignment="Right" />
         <TextBlock FontSize="25" Margin="10,247,249,485.5" Text="March 26, 2021"/>
         <Button Content="View Receipt" HorizontalAlignment="Left" Margin="10,300,0,0" VerticalAlignment="Top" Width="425" Height="50" FontSize="25" Click="Button_Click"/>
-        <Rectangle Fill="LightGray" Stroke="LightGray" Margin="0,366,0,422"/>
         <TextBlock FontSize="25" Margin="10,378,249,354.5" Text="Receipt #00001"/>
         <TextBlock FontSize="30" Margin="0,378,10,354.5" Text="Total: $3.50" HorizontalAlignment="Right" />
         <TextBlock FontSize="25" Margin="10,423,249,309.5" Text="Feb 06, 2021"/>
         <Button Content="View Receipt" HorizontalAlignment="Left" Margin="10,476,0,0" VerticalAlignment="Top" Width="425" Height="50" FontSize="25" Click="Button_Click_1"/>
-        <Rectangle Fill="LightGray" Stroke="LightGray" Margin="0,190,0,598"/>
-        <Rectangle Fill="LightGray" Stroke="LightGray" Margin="0,546,0,242"/>
+        <Label Content="Purchase History" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="128,11,0,0" Height="58" Width="233" FontSize="30" FontFamily="Open Sans"/>
+        <Rectangle Fill="#B83A3F" Panel.ZIndex="-1" HorizontalAlignment="Left" Height="65" Stroke="{x:Null}" StrokeThickness="0.5" VerticalAlignment="Top" Width="466" Margin="-16,0,0,0"/>
+        <Rectangle Fill="#FFACACAC" Stroke="Black" Margin="-22,194,0,605"/>
+        <Rectangle Fill="#FFACACAC" Stroke="Black" Margin="-22,370,0,429"/>
+        <Rectangle Fill="#FFACACAC" Stroke="Black" Margin="-22,546,0,253"/>
 
     </Grid>
 

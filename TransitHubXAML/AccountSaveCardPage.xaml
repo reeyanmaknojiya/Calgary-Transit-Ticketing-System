@@ -8,15 +8,15 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="AccountSaveCardPage" Height="800" Width="450">
     <Grid>
-        <Button Content="Save Card" HorizontalAlignment="Left" Margin="0,581,0,0" VerticalAlignment="Top" Width="450" Height="70" FontSize="30" Background="#FFC43A3F" Foreground="White" Click="Button_Click"/>
-        <Image HorizontalAlignment="Left" MouseDown="Back_Click" Height="40" VerticalAlignment="Top" Width="64" Source="Resources/back-arrow.png" Margin="30,30,0,0"/>
-        <TextBlock FontSize="30" Margin="143,30,106,702.5" Text="Add New Card"/>
-        <Label x:Name="cardholderLabel" Content="Cardholder Name:" HorizontalAlignment="Left" Margin="30,111,0,0" VerticalAlignment="Top" Width="212" FontWeight="Bold" FontSize="20"/>
-        <TextBox x:Name="cardHolder" HorizontalAlignment="Left" Height="26" Margin="30,153,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="393"/>
-        <Label x:Name="cardNumberLabel" Content="Card Number:" HorizontalAlignment="Left" Margin="30,215,0,0" VerticalAlignment="Top" Width="212" FontWeight="Bold" FontSize="20"/>
-        <TextBox x:Name="cardNumber" HorizontalAlignment="Left" Height="26" Margin="30,257,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="393"/>
-        <Label x:Name="dateLabel" Content="Date:" HorizontalAlignment="Left" Margin="30,330,0,0" VerticalAlignment="Top" Width="72" FontWeight="Bold" FontSize="20"/>
-        <ComboBox x:Name="monthBox" HorizontalAlignment="Left" Margin="30,367,0,0" VerticalAlignment="Top" Width="72">
+        <Button Content="Save Card" HorizontalAlignment="Left" Margin="30,581,0,0" VerticalAlignment="Top" Width="387" Height="58" FontSize="30" Background="#B83A3F" Foreground="White" Click="Button_Click"/>
+        <Image HorizontalAlignment="Left" MouseDown="Back_Click" Height="40" VerticalAlignment="Top" Width="64" Source="Resources/back-arrow-white.png" Margin="30,14,0,0"/>
+        <Label Content="Add New Card" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="141,12,0,0" Height="58" Width="209" FontSize="30" FontFamily="Open Sans"/>
+        <Rectangle Fill="#B83A3F" Panel.ZIndex="-1" HorizontalAlignment="Left" Height="65" Stroke="{x:Null}" StrokeThickness="0.5" VerticalAlignment="Top" Width="450"/>
+        <Label x:Name="cardholderLabel" Content="Cardholder Name" HorizontalAlignment="Left" Margin="30,122,0,0" VerticalAlignment="Top" Width="212" FontSize="24"/>
+        <TextBox x:Name="cardHolder" HorizontalAlignment="Left" Height="42" Margin="30,164,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="393" FontSize="24"/>
+        <Label x:Name="cardNumberLabel" Content="Card Number" HorizontalAlignment="Left" Margin="30,226,0,0" VerticalAlignment="Top" Width="212" FontSize="24"/>
+        <TextBox x:Name="cardNumber" HorizontalAlignment="Left" Height="42" Margin="30,268,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="393" FontSize="24"/>
+        <ComboBox Style="{StaticResource ComboBoxFlatStyle}" x:Name="monthBox" HorizontalAlignment="Left" Margin="30,380,0,0" VerticalAlignment="Top" Height="42" Width="72" FontSize="24" Foreground="#FF2C2C2C">
             <ComboBoxItem Content="01"/>
             <ComboBoxItem Content="02"/>
             <ComboBoxItem Content="03"/>
@@ -30,18 +30,19 @@
             <ComboBoxItem Content="11"/>
             <ComboBoxItem Content="12"/>
         </ComboBox>
-        <Label Content="/" HorizontalAlignment="Left" Margin="118,362,0,0" VerticalAlignment="Top" Width="24" FontWeight="Bold" FontSize="20"/>
-        <ComboBox x:Name="yearBox" HorizontalAlignment="Left" Margin="147,367,0,0" VerticalAlignment="Top" Width="86">
+        <ComboBox Style="{StaticResource ComboBoxFlatStyle}" Height="42" x:Name="yearBox" HorizontalAlignment="Left" Margin="136,380,0,0" VerticalAlignment="Top" Width="86" FontSize="24" Foreground="#FF2C2C2C">
             <ComboBoxItem Content="2021"/>
             <ComboBoxItem Content="2022"/>
             <ComboBoxItem Content="2023"/>
             <ComboBoxItem Content="2024"/>
             <ComboBoxItem Content="2025"/>
         </ComboBox>
-        <Label x:Name="cvvLabel" Content="CVV:" HorizontalAlignment="Left" Margin="259,330,0,0" VerticalAlignment="Top" Width="72" FontWeight="Bold" FontSize="20"/>
-        <TextBox x:Name="cvvIn" HorizontalAlignment="Left" Height="26" Margin="259,363,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="164"/>
-        <Label x:Name="zipLabel" Content="ZIP Code:" HorizontalAlignment="Left" Margin="30,429,0,0" VerticalAlignment="Top" Width="203" FontWeight="Bold" FontSize="20"/>
-        <TextBox x:Name="zipIn" HorizontalAlignment="Left" Height="26" Margin="30,487,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="164"/>
+        <Label x:Name="cvvLabel" Content="CVV" HorizontalAlignment="Left" Margin="258,338,0,0" VerticalAlignment="Top" Width="72" FontSize="24"/>
+        <TextBox x:Name="cvvIn" HorizontalAlignment="Left" Height="42" Margin="259,380,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="164" FontSize="24"/>
+        <Label x:Name="zipLabel" Content="ZIP Code" HorizontalAlignment="Left" Margin="30,458,0,0" VerticalAlignment="Top" Width="203" FontSize="24"/>
+        <TextBox x:Name="zipIn" HorizontalAlignment="Left" Height="42" Margin="30,505,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="164" FontSize="24"/>
+        <Label x:Name="dateLabel_Copy" Content="Month" HorizontalAlignment="Left" Margin="25,338,0,0" VerticalAlignment="Top" Width="87" FontSize="24"/>
+        <Label x:Name="dateLabel_Copy1" Content="Year" HorizontalAlignment="Left" Margin="131,338,0,0" VerticalAlignment="Top" Width="87" FontSize="24"/>
 
     </Grid>
 </Page>

@@ -18,7 +18,7 @@
             <Grid  Background="#B83A3F" Margin="0,0,0,12">
 
                 <!--<Image Source="Resources/back-arrow.png"  Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50"/>-->
-                <TextBlock Text="HELP" Foreground="White" Grid.Column="1" Grid.ColumnSpan="3" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="50" Margin="76,2,0,6"/>
+                <TextBlock Text="Help" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="30" Margin="192,9,0,16"/>
                 <!--<Button Name="backBttn" Background="Transparent" Click="backBttn_Click">
                     <Image Source="Resources/back-arrow.png"  Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50"/>
                 </Button>-->

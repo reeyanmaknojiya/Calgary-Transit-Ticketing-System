@@ -7,24 +7,30 @@
       mc:Ignorable="d" 
       Title="AccountPaymentMethodsPage" Height="800" Width="450">
     <Grid>
-        <Button Content="Add New Card" HorizontalAlignment="Left" Margin="115,582,0,0" VerticalAlignment="Top" Width="223" Height="62" FontSize="30" Click="Button_Click_2"/>
-        <Image HorizontalAlignment="Left" MouseDown="Back_Click" Height="40" VerticalAlignment="Top" Width="64" Source="Resources/back-arrow.png" Margin="30,30,0,0"/>
-        <TextBlock FontSize="30" Margin="115,30,88,702.5" Text="Payment Methods"/>
-        <TextBlock FontSize="30" Margin="75,141,128,591" Text="Saved Cards"/>
-        <Rectangle Fill="LightGray" Stroke="LightGray" Margin="0,191,0,591"/>
-        <Rectangle Fill="LightGray" Stroke="LightGray" Margin="0,492,0,287"/>
-        <Rectangle Fill="LightGray" Stroke="LightGray" Margin="0,342,0,439"/>
-        <Image HorizontalAlignment="Left" Height="38" Margin="75,228,0,0" VerticalAlignment="Top" Width="60" Source="Resources/visa1.png" RenderTransformOrigin="0.526,1.513"/>
-        <Image HorizontalAlignment="Left" Height="42" Margin="75,376,0,0" VerticalAlignment="Top" Width="64" Source="Resources/mastercard1.jpeg" RenderTransformOrigin="0.526,1.513"/>
-        <TextBlock FontSize="25" Margin="140,226,29,506" Text="XXXX XXXX XXXX 1806" RenderTransformOrigin="0.376,0.438"/>
-        <TextBlock FontSize="25" Margin="144,378,29,354" Text="XXXX XXXX XXXX 0910"/>
-        <Button x:Name="DefaultButton" Content="Make Default" Visibility="Hidden" HorizontalAlignment="Left" Margin="75,294,0,0" VerticalAlignment="Top" Width="135" Height="34" FontSize="15" RenderTransformOrigin="0.506,0" Click="Button_Click"/>
-        <Button Content="Remove" HorizontalAlignment="Left" Margin="252,294,0,0" VerticalAlignment="Top" Width="135" Height="34" FontSize="15" Background="#FFC43A3F" Foreground="White" RenderTransformOrigin="0.506,0"/>
-        <Button x:Name="DefaultButton2" Content="Make Default" HorizontalAlignment="Left" Margin="75,444,0,0" VerticalAlignment="Top" Width="135" Height="34" FontSize="15" RenderTransformOrigin="0.506,0" Click="Button_Click_1"/>
-        <Button Content="Remove" HorizontalAlignment="Left" Margin="252,444,0,0" VerticalAlignment="Top" Width="135" Height="34" FontSize="15" Background="#FFC43A3F" Foreground="White" RenderTransformOrigin="0.506,0"/>
-        <TextBlock x:Name="DefaultLabel" FontSize="20" Margin="106,296,256,461" Text="Default"/>
-        <TextBlock x:Name="DefaultLabel2" Visibility="Hidden" FontSize="20" Margin="106,446,256,311" Text="Default"/>
-
+        <Button Content="Add New Card" HorizontalAlignment="Left" Margin="33,564,0,0" VerticalAlignment="Top" Width="384" Height="58" FontSize="30" Click="Button_Click_2"/>
+        <Image HorizontalAlignment="Left" MouseDown="Back_Click" Height="40" VerticalAlignment="Top" Width="64" Source="Resources/back-arrow-white.png" Margin="33,13,0,0"/>
+        <TextBlock FontSize="30" Margin="75,85,128,647" Text="Saved Cards"/>
+        <Image HorizontalAlignment="Left" Height="38" Margin="75,162,0,0" VerticalAlignment="Top" Width="60" Source="Resources/visa1.png" RenderTransformOrigin="0.526,1.513"/>
+        <Image HorizontalAlignment="Left" Height="42" Margin="75,292,0,0" VerticalAlignment="Top" Width="64" Source="Resources/mastercard1.jpeg" RenderTransformOrigin="0.526,1.513"/>
+        <TextBlock FontSize="25" Margin="140,160,29,572" Text="XXXX XXXX XXXX 1806" RenderTransformOrigin="0.376,0.438"/>
+        <TextBlock FontSize="25" Margin="144,294,29,438" Text="XXXX XXXX XXXX 0910"/>
+        <Button x:Name="DefaultButton" Content="Make Default" Visibility="Hidden" HorizontalAlignment="Left" Margin="75,228,0,0" VerticalAlignment="Top" Width="135" Height="34" FontSize="15" RenderTransformOrigin="0.506,0" Click="Button_Click"/>
+        <Button Content="Remove" HorizontalAlignment="Left" Margin="252,228,0,0" VerticalAlignment="Top" Width="135" Height="34" FontSize="15" Background="#FFC43A3F" Foreground="White" RenderTransformOrigin="0.506,0"/>
+        <Button x:Name="DefaultButton2" Content="Make Default" HorizontalAlignment="Left" Margin="75,360,0,0" VerticalAlignment="Top" Width="135" Height="34" FontSize="15" RenderTransformOrigin="0.506,0" Click="Button_Click_1"/>
+        <Button Content="Remove" HorizontalAlignment="Left" Margin="252,360,0,0" VerticalAlignment="Top" Width="135" Height="34" FontSize="15" Background="#FFC43A3F" Foreground="White" RenderTransformOrigin="0.506,0"/>
+        <TextBlock x:Name="DefaultLabel" FontSize="18" Margin="76,231,238,526" Text="Default Method" FontWeight="Bold"/>
+        <TextBlock x:Name="DefaultLabel2" Visibility="Hidden" FontSize="18" Margin="75,364,238,393" Text="Default Method" FontWeight="Bold"/>
+        <Label Content="Payment Methods" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="111,11,0,0" Height="58" Width="251" FontSize="30" FontFamily="Open Sans"/>
+        <Rectangle Fill="#B83A3F" Panel.ZIndex="-1" HorizontalAlignment="Left" Height="65" Stroke="{x:Null}" StrokeThickness="0.5" VerticalAlignment="Top" Width="466" Margin="-16,0,0,0"/>
+        <Rectangle Fill="#FFACACAC" Stroke="Black" Margin="-22,146,0,653"/>
+        <Rectangle Fill="#FFACACAC" Stroke="Black" Margin="-22,281,0,518"/>
+        <Rectangle Fill="#FFACACAC" Stroke="Black" Margin="-22,413,0,386"/>
+        <TextBlock FontSize="25" Margin="151,428,53,304" Text="my_email@gmail.com"/>
+        <Image HorizontalAlignment="Left" Height="56" Margin="83,424,0,0" VerticalAlignment="Top" Width="64" Source="Resources/paypal.png" RenderTransformOrigin="0.526,1.513"/>
+        <Rectangle Fill="#FFACACAC" Stroke="Black" Margin="-22,537,0,262"/>
+        <Button x:Name="DefaultButton2_Copy" Content="Make Default" HorizontalAlignment="Left" Margin="75,484,0,0" VerticalAlignment="Top" Width="135" Height="34" FontSize="15" RenderTransformOrigin="0.506,0" Click="Button_Click_3"/>
+        <Button Content="Remove" HorizontalAlignment="Left" Margin="252,484,0,0" VerticalAlignment="Top" Width="135" Height="34" FontSize="15" Background="#FFC43A3F" Foreground="White" RenderTransformOrigin="0.506,0"/>
+        <TextBlock x:Name="DefaultLabel2_Copy" Visibility="Hidden" FontSize="18" Margin="75,488,238,269" Text="Default Method" FontWeight="Bold"/>
 
     </Grid>
 </Page>

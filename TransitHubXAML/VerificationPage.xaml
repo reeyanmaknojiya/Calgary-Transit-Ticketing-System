@@ -9,17 +9,18 @@
       Title="VerificationPage" Height="800" Width="450" >
     <Grid>
 
-        <Button Content="SEND FOR APPROVAL" Foreground="white" Background="#B83A3F" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="30" Width="450" Margin="0,587,0,0" Height="70" RenderTransformOrigin="0.498,1.486"/>
-        <Label Content="Registration Number" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="100,162,104,0" FontSize ="25" Height="44" Width="240" Grid.ColumnSpan="2"/>
-        <Label Content="Photo of your Identification" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="60,315,55,0" FontSize ="25" Height="53" Width="315" Grid.ColumnSpan="2"/>
-        <Label Content="or" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="199,444,0,0" FontSize ="25" Height="44" Width="45" RenderTransformOrigin="1.711,0.58"/>
-        <TextBox HorizontalAlignment="Left" Height="47" TextWrapping="Wrap" VerticalAlignment="Top" Width="295" Margin="74,220,0,0" FontSize ="25"/>
-        <Button Content="  SELECT FILE" HorizontalAlignment="Left" VerticalAlignment="Top" Width="295" FontSize ="25" Margin="74,389,0,0" Height="50"/>
-        <Button Content="  TAKE PHOTO " HorizontalAlignment="Left" VerticalAlignment="Top" Width="295" FontSize ="25" Margin="74,493,0,0" Height="50"/>
-        <Image HorizontalAlignment="Left" Height="40" Margin="88,498,0,0" VerticalAlignment="Top" Width="77" Source="Resources/camera.png" RenderTransformOrigin="0.526,1.513"/>
-        <Image HorizontalAlignment="Left" Height="40" Margin="88,395,0,0" VerticalAlignment="Top" Width="77" Source="Resources/folder.png" RenderTransformOrigin="0.526,1.513"/>
-        <Image HorizontalAlignment="Left" MouseDown="Back_Click" Height="40" VerticalAlignment="Top" Width="64" Source="Resources/back-arrow.png" Margin="30,30,0,0"/>
-        <TextBlock FontSize="30" Margin="129,30,88,702" Text="Purchase History"/>
+        <Button Content="Send For Approval" Foreground="white" Background="#B83A3F" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="30" Width="387" Margin="30,537,0,0" Height="58" RenderTransformOrigin="0.498,1.486" Click="Button_Click"/>
+        <Label Content="Registration Number" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="103,96,107,0" FontSize ="25" Height="44" Width="240"/>
+        <Label Content="Photo of your Identification" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="70,245,65,0" FontSize ="25" Height="53" Width="315"/>
+        <Label Content="or" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="199,374,0,0" FontSize ="25" Height="44" Width="45" RenderTransformOrigin="1.711,0.58"/>
+        <TextBox HorizontalAlignment="Left" Height="47" TextWrapping="Wrap" VerticalAlignment="Top" Width="295" Margin="74,154,0,0" FontSize ="25"/>
+        <Button Content="  SELECT FILE" HorizontalAlignment="Left" VerticalAlignment="Top" Width="295" FontSize ="25" Margin="74,319,0,0" Height="50"/>
+        <Button Content="  TAKE PHOTO " HorizontalAlignment="Left" VerticalAlignment="Top" Width="295" FontSize ="25" Margin="74,423,0,0" Height="50"/>
+        <Image HorizontalAlignment="Left" Height="40" Margin="88,428,0,0" VerticalAlignment="Top" Width="77" Source="Resources/camera.png" RenderTransformOrigin="0.526,1.513"/>
+        <Image HorizontalAlignment="Left" Height="40" Margin="88,325,0,0" VerticalAlignment="Top" Width="77" Source="Resources/folder.png" RenderTransformOrigin="0.526,1.513"/>
+        <Image HorizontalAlignment="Left" MouseDown="Back_Click" Height="40" VerticalAlignment="Top" Width="64" Source="Resources/back-arrow-white.png" Margin="33,13,0,0"/>
+        <Label Content="Verification" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="155,11,0,0" Height="58" Width="161" FontSize="30" FontFamily="Open Sans"/>
+        <Rectangle Fill="#B83A3F" Panel.ZIndex="-1" HorizontalAlignment="Left" Height="65" Stroke="{x:Null}" StrokeThickness="0.5" VerticalAlignment="Top" Width="466" Margin="-16,0,0,0"/>
     </Grid>
 
 

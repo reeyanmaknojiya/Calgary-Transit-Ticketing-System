@@ -10,8 +10,8 @@
 
 
     <Grid>
-        <Label Content="Payment Information" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="88,12,-115,0" Height="58" Width="477" FontSize="30" FontFamily="Open Sans"/>
-        <Image MouseDown="Label_MouseDown" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="69" Source="Resources/back-arrow-white.png" Margin="30,20,0,0"/>
+        <Label Content="Payment Information" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="92,12,-119,0" Height="58" Width="477" FontSize="30" FontFamily="Open Sans"/>
+        <Image MouseDown="Label_MouseDown" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="69" Source="Resources/back-arrow-white.png" Margin="32,13,0,0"/>
         <!--<Label MouseDown="Label_MouseDown" Content="&lt;" Foreground="White" HorizontalAlignment="Left" Margin="26,-10,0,0" VerticalAlignment="Top" Height="75" Width="57" FontSize="50"/>-->
         <Rectangle Fill="#B83A3F" Panel.ZIndex="-1" HorizontalAlignment="Left" Height="65" Stroke="{x:Null}" StrokeThickness="0.5" VerticalAlignment="Top" Width="450"/>
         <Label Name="cardholderLabel" Content="Cardholder Name" HorizontalAlignment="Left" Margin="30,122,0,0" VerticalAlignment="Top" Width="212" FontSize="24"/>
@@ -43,7 +43,7 @@
         <TextBox Name="cvvIn" HorizontalAlignment="Left" Height="42" Margin="259,380,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="164" FontSize="24"/>
         <Label Name="zipLabel" Content="ZIP Code" HorizontalAlignment="Left" Margin="30,458,0,0" VerticalAlignment="Top" Width="203" FontSize="24"/>
         <TextBox Name="zipIn" HorizontalAlignment="Left" Height="42" Margin="30,505,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="164" FontSize="24"/>
-        <Button Style="{StaticResource RedButton}" Click="Button_Click" Content="Continue and Pay" Foreground="white" Background="#B83A3F" HorizontalAlignment="Left" Margin="50,583,0,0" VerticalAlignment="Top" Width="354" Height="49" FontSize="22"/>
+        <Button Style="{StaticResource RedButton}" Click="Button_Click" Content="Continue and Pay" Foreground="white" Background="#B83A3F" HorizontalAlignment="Left" Margin="30,583,0,0" VerticalAlignment="Top" Width="387" Height="58" FontSize="30"/>
         <Label x:Name="dateLabel_Copy" Content="Month" HorizontalAlignment="Left" Margin="25,338,0,0" VerticalAlignment="Top" Width="87" FontSize="24"/>
         <Label x:Name="dateLabel_Copy1" Content="Year" HorizontalAlignment="Left" Margin="131,338,0,0" VerticalAlignment="Top" Width="87" FontSize="24"/>
 

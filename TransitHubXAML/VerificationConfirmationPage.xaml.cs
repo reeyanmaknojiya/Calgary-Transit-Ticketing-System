@@ -10,18 +10,23 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace TransitHubXAML
 {
     /// <summary>
-    /// Interaction logic for AccountEdit.xaml
+    /// Interaction logic for VerificationConfirmationPage.xaml
     /// </summary>
-    public partial class AccountEdit : Window
+    public partial class VerificationConfirmationPage : Page
     {
-        public AccountEdit()
+        public VerificationConfirmationPage()
         {
             InitializeComponent();
+        }
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new accountPage());
         }
     }
 }

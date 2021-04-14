@@ -35,6 +35,8 @@ namespace TransitHubXAML
             DefaultLabel2.Visibility = System.Windows.Visibility.Hidden;
             DefaultButton.Visibility = System.Windows.Visibility.Hidden;
             DefaultLabel.Visibility = System.Windows.Visibility.Visible;
+            DefaultButton2_Copy.Visibility = System.Windows.Visibility.Visible;
+            DefaultLabel2_Copy.Visibility = System.Windows.Visibility.Hidden;
 
         }
 
@@ -42,6 +44,17 @@ namespace TransitHubXAML
         {
             DefaultButton2.Visibility = System.Windows.Visibility.Hidden;
             DefaultLabel2.Visibility = System.Windows.Visibility.Visible;
+            DefaultButton.Visibility = System.Windows.Visibility.Visible;
+            DefaultLabel.Visibility = System.Windows.Visibility.Hidden;
+            DefaultButton2_Copy.Visibility = System.Windows.Visibility.Visible;
+            DefaultLabel2_Copy.Visibility = System.Windows.Visibility.Hidden;
+        }
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            DefaultButton2_Copy.Visibility = System.Windows.Visibility.Hidden;
+            DefaultLabel2_Copy.Visibility = System.Windows.Visibility.Visible;
+            DefaultButton2.Visibility = System.Windows.Visibility.Visible;
+            DefaultLabel2.Visibility = System.Windows.Visibility.Hidden;
             DefaultButton.Visibility = System.Windows.Visibility.Visible;
             DefaultLabel.Visibility = System.Windows.Visibility.Hidden;
         }

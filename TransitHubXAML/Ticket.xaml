@@ -11,7 +11,7 @@
     <ScrollViewer VerticalScrollBarVisibility="Auto">
         <Grid RenderTransformOrigin="0.493,0.585">
 
-            <Label Content="Ticket Display" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="112,7,0,0" Height="58" Width="280" FontSize="40" FontFamily="Open Sans"/>
+            <Label Content="Ticket Display" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="133,13,0,0" Height="58" Width="193" FontSize="30" FontFamily="Open Sans"/>
 
             <Rectangle Fill="#B83A3F" Panel.ZIndex="-1" HorizontalAlignment="Left" Height="71" Stroke="{x:Null}" StrokeThickness="0.5" VerticalAlignment="Top" Width="550"/>
             

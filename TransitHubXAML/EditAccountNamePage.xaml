@@ -8,13 +8,13 @@
       Title="EditAccountNamePage" Height="800" Width="450">
     <Grid>
         <Label Content="First Name" HorizontalAlignment="Left" Margin="49,141,0,0" VerticalAlignment="Top" Height="44" Width="173" FontSize="22"/>
-        <TextBox x:Name="firstNameText" FontSize="24" HorizontalAlignment="Left" Height="42" Margin="56,178,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="166"/>
-        <TextBox x:Name="lastNameText" FontSize="24" HorizontalAlignment="Left" Height="42" Margin="231,178,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="179"/>
-        <Label Content="Last Name" HorizontalAlignment="Left" Margin="227,141,0,0" VerticalAlignment="Top" Height="44" Width="173" FontSize="22"/>
-        <Image MouseDown="Back_Click" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="64" Source="Resources/back-arrow.png" Margin="30,30,0,0"/>
-        <TextBlock FontSize="30" Margin="154,30,113,702.5" Text="Edit Name"/>
-        <Button Content="Confirm" HorizontalAlignment="Left" Margin="227,665,0,0" VerticalAlignment="Top" Width="223" Height="70" FontSize="30" Background="#FFC43A3F" Foreground="White" Click="Button_Click_1"/>
-        <Button Content="Cancel" HorizontalAlignment="Left" Margin="4,665,0,0" VerticalAlignment="Top" Width="223" Height="70" FontSize="30" Click="Button_Click"/>
+        <TextBox x:Name="firstNameText" FontSize="24" HorizontalAlignment="Left" Height="42" Margin="56,178,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="328"/>
+        <TextBox x:Name="lastNameText" FontSize="24" HorizontalAlignment="Left" Height="42" Margin="56,302,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="328"/>
+        <Label Content="Last Name" HorizontalAlignment="Left" Margin="52,265,0,0" VerticalAlignment="Top" Height="44" Width="173" FontSize="22"/>
+        <Image MouseDown="Back_Click" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="64" Source="Resources/back-arrow-white.png" Margin="33,13,0,0"/>
+        <Button Content="Confirm" HorizontalAlignment="Left" Margin="30,521,0,0" VerticalAlignment="Top" Width="387" Height="58" FontSize="30" Background="#B83A3F" Foreground="White" Click="Button_Click_1"/>
+        <Label Content="Edit Name" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="155,11,0,0" Height="58" Width="192" FontSize="30" FontFamily="Open Sans"/>
+        <Rectangle Fill="#B83A3F" Panel.ZIndex="-1" HorizontalAlignment="Left" Height="65" Stroke="{x:Null}" StrokeThickness="0.5" VerticalAlignment="Top" Width="466" Margin="-16,0,0,0"/>
 
     </Grid>
 
