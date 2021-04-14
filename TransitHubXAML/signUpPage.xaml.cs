@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -92,7 +92,12 @@ namespace TransitHubXAML
             }
             if (!String.IsNullOrEmpty(dayText.Text))
             {
-                if (int.Parse(dayText.Text) > 31 ^ int.Parse(dayText.Text) < 1)
+                if (!Regex.IsMatch(dayText.Text, @"^\d+$"))
+                {
+                    dayText.BorderBrush = System.Windows.Media.Brushes.Red;
+                    valid = false;
+                }
+                else if (int.Parse(dayText.Text) > 31 ^ int.Parse(dayText.Text) < 1)
                 {
                     dayText.BorderBrush = System.Windows.Media.Brushes.Red;
                     valid = false;
@@ -105,7 +110,12 @@ namespace TransitHubXAML
             }
             if (!String.IsNullOrEmpty(yearText.Text))
             {
-                if (int.Parse(yearText.Text) > 2021 ^ int.Parse(yearText.Text) < 1900)
+                if (!Regex.IsMatch(yearText.Text, @"^\d+$"))
+                {
+                    yearText.BorderBrush = System.Windows.Media.Brushes.Red;
+                    valid = false;
+                }
+                else if (int.Parse(yearText.Text) > 2021 ^ int.Parse(yearText.Text) < 1900)
                 {
                     yearText.BorderBrush = System.Windows.Media.Brushes.Red;
                     valid = false;
@@ -128,7 +138,7 @@ namespace TransitHubXAML
                 valid = false;
             }
 
-            if (!Regex.IsMatch(phoneText.Text, "\\d{10}") & !Regex.IsMatch(phoneText.Text, "[(]\\d{3}[)]\\d{3}[-]?\\d{4}"))
+            if (!Regex.IsMatch(phoneText.Text, @"^\(?([0-9]{3})\)?[-.●]?([0-9]{3})[-.●]?([0-9]{4})$"))
             {
                 phoneText.BorderBrush = System.Windows.Media.Brushes.Red;
                 valid = false;
@@ -247,6 +257,22 @@ namespace TransitHubXAML
             confirmPasswordBox.Password = confirmPasswordUnmask.Text;
             viewConfirmEye.Visibility = Visibility.Visible;
             hideConfirmEye.Visibility = Visibility.Collapsed;
+        }
+
+        private void dayText_Click(object sender, MouseButtonEventArgs e)
+        {
+            if (dayText.Text == "Day")
+            {
+                dayText.Text = "";
+            }
+        }
+
+        private void yearText_Click(object sender, MouseButtonEventArgs e)
+        {
+            if (yearText.Text == "Year")
+            {
+                yearText.Text = "";
+            }
         }
     }
 }

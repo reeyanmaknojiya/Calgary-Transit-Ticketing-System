@@ -35,6 +35,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PresentationFramework.Aero2" />
     <Reference Include="QRCoder, Version=1.4.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\QRCoder.1.4.1\lib\net40\QRCoder.dll</HintPath>
     </Reference>
@@ -532,7 +533,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Resource Include="Resources\logout-red.png" />
-    <Resource Include="logout-red.png" />
     <Resource Include="Resources\ORCode.jpg" />
     <Resource Include="Resources\back-arrow-white.png" />
   </ItemGroup>
