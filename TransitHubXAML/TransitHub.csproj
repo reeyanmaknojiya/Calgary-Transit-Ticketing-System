@@ -1,0 +1,547 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{36ABAF17-68E5-4AC1-9416-0B7E56192564}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TransitHubXAML</RootNamespace>
+    <AssemblyName>TransitHubXAML</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationFramework.Aero2" />
+    <Reference Include="QRCoder, Version=1.4.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\QRCoder.1.4.1\lib\net40\QRCoder.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="accountPage.xaml.cs">
+      <DependentUpon>accountPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="cartPage.xaml.cs">
+      <DependentUpon>cartPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="checkout.xaml.cs">
+      <DependentUpon>checkout.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControl\MenuWithSubMenuControl.xaml.cs">
+      <DependentUpon>MenuWithSubMenuControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="forgotPassPage.xaml.cs">
+      <DependentUpon>forgotPassPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help.xaml.cs">
+      <DependentUpon>Help.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\creditCard.cs" />
+    <Compile Include="Models\debitCard.cs" />
+    <Compile Include="Models\Enums.cs" />
+    <Compile Include="Models\paypal.cs" />
+    <Compile Include="Models\storeItems.cs" />
+    <Compile Include="popUp.xaml.cs">
+      <DependentUpon>popUp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TempUser.cs" />
+    <Compile Include="Ticket.xaml.cs">
+      <DependentUpon>Ticket.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ticketDisplay.xaml.cs">
+      <DependentUpon>ticketDisplay.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VerificationConfirmationPage.xaml.cs">
+      <DependentUpon>VerificationConfirmationPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModel\MenuViewModel.cs" />
+    <Compile Include="Wallet.xaml.cs">
+      <DependentUpon>Wallet.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs" />
+    <Compile Include="loginPage.xaml.cs">
+      <DependentUpon>loginPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="paymentInformationPage.xaml.cs">
+      <DependentUpon>paymentInformationPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="selectPaymentMethod.xaml.cs">
+      <DependentUpon>selectPaymentMethod.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="signUp.xaml.cs">
+      <DependentUpon>signUp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="signUpPage.xaml.cs">
+      <DependentUpon>signUpPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Account.xaml.cs">
+      <DependentUpon>Account.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="storePage.xaml.cs">
+      <DependentUpon>storePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="thankYou.xaml.cs">
+      <DependentUpon>thankYou.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Verification.xaml.cs">
+      <DependentUpon>Verification.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AccountEdit.xaml.cs">
+      <DependentUpon>AccountEdit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AccountPaymentMethods.xaml.cs">
+      <DependentUpon>AccountPaymentMethods.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AccountReceipts.xaml.cs">
+      <DependentUpon>AccountReceipts.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AccountSaveCard.xaml.cs">
+      <DependentUpon>AccountSaveCard.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditAccountBirthday.xaml.cs">
+      <DependentUpon>EditAccountBirthday.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditAccountEmail.xaml.cs">
+      <DependentUpon>EditAccountEmail.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditAccountName.xaml.cs">
+      <DependentUpon>EditAccountName.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditAccountPassword.xaml.cs">
+      <DependentUpon>EditAccountPassword.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditAccountPhone.xaml.cs">
+      <DependentUpon>EditAccountPhone.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewReceipt1.xaml.cs">
+      <DependentUpon>ViewReceipt1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AccountPaymentMethodsPage.xaml.cs">
+      <DependentUpon>AccountPaymentMethodsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AccountReceiptsPage.xaml.cs">
+      <DependentUpon>AccountReceiptsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AccountSaveCardPage.xaml.cs">
+      <DependentUpon>AccountSaveCardPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AccountEditPage.xaml.cs">
+      <DependentUpon>AccountEditPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VerificationPage.xaml.cs">
+      <DependentUpon>VerificationPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditAccountBirthdayPage.xaml.cs">
+      <DependentUpon>EditAccountBirthdayPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditAccountEmailPage.xaml.cs">
+      <DependentUpon>EditAccountEmailPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditAccountNamePage.xaml.cs">
+      <DependentUpon>EditAccountNamePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditAccountPasswordPage.xaml.cs">
+      <DependentUpon>EditAccountPasswordPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditAccountPhonePage.xaml.cs">
+      <DependentUpon>EditAccountPhonePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LogoutConfirmationPage.xaml.cs">
+      <DependentUpon>LogoutConfirmationPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="windowAccess.cs" />
+    <Page Include="accountPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Cart.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="cartPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="checkout.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="chooseLogin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="chooseLoginPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="CustomControl\MenuWithSubMenuControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="forgotPassPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Help.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="loginPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Cart.xaml.cs">
+      <DependentUpon>Cart.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="chooseLogin.xaml.cs">
+      <DependentUpon>chooseLogin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="chooseLoginPage.xaml.cs">
+      <DependentUpon>chooseLoginPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Login.xaml.cs">
+      <DependentUpon>Login.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CardConfirmationPage.xaml.cs">
+      <DependentUpon>CardConfirmationPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ReceiptPage1.xaml.cs">
+      <DependentUpon>ReceiptPage1.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ReceiptPage2.xaml.cs">
+      <DependentUpon>ReceiptPage2.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="PaymentInformation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="paymentInformationPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="popUp.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="selectPaymentMethod.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="signUp.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="signUpPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Ticket.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ticketDisplay.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CardConfirmationPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ReceiptPage1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ReceiptPage2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VerificationConfirmationPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Wallet.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Account.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="storePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="thankYou.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Verification.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AccountEdit.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AccountPaymentMethods.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EditAccountBirthday.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EditAccountName.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EditAccountEmail.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EditAccountPhone.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EditAccountPassword.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AccountReceipts.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AccountSaveCard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewReceipt1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AccountPaymentMethodsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AccountReceiptsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AccountSaveCardPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AccountEditPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VerificationPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EditAccountBirthdayPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EditAccountEmailPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EditAccountNamePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EditAccountPasswordPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EditAccountPhonePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LogoutConfirmationPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PaymentInformation.xaml.cs">
+      <DependentUpon>PaymentInformation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\plusButton.jpg" />
+    <Resource Include="Resources\visa.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\back-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\google.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\fb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\camera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\credit-card.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\history.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\checkmark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\account.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\account_selected.png" />
+    <Resource Include="Resources\cart.png" />
+    <Resource Include="Resources\cart_selected.png" />
+    <Resource Include="Resources\help.png" />
+    <Resource Include="Resources\help_selected.png" />
+    <Resource Include="Resources\my_tickets_selected.png" />
+    <Resource Include="Resources\store.png" />
+    <Resource Include="Resources\store_selected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\accountNav.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\masterCard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\paypal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\debit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\visa1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\mastercard1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\my_tickets.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\invisible.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Accounts.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Resources\logout-red.png" />
+    <Resource Include="Resources\ORCode.jpg" />
+    <Resource Include="Resources\back-arrow-white.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

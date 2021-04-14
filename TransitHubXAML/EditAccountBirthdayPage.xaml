@@ -1,0 +1,34 @@
+<Page x:Class="TransitHubXAML.EditAccountBirthdayPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TransitHubXAML"
+      mc:Ignorable="d" 
+      Title="EditAccountBirthdayPage" Height="800" Width="450">
+    <Grid>
+        <ComboBox x:Name="monthText" Style="{StaticResource ComboBoxFlatStyle}" HorizontalAlignment="Left" Height="43" Margin="47,228,0,0" VerticalAlignment="Top" Width="166" BorderBrush="#FFABADB3" FontSize="22" Foreground="#FF2C2C2C">
+            <ComboBoxItem IsSelected="True" Content="Month"/>
+            <ComboBoxItem Content="January"/>
+            <ComboBoxItem Content="February"/>
+            <ComboBoxItem Content="March"/>
+            <ComboBoxItem Content="April"/>
+            <ComboBoxItem Content="May"/>
+            <ComboBoxItem Content="June"/>
+            <ComboBoxItem Content="July"/>
+            <ComboBoxItem Content="August"/>
+            <ComboBoxItem Content="September"/>
+            <ComboBoxItem Content="October"/>
+            <ComboBoxItem Content="November"/>
+            <ComboBoxItem Content="December"/>
+        </ComboBox>
+        <TextBox x:Name="dayText" HorizontalAlignment="Left" Height="42" Margin="222,229,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="79" FontSize="22" TextAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="yearText" HorizontalAlignment="Left" Height="42" Margin="313,229,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="89" FontSize="22" TextAlignment="Center" VerticalContentAlignment="Center" RenderTransformOrigin="1.718,0.667"/>
+        <Label Content="Enter Birthday" HorizontalAlignment="Left" Margin="40,191,0,0" VerticalAlignment="Top" Height="44" Width="173" FontSize="22"/>
+        <Image MouseDown="Back_Click" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="64" Source="Resources/back-arrow-white.png" Margin="33,13,0,0"/>
+        <Button Content="Confirm" HorizontalAlignment="Left" Margin="28,521,0,0" VerticalAlignment="Top" Width="389" Height="58" FontSize="30" Background="#B83A3F" Foreground="White" Click="Button_Click_1"/>
+        <Label Content="Edit Birthday" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="151,11,0,0" Height="58" Width="192" FontSize="30" FontFamily="Open Sans"/>
+        <Rectangle Fill="#B83A3F" Panel.ZIndex="-1" HorizontalAlignment="Left" Height="65" Stroke="{x:Null}" StrokeThickness="0.5" VerticalAlignment="Top" Width="466" Margin="-16,0,0,0"/>
+
+    </Grid>
+</Page>

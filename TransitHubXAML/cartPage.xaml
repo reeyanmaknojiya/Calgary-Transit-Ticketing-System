@@ -1,0 +1,51 @@
+﻿<Page x:Class="TransitHubXAML.cartPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TransitHubXAML"
+      mc:Ignorable="d" 
+      d:DesignHeight="800" d:DesignWidth="450"
+      Title="cartPage">
+
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <Grid RenderTransformOrigin="0.493,0.585">
+
+            <Label Content="Cart" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="192,10,0,0" Height="58" Width="68" FontSize="30" FontFamily="Open Sans"/>
+            <Label Content="Adult Ticket" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="22,76,0,0" TextOptions.TextFormattingMode="Display" FontSize="20"/>
+            <Label Content="$3.50" HorizontalAlignment="Left" Margin="22,125,0,0" VerticalAlignment="Top" FontSize="20"/>
+            <Label Name="adultTicketAmountLabel" Content="0" HorizontalAlignment="Left" Margin="306,104,0,0" VerticalAlignment="Top" FontSize="20"/>
+            <Label Content="Youth Ticket" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="22,177,0,0" TextOptions.TextFormattingMode="Display" FontSize="20"/>
+            <Label Content="$2.40" HorizontalAlignment="Left" Margin="22,225,0,0" VerticalAlignment="Top" FontSize="20"/>
+            <Label Name="youthTicketAmountLabel" Content="0" HorizontalAlignment="Left" Margin="306,204,0,0" VerticalAlignment="Top" FontSize="20"/>
+            <Button Name="adultTicketPlus" Content="+" Background="White" HorizontalAlignment="Left" Margin="353,102,0,0" VerticalAlignment="Top" Width="40" Height="37" FontSize="25" Click="adultTicketPlus_Click" Foreground="#FF707070"/>
+            <Button Name="adultTicketMinus" Content="-" Background="White" HorizontalAlignment="Left" Margin="243,102,0,0" VerticalAlignment="Top" Width="40" Height="37" FontSize="25" Click="adultTicketMinus_Click" Foreground="#FF707070"/>
+            <Button Name="youthTicketMinus" Content="-" Background="White" HorizontalAlignment="Left" Margin="243,202,0,0" VerticalAlignment="Top" Width="40" Height="37" FontSize="25" Click="youthTicketMinus_Click" Foreground="#FF707070"/>
+            <Button Name="youthTicketPlus" Content="+" Background="White" HorizontalAlignment="Left" Margin="353,202,0,0" VerticalAlignment="Top" Width="40" Height="37" FontSize="25" Click="youthTicketPlus_Click" Foreground="#FF707070"/>
+            <Rectangle Fill="#B83A3F" Panel.ZIndex="-1" HorizontalAlignment="Left" Height="65" Stroke="{x:Null}" StrokeThickness="0.5" VerticalAlignment="Top" Width="450"/>
+            <Rectangle Fill="#FFACACAC" HorizontalAlignment="Left" Height="1" Stroke="{x:Null}" StrokeThickness="0.5" VerticalAlignment="Top" Width="450" Margin="0,169,0,0"/>
+            <Rectangle Fill="#FFACACAC" HorizontalAlignment="Left" Height="1" Stroke="{x:Null}" StrokeThickness="0.5" VerticalAlignment="Top" Width="452" Margin="0,269,-2,0"/>
+            <Label Content="Adult Monthly Pass" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="22,277,0,0" TextOptions.TextFormattingMode="Display" FontSize="20"/>
+            <Label Content="$109.00" HorizontalAlignment="Left" Margin="20,325,0,0" VerticalAlignment="Top" FontSize="20"/>
+            <Rectangle Fill="#FFACACAC" HorizontalAlignment="Left" Height="1" Stroke="{x:Null}" StrokeThickness="0.5" VerticalAlignment="Top" Width="452" Margin="0,369,-2,0"/>
+            <Label Content="Youth Monthly Pass" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="22,377,0,0" TextOptions.TextFormattingMode="Display" FontSize="20"/>
+            <Label Content="$79.00" HorizontalAlignment="Left" Margin="22,425,0,0" VerticalAlignment="Top" FontSize="20"/>
+            <Rectangle Fill="#FFACACAC" HorizontalAlignment="Left" Height="1" Stroke="{x:Null}" StrokeThickness="0.5" VerticalAlignment="Top" Width="452" Margin="0,469,-2,0"/>
+            <Label Name="lowIncomePassLabel" Content="Low Income Pass" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="22,477,0,0" TextOptions.TextFormattingMode="Display" FontSize="20"/>
+            <Label Name="lowIncomePassLabel1" Content="$38.15" HorizontalAlignment="Left" Margin="22,525,0,0" VerticalAlignment="Top" FontSize="20"/>
+            <Button Name="adultMonthlyMinus" Content="-" Background="White" HorizontalAlignment="Left" Margin="243,302,0,0" VerticalAlignment="Top" Width="40" Height="37" FontSize="25" Click="adultMonthlyMinus_Click" Foreground="#FF707070"/>
+            <Label Name="adultMonthlyAmountLabel" Content="0" HorizontalAlignment="Left" Margin="306,304,0,0" VerticalAlignment="Top" FontSize="20"/>
+            <Button Name="adultMonthlyPlus" Content="+" Background="White" HorizontalAlignment="Left" Margin="353,302,0,0" VerticalAlignment="Top" Width="40" Height="37" FontSize="25" Click="adultMonthlyPlus_Click" Foreground="#FF707070"/>
+            <Button Name="youthMonthlyMinus" Content="-" Background="White" HorizontalAlignment="Left" Margin="243,402,0,0" VerticalAlignment="Top" Width="40" Height="37" FontSize="25" Click="youthMonthlyMinus_Click" Foreground="#FF707070"/>
+            <Label Name="youthMonthlyAmountLabel" Content="0" HorizontalAlignment="Left" Margin="306,404,0,0" VerticalAlignment="Top" FontSize="20"/>
+            <Button Name="youthMonthlyPlus" Content="+" Background="White" HorizontalAlignment="Left" Margin="353,402,0,0" VerticalAlignment="Top" Width="40" Height="37" FontSize="25" Click="youthMonthlyPlus_Click" Foreground="#FF707070"/>
+            <Button Name="lowIncomeMinus" Content="-" Background="White" HorizontalAlignment="Left" Margin="243,502,0,0" VerticalAlignment="Top" Width="40" Height="37" FontSize="25" Click="lowIncomeMinus_Click" Foreground="#FF707070"/>
+            <Label Name="lowIncomeAmountLabel" Content="0" HorizontalAlignment="Left" Margin="306,504,0,0" VerticalAlignment="Top" FontSize="20"/>
+            <Button Name="lowIncomePlus" Content="+" Background="White" HorizontalAlignment="Left" Margin="353,502,0,0" VerticalAlignment="Top" Width="40" Height="37" FontSize="25" Click="lowIncomePlus_Click" Foreground="#FF707070"/>
+            <Rectangle Name="botRect" Fill="#FFACACAC" HorizontalAlignment="Left" Height="1" Stroke="{x:Null}" StrokeThickness="0.5" VerticalAlignment="Top" Width="442" Margin="10,569,-2,0"/>
+            <Button Name="checkoutButton" Content="Checkout $0.00" Style="{StaticResource RedButton}" Foreground="white" Background="#B83A3F" HorizontalAlignment="Left" Margin="32,581,0,0" VerticalAlignment="Top" Width="384" Height="58" FontSize="30" Click="checkoutButton_Click" BorderBrush="#FFB83A3F"/>
+
+
+        </Grid>
+    </ScrollViewer>
+</Page>
