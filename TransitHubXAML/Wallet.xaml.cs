@@ -38,18 +38,32 @@ namespace TransitHubXAML
             {
                 this.NavigationService.Navigate(new activatedTicketDisplay(ticket1.Content.ToString(), ticketDate1.Content.ToString(), this));
             }
-            
-
         }
 
         private void Ticket_2_Click(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new ticketDisplay(ticket2.Content.ToString(), ticketDate2.Content.ToString(), this));
+            if (!isTicket2)
+            {
+                isTicket2 = true;
+                this.NavigationService.Navigate(new ticketDisplay(ticket2.Content.ToString(), ticketDate2.Content.ToString(), this));
+            }
+            else
+            {
+                this.NavigationService.Navigate(new activatedTicketDisplay(ticket2.Content.ToString(), ticketDate2.Content.ToString(), this));
+            }
         }
 
         private void Ticket_3_Click(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new ticketDisplay(ticket3.Content.ToString(), ticketDate3.Content.ToString(), this));
+            if (!isTicket3)
+            {
+                isTicket3 = true;
+                this.NavigationService.Navigate(new ticketDisplay(ticket3.Content.ToString(), ticketDate3.Content.ToString(), this));
+            }
+            else
+            {
+                this.NavigationService.Navigate(new activatedTicketDisplay(ticket3.Content.ToString(), ticketDate3.Content.ToString(), this));
+            }
         }
 
     }

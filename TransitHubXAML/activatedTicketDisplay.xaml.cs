@@ -22,8 +22,6 @@ namespace TransitHubXAML
     /// </summary>
     public partial class activatedTicketDisplay : Page
     {
-        private String type;
-        private String purchaseDate;
         private Page wallet;
         public activatedTicketDisplay(String type, String date, Page wallet)
         {
@@ -77,8 +75,6 @@ namespace TransitHubXAML
             }
         }
 
-
-        
         private void Image_MouseDown(object sender, MouseButtonEventArgs e)
         {
             this.NavigationService.Navigate(wallet);
