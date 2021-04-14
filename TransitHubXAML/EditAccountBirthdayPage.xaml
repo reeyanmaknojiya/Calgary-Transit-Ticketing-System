@@ -7,7 +7,7 @@
       mc:Ignorable="d" 
       Title="EditAccountBirthdayPage" Height="800" Width="450">
     <Grid>
-        <ComboBox x:Name="monthText" Style="{StaticResource {x:Static ToolBar.ComboBoxStyleKey}}" HorizontalAlignment="Left" Height="43" Margin="47,228,0,0" VerticalAlignment="Top" Width="166" BorderBrush="#FFABADB3" FontSize="22">
+        <ComboBox x:Name="monthText" Style="{StaticResource ComboBoxFlatStyle}" HorizontalAlignment="Left" Height="43" Margin="47,228,0,0" VerticalAlignment="Top" Width="166" BorderBrush="#FFABADB3" FontSize="22" Foreground="#FF2C2C2C">
             <ComboBoxItem IsSelected="True" Content="Month"/>
             <ComboBoxItem Content="January"/>
             <ComboBoxItem Content="February"/>

@@ -97,9 +97,9 @@ namespace TransitHubXAML
                 passwordLabel.Margin = new Thickness(11, 223, 0, 0);
                 passwordBox.Margin = new Thickness(18, 263, 0, 0);
                 passwordUnmask.Margin = new Thickness(18, 263, 0, 0);
-                rememberCheckBox.Margin = new Thickness(18, 319, 0, 0);
-                rememberText.Margin = new Thickness(30, 310, 0, 0);
-                forgotPassText.Margin = new Thickness(250, 310, 0, 0);
+                rememberCheckBox.Margin = new Thickness(18, 329, 0, 0);
+                rememberText.Margin = new Thickness(37, 321, 0, 0);
+                forgotPassText.Margin = new Thickness(240, 321, 0, 0);
                 viewEye.Margin = new Thickness(331, 267, 0, 0);
                 hideEye.Margin = new Thickness(331, 267, 0, 0);
             }
