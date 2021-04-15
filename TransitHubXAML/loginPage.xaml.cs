@@ -58,28 +58,31 @@ namespace TransitHubXAML
                 {
                     if (line.Equals(email))
                     {
-                        string passwordString = sr.ReadLine();
-                        if (passwordString.Equals(password))
+                        if (!String.IsNullOrEmpty(email))
                         {
-                            valid = true;
-                            string fname = sr.ReadLine();
-                            string lname = sr.ReadLine();
-                            string bmonth = sr.ReadLine();
-                            string bday = sr.ReadLine();
-                            string byear = sr.ReadLine();
-                            string phoneN = sr.ReadLine();
+                            string passwordString = sr.ReadLine();
+                            if (passwordString.Equals(password))
+                            {
+                                valid = true;
+                                string fname = sr.ReadLine();
+                                string lname = sr.ReadLine();
+                                string bmonth = sr.ReadLine();
+                                string bday = sr.ReadLine();
+                                string byear = sr.ReadLine();
+                                string phoneN = sr.ReadLine();
 
-                            User.firstName = fname;
-                            User.lastName = lname;
-                            User.bMonth = bmonth;
-                            User.bDay = bday;
-                            User.bYear = byear;
-                            User.email = email;
-                            User.phone = phoneN;
-                            User.password = password;
-                            User.loggedIn = true;
-                            TempUser.loggedIn = false;
-                            this.NavigationService.Navigate(new storePage());
+                                User.firstName = fname;
+                                User.lastName = lname;
+                                User.bMonth = bmonth;
+                                User.bDay = bday;
+                                User.bYear = byear;
+                                User.email = email;
+                                User.phone = phoneN;
+                                User.password = password;
+                                User.loggedIn = true;
+                                TempUser.loggedIn = false;
+                                this.NavigationService.Navigate(new storePage());
+                            }
                         }
                     }
                     //account.Add(line);
