@@ -19,9 +19,9 @@ namespace TransitHubXAML
     /// </summary>
     public partial class Wallet : Page
     {
-        private Boolean isTicket1;
-        private Boolean isTicket2;
-        private Boolean isTicket3;
+        public Boolean isTicket1;
+        public Boolean isTicket2;
+        public Boolean isTicket3;
 
         public Wallet()
         {
@@ -32,8 +32,7 @@ namespace TransitHubXAML
         {
             if (!isTicket1)
             {
-                isTicket1 = true;
-                this.NavigationService.Navigate(new ticketDisplay(ticket1.Content.ToString(), ticketDate1.Content.ToString(), this));
+                this.NavigationService.Navigate(new ticketDisplay(ticket1.Content.ToString(), ticketDate1.Content.ToString(), this, 1));
             } else
             {
                 this.NavigationService.Navigate(new activatedTicketDisplay(ticket1.Content.ToString(), ticketDate1.Content.ToString(), this));
@@ -44,8 +43,7 @@ namespace TransitHubXAML
         {
             if (!isTicket2)
             {
-                isTicket2 = true;
-                this.NavigationService.Navigate(new ticketDisplay(ticket2.Content.ToString(), ticketDate2.Content.ToString(), this));
+                this.NavigationService.Navigate(new ticketDisplay(ticket2.Content.ToString(), ticketDate2.Content.ToString(), this, 2));
             }
             else
             {
@@ -57,8 +55,7 @@ namespace TransitHubXAML
         {
             if (!isTicket3)
             {
-                isTicket3 = true;
-                this.NavigationService.Navigate(new ticketDisplay(ticket3.Content.ToString(), ticketDate3.Content.ToString(), this));
+                this.NavigationService.Navigate(new ticketDisplay(ticket3.Content.ToString(), ticketDate3.Content.ToString(), this, 3));
             }
             else
             {
@@ -79,6 +76,22 @@ namespace TransitHubXAML
         private void Senior_Click(object sender, RoutedEventArgs e)
         {
             this.NavigationService.Navigate(new seniorPass(this));
+        }
+
+        public void setTicket(int id)
+        {
+            if (id == 1)
+            {
+                isTicket1 = true;
+            }
+            else if (id == 2)
+            {
+                isTicket2 = true;
+            }
+            else if (id == 3)
+            {
+                isTicket3 = true;
+            }
         }
 
     }

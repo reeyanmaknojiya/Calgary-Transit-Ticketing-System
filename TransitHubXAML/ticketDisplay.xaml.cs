@@ -22,12 +22,14 @@ namespace TransitHubXAML
     /// </summary>
     public partial class ticketDisplay : Page
     {
-        private Page wallet;
-        public ticketDisplay(String type, String date, Page wallet)
+        private Wallet wallet;
+        private int id;
+        public ticketDisplay(String type, String date, Wallet wallet, int id)
         { 
             InitializeComponent();
 
             this.wallet = wallet;
+            this.id = id;
 
             ticketTypeLabel.Content = type;
             purchasedLabel.Content = date;
@@ -58,6 +60,8 @@ namespace TransitHubXAML
             activateButton.Width = 0;
 
             activatedLabel.Content = $"Activated on: {date1:MMMM dd, yyyy}";
+
+            wallet.setTicket(id);
         }
 
         /*
