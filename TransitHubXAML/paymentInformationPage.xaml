@@ -41,7 +41,7 @@
         </ComboBox>
         <Label Name="cvvLabel" Content="CVV" HorizontalAlignment="Left" Margin="258,338,0,0" VerticalAlignment="Top" Width="72" FontSize="24"/>
         <TextBox Name="cvvIn" HorizontalAlignment="Left" Height="42" Margin="259,380,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="164" FontSize="24"/>
-        <Label Name="zipLabel" Content="ZIP Code" HorizontalAlignment="Left" Margin="30,458,0,0" VerticalAlignment="Top" Width="203" FontSize="24"/>
+        <Label Name="zipLabel" Content="Postal Code" HorizontalAlignment="Left" Margin="30,458,0,0" VerticalAlignment="Top" Width="203" FontSize="24"/>
         <TextBox Name="zipIn" HorizontalAlignment="Left" Height="42" Margin="30,505,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="164" FontSize="24"/>
         <Button Style="{StaticResource RedButton}" Click="Button_Click" Content="Continue and Pay" Foreground="white" Background="#B83A3F" HorizontalAlignment="Left" Margin="30,583,0,0" VerticalAlignment="Top" Width="387" Height="58" FontSize="30"/>
         <Label x:Name="dateLabel_Copy" Content="Month" HorizontalAlignment="Left" Margin="25,338,0,0" VerticalAlignment="Top" Width="87" FontSize="24"/>

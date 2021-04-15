@@ -100,13 +100,13 @@ namespace TransitHubXAML
             {
                 //bad postal code
                 zipIn.BorderBrush = System.Windows.Media.Brushes.Red;
-                zipLabel.Content = "ZIP Code";
+                zipLabel.Content = "Postal Code";
                 badInput = true;
             }
             else
             {
                 zipIn.BorderBrush = System.Windows.Media.Brushes.White;
-                zipLabel.Content = "ZIP Code";
+                zipLabel.Content = "Postal Code";
             }
 
             if (!badInput)

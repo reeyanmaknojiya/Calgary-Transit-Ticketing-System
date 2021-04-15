@@ -39,7 +39,7 @@
         </ComboBox>
         <Label x:Name="cvvLabel" Content="CVV" HorizontalAlignment="Left" Margin="258,338,0,0" VerticalAlignment="Top" Width="72" FontSize="24"/>
         <TextBox x:Name="cvvIn" HorizontalAlignment="Left" Height="42" Margin="259,380,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="164" FontSize="24"/>
-        <Label x:Name="zipLabel" Content="ZIP Code" HorizontalAlignment="Left" Margin="30,458,0,0" VerticalAlignment="Top" Width="203" FontSize="24"/>
+        <Label x:Name="zipLabel" Content="Postal Code" HorizontalAlignment="Left" Margin="30,458,0,0" VerticalAlignment="Top" Width="203" FontSize="24"/>
         <TextBox x:Name="zipIn" HorizontalAlignment="Left" Height="42" Margin="30,505,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="164" FontSize="24"/>
         <Label x:Name="dateLabel_Copy" Content="Month" HorizontalAlignment="Left" Margin="25,338,0,0" VerticalAlignment="Top" Width="87" FontSize="24"/>
         <Label x:Name="dateLabel_Copy1" Content="Year" HorizontalAlignment="Left" Margin="131,338,0,0" VerticalAlignment="Top" Width="87" FontSize="24"/>
