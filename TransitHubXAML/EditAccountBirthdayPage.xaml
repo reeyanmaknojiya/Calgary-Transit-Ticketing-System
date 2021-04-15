@@ -26,7 +26,7 @@
         <TextBox x:Name="yearText" HorizontalAlignment="Left" Height="42" Margin="313,229,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="89" FontSize="22" TextAlignment="Center" VerticalContentAlignment="Center" RenderTransformOrigin="1.718,0.667"/>
         <Label Content="Enter Birthday" HorizontalAlignment="Left" Margin="40,191,0,0" VerticalAlignment="Top" Height="44" Width="173" FontSize="22"/>
         <Image MouseDown="Back_Click" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="64" Source="Resources/back-arrow-white.png" Margin="33,13,0,0"/>
-        <Button Content="Confirm" HorizontalAlignment="Left" Margin="28,521,0,0" VerticalAlignment="Top" Width="389" Height="58" FontSize="30" Background="#B83A3F" Foreground="White" Click="Button_Click_1"/>
+        <Button Content="Confirm" Style="{StaticResource RedButton}" HorizontalAlignment="Left" Margin="28,521,0,0" VerticalAlignment="Top" Width="389" Height="58" FontSize="30" Background="#B83A3F" Foreground="White" Click="Button_Click_1"/>
         <Label Content="Edit Birthday" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="151,11,0,0" Height="58" Width="192" FontSize="30" FontFamily="Open Sans"/>
         <Rectangle Fill="#B83A3F" Panel.ZIndex="-1" HorizontalAlignment="Left" Height="65" Stroke="{x:Null}" StrokeThickness="0.5" VerticalAlignment="Top" Width="466" Margin="-16,0,0,0"/>
 
