@@ -97,14 +97,17 @@ Note: Could use Tab key or mouse click to alternate between text fields
 		- Enter the information similar to what is mentioned in point 6
 		- Click on Save Card
 		- Select on the confirmation page
+	- Use the back button to navigate to the main account page
 4. Purchase History
 	- Click on purchase history to view a record of past purchases
 	- Click on the View Receipt button on any receipt to view the full receipt
 	- Use the back button to navigate to the Purchase History page
+	- Use the back button to navigate to the main account page
 5. Verification
 	- Enter any random number in the Registration Number input box
 	- Click on Send For Approval
 	- Select OK on the confirmation page
+	- Use the back button to navigate to the main account page
 6. Logout
 	- Use the back button to navigate to the Main Account page
 	- Click on the red logout button on the top right
