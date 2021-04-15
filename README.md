@@ -82,4 +82,31 @@ Note: Could use Tab key or mouse click to alternate between text fields
 	- it will expand and display the answers to the question selected
 
 ## Account Page
-1. 
+1. After login or signup, use the Navbar to select Account from the bottom right
+2. Select Account to view or edit account details
+	- Click on the edit button on the right to edit the respective fields
+	- Example Information
+		- Click on the edit button next to Phone Number
+		- Enter 1111111111 (Note: Input validation has been done in all fields)
+		- Click on the Confirm button
+		- The Phone Number will be updated
+	- Use the back button to navigate to the main account page
+3. Select Payment Methods to view and add cards and other methods
+	- Click on the Make Default button to change default card settings (Note: Only for interaction purposes)
+	- Click on the Add New Card button at the bottom to add a new card
+		- Enter the information similar to what is mentioned in point 6
+		- Click on Save Card
+		- Select on the confirmation page
+4. Purchase History
+	- Click on purchase history to view a record of past purchases
+	- Click on the View Receipt button on any receipt to view the full receipt
+	- Use the back button to navigate to the Purchase History page
+5. Verification
+	- Enter any random number in the Registration Number input box
+	- Click on Send For Approval
+	- Select OK on the confirmation page
+6. Logout
+	- Use the back button to navigate to the Main Account page
+	- Click on the red logout button on the top right
+	- Select Yes on the confirmation page
+	- You will be successfully logged out
