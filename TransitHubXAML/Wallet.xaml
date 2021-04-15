@@ -63,25 +63,25 @@
 		<TabControl HorizontalAlignment="Left" Height="700" VerticalAlignment="Top" Width="450" >
             <TabItem  Header="Tickets" FontSize="30" Width="220" Margin="0,0,0,-17">
                 <Canvas>
-                    <Label Content="Adult Monthly Pass - Feb" Height="45" Canvas.Top="25" Width="300" Canvas.Left="10" FontSize="24"/>
-					<Label Content="Purchased: Feb 02, 2021" FontSize="16" Canvas.Left="10" Canvas.Top="60" />
-                    <Button Content="View" Height="45" Width="100" FontSize="24" HorizontalContentAlignment="Center" Canvas.Right="20" Canvas.Top="38"/>
+                    <Label Content="Adult Monthly Pass - April" Height="45" Canvas.Top="25" Width="300" Canvas.Left="10" FontSize="24"/>
+					<Label Content="Purchased: Apr 05, 2021" FontSize="16" Canvas.Left="10" Canvas.Top="60" />
+                    <Button Content="View" Height="45" Width="100" FontSize="24" HorizontalContentAlignment="Center" Canvas.Right="20" Canvas.Top="38" Click="Adult_Click"/>
                     <Rectangle Fill="#FFACACAC" Height="1" Stroke="Black" Width="472" Canvas.Left="-28" Canvas.Top="115"/>
                     <Label x:Name="ticket1" Content="Youth Ticket" Height="45" Canvas.Top="140" Width="300" Canvas.Left="10" FontSize="24"/>
-                    <Label x:Name="ticketDate1" Content="Purchased: Feb 05, 2021" FontSize="16" Canvas.Left="10" Canvas.Top="175" />
+                    <Label x:Name="ticketDate1" Content="Purchased: Apr 03, 2021" FontSize="16" Canvas.Left="10" Canvas.Top="175" />
 					<Button Content="View" Height="45" Width="100" FontSize="24" HorizontalContentAlignment="Center" Canvas.Right="20" Canvas.Top="153" Click="Ticket_1_Click"/>
                     <Rectangle Fill="#FFACACAC" Height="1" Stroke="Black" Width="472" Canvas.Left="-28" Canvas.Top="230"/>
                     <Label x:Name="ticket2" Content="Adult Ticket" Height="45" Canvas.Top="255" Width="300" Canvas.Left="10" FontSize="24"/>
-                    <Label x:Name="ticketDate2" Content="Purchased: Feb 05, 2021" FontSize="16" Canvas.Left="10" Canvas.Top="290" />
+                    <Label x:Name="ticketDate2" Content="Purchased: Apr 02, 2021" FontSize="16" Canvas.Left="10" Canvas.Top="290" />
 					<Button Content="View" Height="45" Width="100" FontSize="24" HorizontalContentAlignment="Center" Canvas.Right="20" Canvas.Top="268" Click="Ticket_2_Click"/>
                     <Rectangle Fill="#FFACACAC" Height="1" Stroke="Black" Width="472" Canvas.Left="-28" Canvas.Top="345"/>
                     <Label x:Name="ticket3" Content="Adult Ticket" Height="45" Canvas.Top="370" Width="300" Canvas.Left="10" FontSize="24"/>
-                    <Label  x:Name="ticketDate3" Content="Purchased: Feb 05, 2021" FontSize="16" Canvas.Left="10" Canvas.Top="405" />
+                    <Label  x:Name="ticketDate3" Content="Purchased: Apr 01, 2021" FontSize="16" Canvas.Left="10" Canvas.Top="405" />
 					<Button Content="View" Height="45" Width="100" FontSize="24" HorizontalContentAlignment="Center" Canvas.Right="20" Canvas.Top="383" Click="Ticket_3_Click"/>
                     <Rectangle Fill="#FFACACAC" Height="1" Stroke="Black" Width="472" Canvas.Left="-28" Canvas.Top="460"/>
-					<Label Content="Adult Monthly Pass - Mar" Height="45" Canvas.Top="485" Width="300" Canvas.Left="10" FontSize="24"/>
-					<Label Content="Purchased: Feb 28, 2021" FontSize="16" Canvas.Left="10" Canvas.Top="520" />
-					<Button Content="View" Height="45" Width="100" FontSize="24" HorizontalContentAlignment="Center" Canvas.Right="20" Canvas.Top="498"/>
+					<Label Content="Youth Monthly Pass - April" Height="45" Canvas.Top="485" Width="300" Canvas.Left="10" FontSize="24"/>
+					<Label Content="Purchased: Apr 01, 2021" FontSize="16" Canvas.Left="10" Canvas.Top="520" />
+					<Button Content="View" Height="45" Width="100" FontSize="24" HorizontalContentAlignment="Center" Canvas.Right="20" Canvas.Top="498" Click="Youth_Click"/>
                     <Rectangle Fill="#FFACACAC" Height="1" Stroke="Black" Width="472" Canvas.Left="-28" Canvas.Top="575"/>
 				</Canvas>
 			</TabItem>

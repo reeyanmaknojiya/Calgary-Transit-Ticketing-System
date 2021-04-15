@@ -66,5 +66,20 @@ namespace TransitHubXAML
             }
         }
 
+        private void Adult_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new adultPass(this));
+        }
+
+        private void Youth_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new youthPass(this));
+        }
+
+        private void Senior_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new seniorPass(this));
+        }
+
     }
 }

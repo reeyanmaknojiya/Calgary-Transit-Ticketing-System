@@ -63,6 +63,12 @@
     <Compile Include="accountPage.xaml.cs">
       <DependentUpon>accountPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="seniorPass.xaml.cs">
+      <DependentUpon>seniorPass.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="youthPass.xaml.cs">
+      <DependentUpon>youthPass.xaml</DependentUpon>
+    </Compile>
     <Compile Include="cartPage.xaml.cs">
       <DependentUpon>cartPage.xaml</DependentUpon>
     </Compile>
@@ -89,6 +95,9 @@
     <Compile Include="TempUser.cs" />
     <Compile Include="activatedTicketDisplay.xaml.cs">
       <DependentUpon>activatedTicketDisplay.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="adultPass.xaml.cs">
+      <DependentUpon>adultPass.xaml</DependentUpon>
     </Compile>
     <Compile Include="ticketDisplay.xaml.cs">
       <DependentUpon>ticketDisplay.xaml</DependentUpon>
@@ -196,6 +205,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="seniorPass.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="youthPass.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Cart.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -297,6 +314,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="activatedTicketDisplay.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="adultPass.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -539,6 +560,9 @@
     <Content Include="Accounts.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Resource Include="Resources\adultPass.png" />
+    <Resource Include="Resources\seniorPass.png" />
+    <Resource Include="Resources\youthPass.png" />
     <Resource Include="Resources\logout-red.png" />
     <Resource Include="Resources\ORCode.jpg" />
     <Resource Include="Resources\back-arrow-white.png" />
