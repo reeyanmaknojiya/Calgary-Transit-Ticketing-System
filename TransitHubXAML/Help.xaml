@@ -42,11 +42,11 @@
                     <Label Content="Customer Service" Foreground="Black" Grid.Row="0" VerticalAlignment="Top" FontSize="25" Margin="11,0,-11,0"/>
 
                     <Label Content="General Inquiries" Foreground="Black" VerticalAlignment="Top" FontSize="25" Margin="22,38,-12,0" Grid.RowSpan="2"/>
-                    <Button Content="403-262-1000" Grid.Row="2" Height="50" Width="390" FontSize="18" BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Center" VerticalAlignment="Top" Background="#B83A3F" Foreground="white" />
-                    <Button Content="(TTY) 403-262-8087" Grid.Row="3" Height="50" Width="390" Grid.RowSpan="2" FontSize="18" BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,4,0,68" Background="#B83A3F" Foreground="white"/>
+                    <Button Content="403-262-1000" Style="{StaticResource RedButton}" Grid.Row="2" Height="50" Width="390" FontSize="18" BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Center" VerticalAlignment="Top" Background="#B83A3F" Foreground="white" />
+                    <Button Content="(TTY) 403-262-8087" Style="{StaticResource RedButton}" Grid.Row="3" Height="50" Width="390" Grid.RowSpan="2" FontSize="18" BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,4,0,68" Background="#B83A3F" Foreground="white"/>
 
                     <Label Content="Lost Property" Foreground="Black" Grid.Row="4" VerticalAlignment="Top" FontSize="25" Margin="22,10,-11,0"/>
-                    <Button Content="403-268-1600" Grid.Row="4" Height="50" Width="390" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,56,0,0" Grid.RowSpan="2" Background="#B83A3F" Foreground="white" BorderBrush="Black"/>
+                    <Button Content="403-268-1600" Style="{StaticResource RedButton}" Grid.Row="4" Height="50" Width="390" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,56,0,0" Grid.RowSpan="2" Background="#B83A3F" Foreground="white" BorderBrush="Black"/>
                 </Grid>
 
                 <Grid Grid.Row="2" Background="White">
@@ -57,8 +57,8 @@
                     </Grid.RowDefinitions>
                     <Label Content="Useful Links" Foreground="Black" Grid.Row="0" VerticalAlignment="Top" FontSize="25" Margin="22,0,-22,0"/>
 
-                    <Button Content="Calgary Transit Website" Height="50" Width="390" Margin="14,48,13,32" Grid.RowSpan="2" FontSize="18" Background="#B83A3F" Foreground="white" BorderBrush="Black" BorderThickness="1"/>
-                    <Button Content="Feedback" Grid.Row="1" Height="50" Width="390"  Grid.RowSpan="2" Margin="14,47,13,43" FontSize="18" Background="#B83A3F" Foreground="white" BorderBrush="Black" BorderThickness="1"/>
+                    <Button Content="Calgary Transit Website" Style="{StaticResource RedButton}" Height="50" Width="390" Margin="14,48,13,32" Grid.RowSpan="2" FontSize="18" Background="#B83A3F" Foreground="white" BorderBrush="Black" BorderThickness="1"/>
+                    <Button Content="Feedback" Grid.Row="1" Style="{StaticResource RedButton}" Height="50" Width="390"  Grid.RowSpan="2" Margin="14,47,13,43" FontSize="18" Background="#B83A3F" Foreground="white" BorderBrush="Black" BorderThickness="1"/>
                 </Grid>
 
                 <Grid Grid.Row="3" Background="White">

@@ -16,7 +16,7 @@
         <TextBox x:Name="cardHolder" HorizontalAlignment="Left" Height="42" Margin="30,164,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="393" FontSize="24"/>
         <Label x:Name="cardNumberLabel" Content="Card Number" HorizontalAlignment="Left" Margin="30,226,0,0" VerticalAlignment="Top" Width="212" FontSize="24"/>
         <TextBox x:Name="cardNumber" HorizontalAlignment="Left" Height="42" Margin="30,268,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="393" FontSize="24"/>
-        <ComboBox Style="{StaticResource ComboBoxFlatStyle}" x:Name="monthBox" HorizontalAlignment="Left" Margin="30,380,0,0" VerticalAlignment="Top" Height="42" Width="72" FontSize="24" Foreground="#FF2C2C2C">
+        <ComboBox Style="{StaticResource ComboBoxFlatStyle}" x:Name="monthBox" HorizontalAlignment="Left" Margin="30,380,0,0" VerticalAlignment="Top" Height="42" Width="82" FontSize="24" Foreground="#FF2C2C2C">
             <ComboBoxItem Content="01"/>
             <ComboBoxItem Content="02"/>
             <ComboBoxItem Content="03"/>
@@ -30,7 +30,7 @@
             <ComboBoxItem Content="11"/>
             <ComboBoxItem Content="12"/>
         </ComboBox>
-        <ComboBox Style="{StaticResource ComboBoxFlatStyle}" Height="42" x:Name="yearBox" HorizontalAlignment="Left" Margin="136,380,0,0" VerticalAlignment="Top" Width="86" FontSize="24" Foreground="#FF2C2C2C">
+        <ComboBox Style="{StaticResource ComboBoxFlatStyle}" Height="42" x:Name="yearBox" HorizontalAlignment="Left" Margin="136,380,0,0" VerticalAlignment="Top" Width="97" FontSize="24" Foreground="#FF2C2C2C">
             <ComboBoxItem Content="2021"/>
             <ComboBoxItem Content="2022"/>
             <ComboBoxItem Content="2023"/>

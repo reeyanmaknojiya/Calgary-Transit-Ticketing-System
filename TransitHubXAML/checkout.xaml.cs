@@ -26,6 +26,8 @@ namespace TransitHubXAML
 
             if (!User.loggedIn)
             {
+                oneTimeCard.Margin = new Thickness(33, 200, 0, 0);
+                labelNotSaved.Margin = new Thickness(33, 258, 0, 0);
                 oneTimeCard.Content = "Guest Checkout";
                 visaRectangle.Visibility = System.Windows.Visibility.Hidden;
                 visaLabel1.Visibility = System.Windows.Visibility.Hidden;
