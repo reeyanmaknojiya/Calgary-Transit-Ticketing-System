@@ -23,9 +23,9 @@
             <Label Name="ppLabel1" MouseDown="Paypal_Click" Content="my_email@realemail.com" HorizontalAlignment="Left" Margin="48,480,0,0" VerticalAlignment="Top" Width="189" FontSize="16"/>
             <Image Name="visaImage" MouseDown="Visa_Click" Source="Resources/visa.PNG" HorizontalAlignment="Left" Height="62" Margin="269,152,0,0" VerticalAlignment="Top" Width="135"/>
             <Image Name="ppImage" MouseDown="Paypal_Click" Source="Resources/paypal.PNG" HorizontalAlignment="Left" Height="107" Margin="289,437,0,0" VerticalAlignment="Top" Width="115"/>
-            <Button Style="{StaticResource RedButton}" Name="oneTimeCard" Click="Button_Click" Content="One Time Checkout" Foreground="White"  Background="#B83A3F"  HorizontalAlignment="Left" Margin="33,581,0,0" VerticalAlignment="Top" Width="383" Height="58" FontSize="30"/>
-            <Label Content="*Card will not be saved" HorizontalAlignment="Left" Margin="33,639,0,0" VerticalAlignment="Top" Width="134"/>
-            <Label Content="Checkout" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="164,11,0,0" Height="58" Width="144" FontSize="30" FontFamily="Open Sans"/>
+            <Button Style="{StaticResource RedButton}" Name="oneTimeCard" Click="Button_Click" Content="One Time Checkout" Foreground="White"  Background="#B83A3F"  HorizontalAlignment="Left" Margin="33,581,0,0" VerticalAlignment="Top" Width="383" Height="58" FontSize="22"/>
+            <Label Name="labelNotSaved" Content="*Card will not be saved" HorizontalAlignment="Left" Margin="33,639,0,0" VerticalAlignment="Top" Width="134"/>
+            <Label Content="Checkout" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="154,7,0,0" Height="58" Width="144" FontSize="30" FontFamily="Open Sans"/>
             <Rectangle Fill="#B83A3F" Panel.ZIndex="-1" HorizontalAlignment="Left" Height="65" Stroke="{x:Null}" StrokeThickness="0.5" VerticalAlignment="Top" Width="466" Margin="-16,0,0,0"/>
         </Grid>
     </ScrollViewer>
