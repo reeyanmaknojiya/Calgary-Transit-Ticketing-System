@@ -81,7 +81,7 @@ namespace TransitHubXAML
                 //dateLabel.Content = "Date";
             }
 
-            if (!Regex.IsMatch(cvvIn.Text, "\\d{3}"))
+            if (!Regex.IsMatch(cvvIn.Text, "\\D?(\\d{3})\\D?"))
             {
                 //bad cvv
                 cvvIn.BorderBrush = System.Windows.Media.Brushes.Red;

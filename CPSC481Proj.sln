@@ -3,10 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Website", "TransitHub\Website.csproj", "{697BF18E-F8E5-433E-8A29-0DFEF9150572}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF", "WPF\WPF.csproj", "{A89EEE44-5895-40EB-B067-9B06E25E3680}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransitHub", "TransitHubXAML\TransitHub.csproj", "{36ABAF17-68E5-4AC1-9416-0B7E56192564}"
 EndProject
 Global
@@ -15,14 +11,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{697BF18E-F8E5-433E-8A29-0DFEF9150572}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{697BF18E-F8E5-433E-8A29-0DFEF9150572}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{697BF18E-F8E5-433E-8A29-0DFEF9150572}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{697BF18E-F8E5-433E-8A29-0DFEF9150572}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A89EEE44-5895-40EB-B067-9B06E25E3680}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A89EEE44-5895-40EB-B067-9B06E25E3680}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A89EEE44-5895-40EB-B067-9B06E25E3680}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A89EEE44-5895-40EB-B067-9B06E25E3680}.Release|Any CPU.Build.0 = Release|Any CPU
 		{36ABAF17-68E5-4AC1-9416-0B7E56192564}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{36ABAF17-68E5-4AC1-9416-0B7E56192564}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{36ABAF17-68E5-4AC1-9416-0B7E56192564}.Release|Any CPU.ActiveCfg = Release|Any CPU
